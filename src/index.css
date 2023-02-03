@@ -1,0 +1,51 @@
+:root {
+  --main-orange: #f76707;
+  --lighter-orange: #ff922b;
+  --light-white: #fff4e6;
+  --main-green: #2f9e44;
+  --light-orange: #ffd8a8;
+  --light-orange-hover: #ffa94d;
+  --light-green: #b2f2bb;
+  --light-green-hover: #69db7c;
+
+  --main-black: #1d1d1f;
+  --main-white: #f5f5f7;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 50%;  8px per rem 
+  }
+}
+
+@media screen and (max-width: 60em) {
+  html {
+    font-size: 37.5%;  6px per rem 
+  }
+}
+*/
