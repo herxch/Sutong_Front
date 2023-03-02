@@ -1,6 +1,6 @@
-import MainNav from './MainNav';
-import { Fragment } from 'react';
-import Footer from './Footer';
+import MainNav from "../layouts/MainNav";
+import { Fragment } from "react";
+import Footer from "../layouts/Footer";
 //import E3header from './E3header';
 //import Programs from './Programs';
 //import FeaturedProgram from './FeaturedProgram';
@@ -10,7 +10,7 @@ import Footer from './Footer';
 //import AboutE3 from './AboutE3';
 //import classes from './MainNav.module.css';
 
-const Layout = (props) => {
+const MainPage = (props) => {
   return (
     <Fragment>
       <MainNav />
@@ -26,4 +26,4 @@ const Layout = (props) => {
   );
 };
 
-export default Layout;
+export default MainPage;
