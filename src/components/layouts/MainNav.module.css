@@ -1,5 +1,6 @@
 .header {
   background-color: var(--main-black);
+  opacity: 0.85;
   /* padding: 2rem; */
   display: block;
   justify-content: center;
@@ -9,6 +10,11 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.header:hover {
+  transition: opacity 0.2s ease-in;
+  opacity: 1;
 }
 
 .logo {
@@ -51,6 +57,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   flex-grow: 1;
+  height: 100%;
 }
 
 /* .header nav #hidden {
@@ -64,14 +71,14 @@ nav {
 
 .header__links a:link,
 .header__links a:visited,
-.header__links p {
+.header__links a {
   border-style: none;
   text-decoration: none;
   font-size: 1.2rem;
   /* font-weight: 700; */
   color: var(--main-white);
-  padding: 0.5rem 1rem;
-  margin: 0 1.5rem;
+  padding: 0.5rem 2.5rem;
+  /* margin: 0 1.5rem; */
   white-space: nowrap;
   transition: all 0.3s ease;
   position: relative;
@@ -113,7 +120,6 @@ nav {
    opacity: 0; 
  }  */
 
-
 /* .header__links .btn--container {
   display: flex;
   justify-content: flex-end;
@@ -146,6 +152,51 @@ nav {
   color: var(--light-white);
 } */
 
+.header__submenu__links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__submenu {
+  position: absolute;
+  top: 4.8rem;
+  list-style: none;
+  margin: auto;
+  background-color: var(--main-black);
+}
+
+.header__submenu li {
+  padding: 1rem 0 2rem 0;
+}
+
+.header__submenu.show {
+  max-height: 50rem;
+  transition: max-height 0.6s ease-in;
+}
+
+.header__submenu.hide {
+  max-height: 0;
+  transition: max-height 0.6s ease-out;
+  overflow: hidden;
+  /* transform-origin: top; */
+}
+
+.header__submenu.show a {
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in;
+}
+
+.header__submenu.show a:hover {
+  opacity: 1;
+}
+
+.header__submenu.hide a {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
 .nav--clock {
   display: flex;
   flex-direction: column;
@@ -172,7 +223,6 @@ nav {
   padding: 5rem 0;
 }
 
-
 @media screen and (max-width: 40em) {
   .header__links {
     display: none;
@@ -192,7 +242,7 @@ nav {
     top: 4.8rem;
     left: 0;
     width: 100%;
-    /* height: 45rem; */
+    height: auto;
     justify-content: space-between;
     background-color: var(--main-black);
     padding: 3rem;
@@ -233,7 +283,7 @@ nav {
     /* color: var(--light-white); */
     opacity: 0;
   }
-  .cname{
+  .cname {
     margin: 0 auto;
   }
 }

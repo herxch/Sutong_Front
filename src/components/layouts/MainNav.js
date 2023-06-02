@@ -15,6 +15,7 @@ const MainNav = () => {
 
   // const { isLoggedIn, isAdmin, username } = authCtx;
   const [showNav, setShowNav] = useState(false);
+  const [submenuOpen, setSubmenuOpen] = useState(false);
 
   // const onLogoutHandler = () => {
   //   setShowNav(false);
@@ -28,6 +29,19 @@ const MainNav = () => {
   const onToggleHandler = () => {
     setShowNav((prev) => !prev);
   };
+
+  const onMouseEnterHandler = () => {
+    setSubmenuOpen(true);
+  };
+
+  const onMouseLeaveHandler = () => {
+    setSubmenuOpen(false);
+  };
+
+  const submenuClass =
+    submenuOpen && !showNav
+      ? `${classes.header__submenu} ${classes.show}`
+      : `${classes.header__submenu} ${classes.hide}`;
 
   return (
     <header className={classes.header}>
@@ -63,9 +77,41 @@ const MainNav = () => {
           <NavLink onClick={onLinkClickHandler} to="/about">
             About
           </NavLink>
-          <NavLink onClick={onLinkClickHandler} to="/products">
-            Products
-          </NavLink>
+          <div
+            className={classes.header__submenu__links}
+            onMouseEnter={onMouseEnterHandler}
+            onMouseLeave={onMouseLeaveHandler}
+          >
+            <NavLink onClick={onLinkClickHandler} to="/products">
+              Products
+            </NavLink>
+
+            <ul className={submenuClass}>
+              <li>
+                <NavLink onClick={onLinkClickHandler} to="/products/atv">
+                  ATV
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={onLinkClickHandler} to="/products/golfcart">
+                  Golf Cart
+                </NavLink>
+              </li>
+              <li>
+                <NavLink onClick={onLinkClickHandler} to="/products/lawngarden">
+                  Lawn & Garden
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  onClick={onLinkClickHandler}
+                  to="/products/mediumtruck"
+                >
+                  Medium Truck
+                </NavLink>
+              </li>
+            </ul>
+          </div>
           <NavLink onClick={onLinkClickHandler} to="/careers">
             Careers
           </NavLink>
