@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className={classes.footer}>
       <p>
-        © Copyright {new Date().getFullYear()} Sutong China Tire Resources
+        © Copyright {new Date().getFullYear()} Sutong Tire Resources
       </p>
       {/* <p>Designed by Chao Xu</p>{' '} */}
     </div>
