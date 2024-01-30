@@ -1,15 +1,6 @@
 :root {
-  --main-orange: #f76707;
-  --lighter-orange: #ff922b;
-  --light-white: #fff4e6;
-  --main-green: #2f9e44;
-  --light-orange: #ffd8a8;
-  --light-orange-hover: #ffa94d;
-  --light-green: #b2f2bb;
-  --light-green-hover: #69db7c;
-
-  --main-black: #1d1d1f;
-  --main-white: #f5f5f7;
+  --main-orange: #ee8755;
+  --main-blue: #283a8e;
 }
 
 *,
@@ -31,7 +22,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

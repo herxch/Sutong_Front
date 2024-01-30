@@ -1,26 +1,33 @@
-import MainNav from "../layouts/MainNav";
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import Footer from "../layouts/Footer";
-//import E3header from './E3header';
-//import Programs from './Programs';
-//import FeaturedProgram from './FeaturedProgram';
-//import Gallery from './Gallery';
-//import CTA from './CTA';
-//import Map from './Map';
-//import AboutE3 from './AboutE3';
-//import classes from './MainNav.module.css';
+import Navbar from "../layouts/Navbar";
 
 const MainPage = (props) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    // Function to handle scroll events
+    const handleScroll = () => {
+      // Check if the user has scrolled down (you can adjust the threshold)
+      if (window.scrollY > 180) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Fragment>
-      <MainNav />
-      {/* <E3header />
-      <AboutE3 />
-      <Programs />
-   
-      <Gallery />
-      <CTA />
-      <Map /> */}
+      <Navbar styleType={scrolled ? "whitebg" : "blackbg"} />
       <Footer />
     </Fragment>
   );

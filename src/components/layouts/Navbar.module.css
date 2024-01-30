@@ -1,0 +1,65 @@
+/* Navbar.module.css */
+
+/* 默认样式 */
+.navbar {
+  display: flex;
+  padding: 1.6rem 10.8rem;
+  height: 18rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.5s ease;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.logo img {
+  width: 20rem;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 3.6rem;
+}
+
+.linkItem {
+  padding: 1rem;
+}
+
+.linkItem a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* .link {
+  text-decoration: none;
+  color: #333;
+} */
+
+/* Black Background */
+.blackbg {
+  background-color: #303030;
+  transition: background-color 0.5s ease;
+}
+
+.blackbg .linkItem a {
+  color: #fff;
+}
+
+/* White Background */
+.whitebg {
+  background-color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+.whitebg .linkItem a {
+  color: #303030;
+}
