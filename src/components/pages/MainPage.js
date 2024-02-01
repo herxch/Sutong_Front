@@ -1,18 +1,27 @@
 import { Fragment, useState, useEffect } from "react";
 import Footer from "../layouts/Footer";
 import Navbar from "../layouts/Navbar";
+import Hero from "../layouts/Hero";
+import Story from "../layouts/Story";
+import Features from "../layouts/Features";
 
 const MainPage = (props) => {
   const [scrolled, setScrolled] = useState(false);
+  const [navbarVisible, setNavbarVisible] = useState(true);
 
   useEffect(() => {
     // Function to handle scroll events
     const handleScroll = () => {
       // Check if the user has scrolled down (you can adjust the threshold)
-      if (window.scrollY > 180) {
+      if (window.scrollY > 0) {
         setScrolled(true);
       } else {
         setScrolled(false);
+      }
+      if (window.scrollY > 1000) {
+        setNavbarVisible(false);
+      } else {
+        setNavbarVisible(true);
       }
     };
 
@@ -27,7 +36,13 @@ const MainPage = (props) => {
 
   return (
     <Fragment>
-      <Navbar styleType={scrolled ? "whitebg" : "blackbg"} />
+      <Navbar
+        styleType={scrolled ? "whitebg" : "blackbg"}
+        visibility={navbarVisible ? "show" : "hide"}
+      />
+      <Hero />
+      <Story />
+      <Features />
       <Footer />
     </Fragment>
   );
