@@ -1,0 +1,31 @@
+/* HeroSection.module.css */
+
+.heroContainer {
+  background-image: url("../../../assets/pic/Hero.jpg"); /* Update with the correct path */
+  background-size: contain;
+  background-position: center;
+  height: 100vh; /* Adjust the height as necessary */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Adjust the text color as necessary */
+  text-align: center;
+  width: 100%;
+  margin-top: -18rem;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.heroContent {
+  max-width: 45rem; /* Adjust the max width as necessary */
+  margin-top: -30rem;
+}
+
+.heroTitle {
+  font-size: 3.2rem; /* Adjust the font size as necessary */
+  margin-bottom: 3.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1.6rem; /* Adjust the font size as necessary */
+}

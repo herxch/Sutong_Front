@@ -1,0 +1,15 @@
+.locationContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10.8rem;
+  margin: 0 auto 32rem auto;
+  justify-items: center; /* 水平居中所有网格项 */
+  align-items: start; /* 垂直居中所有网格项 */
+  max-width: 120rem;
+}
+@media (max-width: 1200px) {
+  .locationContainer {
+    grid-template-columns: 1fr;
+    padding: 0 12rem;
+  }
+}

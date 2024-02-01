@@ -1,0 +1,18 @@
+.heroContainer {
+  background-image: url("../../../assets/pic/AboutHero.jpeg"); /* Update with the correct path */
+  background-size: cover;
+  background-position: center bottom; /* 确保底部可见 */
+  height: 48rem;
+  width: 100%;
+  padding-top: 10rem;
+  text-align: center;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.heroContent {
+  max-width: 45rem;
+  font-size: 3.2rem; /* Adjust the font size as necessary */
+  color: #fff;
+  margin: 0 auto;
+}

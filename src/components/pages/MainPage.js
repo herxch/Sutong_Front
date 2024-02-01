@@ -1,9 +1,9 @@
 import { Fragment, useState, useEffect } from "react";
 import Footer from "../layouts/Footer";
 import Navbar from "../layouts/Navbar";
-import Hero from "../layouts/Hero";
-import Story from "../layouts/Story";
-import Features from "../layouts/Features";
+import Hero from "../layouts/Main/Hero";
+import Story from "../layouts/Main/Story";
+import Features from "../layouts/Main/Features";
 
 const MainPage = (props) => {
   const [scrolled, setScrolled] = useState(false);

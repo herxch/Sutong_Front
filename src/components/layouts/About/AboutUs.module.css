@@ -1,0 +1,50 @@
+.storyContainer {
+  background-color: #fff;
+  margin-top: 30px auto;
+}
+
+.storyContent {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12rem;
+  max-width: 144rem;
+  margin: 32rem auto;
+  padding: 0 12rem;
+}
+
+.storyText {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.storyTitle {
+  font-size: 3.2rem;
+}
+
+.storyParagraph {
+  font-size: 1.6rem;
+}
+
+.storyPhoto {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  flex: 1;
+}
+
+.photoDisplay {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1200px) {
+  .storyContent {
+    flex-direction: column;
+  }
+}

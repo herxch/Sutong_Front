@@ -7,11 +7,13 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logoContainer}>
-        <img
-          src={Logo}
-          alt="Sutong Tire Resources Logo"
-          className={styles.logo}
-        />
+        <NavLink to="/">
+          <img
+            src={Logo}
+            alt="Sutong Tire Resources Logo"
+            className={styles.logo}
+          />
+        </NavLink>
       </div>
       <nav className={styles.nav}>
         <NavLink
