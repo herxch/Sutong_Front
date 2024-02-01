@@ -1,5 +1,5 @@
 .heroContainer {
-  background-image: url("../../../assets/pic/AboutHero.jpeg"); /* Update with the correct path */
+  background-image: url("../../../assets/pic/AboutHero.jpg"); /* Update with the correct path */
   background-size: cover;
   background-position: center bottom; /* 确保底部可见 */
   height: 48rem;
