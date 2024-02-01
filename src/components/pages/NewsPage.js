@@ -1,6 +1,8 @@
 import { Fragment, useState, useEffect } from "react";
 import Footer from "../layouts/Footer";
 import Navbar from "../layouts/Navbar";
+import NewsHero from "../layouts/News/NewsHero";
+import Posts from "../layouts/News/Posts";
 
 const NewsPage = (props) => {
   const [navbarVisible, setNavbarVisible] = useState(true);
@@ -32,7 +34,8 @@ const NewsPage = (props) => {
         styleType="whitebg"
         visibility={navbarVisible ? "show" : "hide"}
       />
-
+      <NewsHero />
+      <Posts />
       <Footer />
     </Fragment>
   );

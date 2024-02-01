@@ -1,0 +1,38 @@
+/* Post.module.css */
+
+.post {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 3.2rem;
+}
+
+.title {
+  font-size: 3.2rem; /* Adjust as needed */
+  color: #303030; /* Adjust as needed */
+  padding: 1rem;
+}
+
+.subTitle {
+  font-size: 2rem; /* Adjust as needed */
+  font-style: italic;
+  font-weight: 400;
+  color: #303030; /* Adjust as needed */
+  padding: 1rem;
+}
+
+.para {
+  font-size: 1.6rem; /* Adjust as needed */
+  color: #303030; /* Adjust as needed */
+  padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .post {
+    width: 90%;
+  }
+}

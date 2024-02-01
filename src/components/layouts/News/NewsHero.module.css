@@ -1,0 +1,10 @@
+.heroContainer {
+  background-image: url("../../../assets/pic/NewsHero.jpg"); /* Update with the correct path */
+  background-size: cover;
+  background-position: center; /* 确保底部可见 */
+  height: 48rem;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}

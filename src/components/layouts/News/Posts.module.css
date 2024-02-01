@@ -1,0 +1,9 @@
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10.8rem;
+  margin: 32rem auto;
+  justify-items: start; /* 水平居中所有网格项 */
+  align-items: center; /* 垂直居中所有网格项 */
+  max-width: 120rem;
+}
