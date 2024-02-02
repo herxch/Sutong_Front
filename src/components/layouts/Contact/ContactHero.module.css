@@ -1,0 +1,19 @@
+.heroContainer {
+  background-image: url("../../../assets/pic/ContactHero.jpg"); /* Update with the correct path */
+  background-size: cover;
+  background-position: center; /* 确保底部可见 */
+  height: 48rem;
+  width: 100%;
+  /* text-align: center; */
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.heroContent {
+  font-size: 6.4rem; /* Adjust the font size as necessary */
+  color: #fff;
+  margin-left: 24rem;
+}

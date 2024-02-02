@@ -1,6 +1,8 @@
 import { Fragment, useState, useEffect } from "react";
 import Footer from "../layouts/Footer";
 import Navbar from "../layouts/Navbar";
+import ContactHero from "../layouts/Contact/ContactHero";
+import ContactContent from "../layouts/Contact/ContactContent";
 
 const ContactPage = (props) => {
   const [navbarVisible, setNavbarVisible] = useState(true);
@@ -32,7 +34,8 @@ const ContactPage = (props) => {
         styleType="whitebg"
         visibility={navbarVisible ? "show" : "hide"}
       />
-
+      <ContactHero />
+      <ContactContent />
       <Footer />
     </Fragment>
   );

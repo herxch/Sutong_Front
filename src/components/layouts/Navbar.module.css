@@ -41,8 +41,8 @@
   color: var(--main-orange);
 }
 
-.blackbg .linkItem .active,
-.whitebg .linkItem .active {
+.blackbg .linkItem.active,
+.whitebg .linkItem.active {
   color: var(--main-orange);
 }
 

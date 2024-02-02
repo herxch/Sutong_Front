@@ -5,6 +5,10 @@ import logoW from "../../assets/pic/Sutong Logo White.png";
 import logoC from "../../assets/pic/Sutong Logo Color.png";
 
 const Navbar = ({ styleType, visibility = "show" }) => {
+  // Function to determine the class name based on the active state
+  const getNavLinkClassName = ({ isActive }) =>
+    isActive ? `${styles.linkItem} ${styles.active}` : styles.linkItem;
+
   return (
     <nav
       className={`${styles.navbar} ${styles[styleType]} ${styles[visibility]}`}
@@ -19,43 +23,23 @@ const Navbar = ({ styleType, visibility = "show" }) => {
           </NavLink>
         </div>
         <nav className={styles.links}>
-          <NavLink
-            to="/about"
-            className={styles.linkItem}
-            activeClassName={styles.active}
-          >
+          <NavLink to="/about" className={getNavLinkClassName}>
             About
           </NavLink>
 
-          <NavLink
-            to="/tires"
-            className={styles.linkItem}
-            activeClassName={styles.active}
-          >
+          <NavLink to="/tires" className={getNavLinkClassName}>
             Tires
           </NavLink>
 
-          <NavLink
-            to="/careers"
-            className={styles.linkItem}
-            activeClassName={styles.active}
-          >
+          <NavLink to="/careers" className={getNavLinkClassName}>
             Careers
           </NavLink>
 
-          <NavLink
-            to="/news"
-            className={styles.linkItem}
-            activeClassName={styles.active}
-          >
+          <NavLink to="/news" className={getNavLinkClassName}>
             News
           </NavLink>
 
-          <NavLink
-            to="/contact"
-            className={styles.linkItem}
-            activeClassName={styles.active}
-          >
+          <NavLink to="/contact" className={getNavLinkClassName}>
             Contact
           </NavLink>
         </nav>

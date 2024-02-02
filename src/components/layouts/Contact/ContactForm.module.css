@@ -1,0 +1,68 @@
+/* ContactForm.module.css */
+
+.contactForm {
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.6rem;
+  align-items: flex-start;
+  padding: 3.2rem;
+  border-radius: 15px;
+}
+
+.contactForm h2 {
+  text-align: center;
+  margin: 3.2rem auto;
+  font-size: 3.2rem;
+}
+
+.contactForm label {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="tel"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.contactForm button {
+  padding: 8px 16px; /* Adjust padding as needed */
+  background-color: var(--main-blue); /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 3.2rem;
+}
+
+.contactForm button:hover {
+  background-color: var(--main-orange);
+}
+
+#recaptcha-placeholder {
+  margin: 1rem 0;
+  /* Add additional styling for the reCAPTCHA placeholder as needed */
+}
+
+.error {
+  color: red; /* Choose a color that fits your design */
+  /* margin-bottom: 1rem; */
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
