@@ -1,56 +1,41 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import ScrollToTopNavLink from "../ui/ScrollToTopNavLink";
 import styles from "./Footer.module.css"; // Ensure the path to your CSS module is correct
-import Logo from "../../assets/pic/Sutong Logo White.png"; // Import your logo as a React component or image
+import Logo from "../../assets/pic/Sutong Logo White.png"; // Import your logo as an image
 
 const Footer = () => {
+  // Function to get the appropriate class name depending on the active state
+  const getNavLinkClassName = ({ isActive }) =>
+    isActive ? `${styles.navItem} ${styles.active}` : styles.navItem;
+
   return (
     <footer className={styles.footer}>
       <div className={styles.logoContainer}>
-        <NavLink to="/">
+        <ScrollToTopNavLink to="/" className={styles.logoLink}>
           <img
             src={Logo}
             alt="Sutong Tire Resources Logo"
             className={styles.logo}
           />
-        </NavLink>
+        </ScrollToTopNavLink>
       </div>
       <nav className={styles.nav}>
-        <NavLink
-          to="/about"
-          className={styles.navItem}
-          activeClassName={styles.active}
-        >
+        <ScrollToTopNavLink to="/about" className={getNavLinkClassName}>
           About
-        </NavLink>
-        <NavLink
-          to="/tires"
-          className={styles.navItem}
-          activeClassName={styles.active}
-        >
+        </ScrollToTopNavLink>
+        {/* The Tires NavLink is commented out, uncomment if needed */}
+        {/* <ScrollToTopNavLink to="/tires" className={getNavLinkClassName}>
           Tires
-        </NavLink>
-        <NavLink
-          to="/careers"
-          className={styles.navItem}
-          activeClassName={styles.active}
-        >
+        </ScrollToTopNavLink> */}
+        <ScrollToTopNavLink to="/careers" className={getNavLinkClassName}>
           Careers
-        </NavLink>
-        <NavLink
-          to="/news"
-          className={styles.navItem}
-          activeClassName={styles.active}
-        >
+        </ScrollToTopNavLink>
+        <ScrollToTopNavLink to="/news" className={getNavLinkClassName}>
           News
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={styles.navItem}
-          activeClassName={styles.active}
-        >
+        </ScrollToTopNavLink>
+        <ScrollToTopNavLink to="/contact" className={getNavLinkClassName}>
           Contact Us
-        </NavLink>
+        </ScrollToTopNavLink>
       </nav>
       <div className={styles.copyRight}>
         © 1993 - {new Date().getFullYear()} Sutong Tire Resources, Inc

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
+import ScrollToTopNavLink from "../ui/ScrollToTopNavLink";
 import logoW from "../../assets/pic/Sutong Logo White.png";
 import logoC from "../../assets/pic/Sutong Logo Color.png";
 
@@ -15,33 +15,33 @@ const Navbar = ({ styleType, visibility = "show" }) => {
     >
       <div className={styles.navContainer}>
         <div className={styles.logo}>
-          <NavLink to="/">
+          <ScrollToTopNavLink to="/">
             <img
               src={styleType === "blackbg" ? logoW : logoC}
               alt="Sutong Company Logo"
             />
-          </NavLink>
+          </ScrollToTopNavLink>
         </div>
         <nav className={styles.links}>
-          <NavLink to="/about" className={getNavLinkClassName}>
+          <ScrollToTopNavLink to="/about" className={getNavLinkClassName}>
             About
-          </NavLink>
+          </ScrollToTopNavLink>
 
-          <NavLink to="/tires" className={getNavLinkClassName}>
+          {/* <ScrollToTopNavLink to="/tires" className={getNavLinkClassName}>
             Tires
-          </NavLink>
+          </ScrollToTopNavLink> */}
 
-          <NavLink to="/careers" className={getNavLinkClassName}>
+          <ScrollToTopNavLink to="/careers" className={getNavLinkClassName}>
             Careers
-          </NavLink>
+          </ScrollToTopNavLink>
 
-          <NavLink to="/news" className={getNavLinkClassName}>
+          <ScrollToTopNavLink to="/news" className={getNavLinkClassName}>
             News
-          </NavLink>
+          </ScrollToTopNavLink>
 
-          <NavLink to="/contact" className={getNavLinkClassName}>
+          <ScrollToTopNavLink to="/contact" className={getNavLinkClassName}>
             Contact
-          </NavLink>
+          </ScrollToTopNavLink>
         </nav>
       </div>
     </nav>

@@ -6,7 +6,6 @@ const ContactForm = () => {
   const [recaptchaValue, setRecaptchaValue] = useState("");
 
   const handleRecaptchaChange = (value) => {
-    console.log("Captcha value:", value);
     setRecaptchaValue(value);
   };
 
