@@ -61,16 +61,16 @@ const ContactForm = () => {
       formIsValid = false;
     }
 
+    if (!recaptchaValue) {
+      errors.reCaptcha = "Please verify you are not a robot.";
+      formIsValid = false;
+    }
     setErrors(errors);
     return formIsValid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!recaptchaValue) {
-      alert("Please verify you are not a robot.");
-      return;
-    }
     if (validateForm()) {
       // Handle form submission logic here, like sending data to a server
       console.log("Form data submitted:", formData);
@@ -144,6 +144,7 @@ const ContactForm = () => {
         sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
         onChange={handleRecaptchaChange}
       />
+      {errors.reCaptcha && <p className={styles.error}>{errors.reCaptcha}</p>}
       <button type="submit">SUBMIT</button>
     </form>
   );
