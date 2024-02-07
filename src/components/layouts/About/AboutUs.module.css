@@ -43,8 +43,23 @@
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 960px) {
   .storyContent {
     flex-direction: column;
+    margin: 20rem auto;
+    gap: 7.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .storyContent {
+    width: 90%;
+    padding: 0;
+    margin: 12rem auto;
+    gap: 6rem;
+  }
+
+  .storyText {
+    gap: 2rem;
   }
 }

@@ -7,3 +7,18 @@
   align-items: center; /* 垂直居中所有网格项 */
   max-width: 120rem;
 }
+
+@media only screen and (max-width: 960px) {
+  .postsContainer {
+    margin: 20rem auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .postsContainer {
+    width: 90%;
+    padding: 0;
+    margin: 12rem auto;
+    gap: 6rem;
+  }
+}

@@ -1,10 +1,16 @@
 .heroContainer {
   background-image: url("../../../assets/pic/NewsHero.jpg"); /* Update with the correct path */
   background-size: cover;
-  background-position: center; /* 确保底部可见 */
+  background-position: left bottom; /* 确保底部可见 */
   height: 48rem;
   width: 100%;
   text-align: center;
   box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
   z-index: 10;
+}
+@media only screen and (max-width: 600px) {
+  .heroContainer {
+    height: 24rem;
+    background-position: left center;
+  }
 }

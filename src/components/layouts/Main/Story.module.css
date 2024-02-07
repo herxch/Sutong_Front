@@ -1,6 +1,7 @@
 .storyContainer {
   background-color: #fff;
-  margin-top: 30px auto;
+  margin: 32rem auto;
+  padding: 0 12rem;
 }
 
 .storyContent {
@@ -8,8 +9,9 @@
   justify-content: space-evenly;
   gap: 12rem;
   max-width: 144rem;
-  margin: 32rem auto;
-  padding: 0 12rem;
+  width: 100%;
+  margin: 0 auto;
+  /* margin: 32rem auto; */
 }
 
 .storyText {
@@ -55,4 +57,24 @@
   width: 100%;
   height: auto;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 960px) {
+  .storyContainer {
+    margin: 20rem auto;
+  }
+  .storyContent {
+    flex-direction: column;
+    gap: 8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .storyContainer {
+    margin: 12rem auto;
+    padding: 0%;
+  }
+  .storyContent {
+    width: 90%;
+  }
 }

@@ -86,6 +86,7 @@ const ContactForm = () => {
         type="text"
         id="name"
         name="name"
+        autoComplete="name"
         value={formData.name}
         onChange={handleChange}
       />
@@ -94,6 +95,7 @@ const ContactForm = () => {
         type="text"
         id="companyName"
         name="companyName"
+        autoComplete="organization"
         value={formData.companyName}
         onChange={handleChange}
       />
@@ -104,6 +106,7 @@ const ContactForm = () => {
         type="tel"
         id="phone"
         name="phone"
+        autoComplete="tel"
         value={formData.phone}
         onChange={handleChange}
       />
@@ -114,6 +117,7 @@ const ContactForm = () => {
         type="email"
         id="email"
         name="email"
+        autoComplete="email"
         value={formData.email}
         onChange={handleChange}
       />

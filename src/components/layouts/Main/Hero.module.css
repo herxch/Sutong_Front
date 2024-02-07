@@ -2,8 +2,8 @@
 
 .heroContainer {
   background-image: url("../../../assets/pic/Hero.jpg"); /* Update with the correct path */
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: center bottom;
   height: 100vh; /* Adjust the height as necessary */
   display: flex;
   align-items: center;
@@ -28,4 +28,28 @@
 
 .heroSubtitle {
   font-size: 1.6rem; /* Adjust the font size as necessary */
+}
+
+@media only screen and (max-width: 1200px) {
+  .heroContainer {
+    /* background-size: contain; */
+    height: 95rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heroContainer {
+    /* background-size: contain; */
+    height: 60rem;
+    margin-top: 0;
+  }
+  .heroContent {
+    width: 30rem;
+  }
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+  }
 }

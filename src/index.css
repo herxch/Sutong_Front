@@ -27,16 +27,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*
 @media screen and (max-width: 75em) {
   html {
-    font-size: 50%;  8px per rem 
+    font-size: 50%; /* 8px per rem  */
   }
 }
 
 @media screen and (max-width: 60em) {
   html {
-    font-size: 37.5%;  6px per rem 
+    font-size: 37.5%; /* 6px per rem  */
   }
 }
-*/

@@ -2,8 +2,28 @@
   display: flex;
   flex-direction: column;
   gap: 8rem;
-  justify-items: start; /* 水平居中所有网格项 */
+  justify-content: flex-start; /* 水平居中所有网格项 */
   align-items: center; /* 垂直居中所有网格项 */
   flex: 1;
-  padding: 0 3.2rem;
+  /* padding: 0 3.2rem; */
+  width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  .addressesContainer {
+    display: grid; /* 改为网格布局 */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 定义两列，每列占据可用空间的等分 */
+    gap: 8rem; /* 保持间隙 */
+    justify-items: start; /* 水平对齐到开始位置 */
+    align-items: stretch; /* 垂直对齐到开始位置，确保内容对齐 */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .addressesContainer {
+    grid-template-columns: 1fr;
+    gap: 5rem; /* 保持间隙 */
+  }
 }

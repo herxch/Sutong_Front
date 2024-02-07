@@ -17,3 +17,19 @@
   color: #fff;
   margin-left: 24rem;
 }
+
+@media only screen and (max-width: 960px) {
+  .heroContent {
+    font-size: 5rem;
+    margin-left: 12rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heroContainer {
+    height: 24rem;
+  }
+  .heroContent {
+    font-size: 2.5rem;
+  }
+}

@@ -18,3 +18,17 @@
   font-size: 1.6rem;
   padding: 1rem;
 }
+
+@media only screen and (max-width: 960px) {
+  .jobsContainer {
+    margin: 20rem auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jobsContainer {
+    width: 90%;
+    padding: 0;
+    margin: 12rem auto;
+  }
+}

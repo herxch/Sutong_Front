@@ -1,9 +1,38 @@
 /* Navbar.module.css */
 
+@keyframes expandHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* 轻微向上偏移 */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes collapseHeight {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0;
+  }
+}
+
 /* 默认样式 */
 .navbar {
   display: flex;
-  padding: 1.6rem 10.8rem;
+  /* padding: 1.6rem 10.8rem; */
   height: 18rem;
   position: sticky;
   top: 0;
@@ -14,12 +43,13 @@
 .navContainer {
   width: 100%;
   max-width: 144rem;
-  margin: 0 auto;
+  margin: 1.6rem 10.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0;
 }
+
 .logo img {
   width: 20rem;
 }
@@ -29,20 +59,25 @@
   gap: 3.6rem;
 }
 
-.linkItem {
+.links .linkItem {
   padding: 1rem;
   text-decoration: none;
   font-size: 1.5rem;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .blackbg .linkItem:hover,
-.whitebg .linkItem:hover {
+.whitebg .linkItem:hover,
+.blackbg .mobileLinkItem:hover,
+.whitebg .mobileLinkItem:hover {
   color: var(--main-orange);
 }
 
 .blackbg .linkItem.active,
-.whitebg .linkItem.active {
+.whitebg .linkItem.active,
+.blackbg .mobileLnkItem.active,
+.whitebg .mobileLinkItem.active {
   color: var(--main-orange);
 }
 
@@ -52,7 +87,8 @@
   transition: background-color 0.7s ease, opacity 0.7s ease;
 }
 
-.blackbg .linkItem {
+.blackbg .linkItem,
+.blackbg .mobileLinkItem {
   color: #fff;
 }
 
@@ -62,7 +98,8 @@
   transition: background-color 0.7s ease, opacity 0.7s ease;
 }
 
-.whitebg .linkItem {
+.whitebg .linkItem,
+.whitebg .mobileLinkItem {
   color: #303030;
 }
 
@@ -72,4 +109,122 @@
 
 .hide {
   opacity: 0;
+}
+
+.mobileMenuButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  /* display: none; */
+  opacity: 0;
+  z-index: 100;
+}
+
+.mobileNavContainer,
+.mobilelinks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.mobilelinks {
+  margin-left: 12rem;
+  margin-top: 12rem;
+}
+
+/* .mobilelinks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem;
+  height: 100%;
+  padding: 12rem;
+} */
+
+.mobileLinkItem {
+  opacity: 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+/* 
+.mobileLinkItemVisible {
+  opacity: 1;
+}
+
+.mobileLinkItemHidden {
+  opacity: 0;
+} */
+
+/* 设置动画和动画延迟 */
+.mobileLinkItemVisible.mobileLinkItem:nth-child(1) {
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+.mobileLinkItemVisible.mobileLinkItem:nth-child(2) {
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.mobileLinkItemVisible.mobileLinkItem:nth-child(3) {
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.mobileLinkItemVisible.mobileLinkItem:nth-child(4) {
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.mobileLinkItemVisible.mobileLinkItem:nth-child(5) {
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.mobileNavContainerVisible {
+  animation: expandHeight 0.3s ease-out forwards;
+}
+
+.mobileNavContainerHidden {
+  animation: collapseHeight 0.3s ease-out forwards;
+}
+
+@media only screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    opacity: 1;
+  }
+
+  .logo img {
+    width: 10rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  .navbar {
+    height: 8rem;
+  }
 }
