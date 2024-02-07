@@ -32,7 +32,7 @@ const Navbar = ({ styleType, visibility = "show" }) => {
   useEffect(() => {
     const handleResize = () => {
       if (window.matchMedia("(min-width: 600px)").matches) {
-        setShowMobileMenu(false); // 当屏幕宽度大于600px时，关闭移动菜单
+        setShowMobileMenu(false); // 当屏幕宽度大于600px时， 关闭移动菜单
       }
     };
 
