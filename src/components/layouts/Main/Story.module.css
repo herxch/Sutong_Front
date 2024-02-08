@@ -28,7 +28,7 @@
 }
 
 .storyParagraph {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 
 .actionButton {
@@ -59,13 +59,22 @@
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1200px) {
   .storyContainer {
     margin: 20rem auto;
   }
   .storyContent {
     flex-direction: column;
     gap: 8rem;
+  }
+  .storyVideo {
+    max-width: none;
+  }
+  .storyParagraph {
+    font-size: 2.5rem;
+  }
+  .actionButton {
+    font-size: 2.5rem;
   }
 }
 

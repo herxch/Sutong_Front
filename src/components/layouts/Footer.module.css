@@ -32,7 +32,7 @@
   color: #fff;
   text-decoration: none;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: color 0.3s ease;
   white-space: nowrap;
 }
@@ -49,9 +49,18 @@
 .copyRight {
   /* margin-bottom: 16rem; */
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
-
+@media only screen and (max-width: 1200px) {
+  .footer {
+    padding: 12rem;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .footer {
+    padding: 10rem;
+  }
+}
 @media only screen and (max-width: 375px) {
   .footer {
     align-items: flex-start;
@@ -74,7 +83,6 @@
   .copyRight {
     /* margin-bottom: 16rem; */
     color: #fff;
-    font-size: 1.8rem;
   }
 
   /* .logoContainer {

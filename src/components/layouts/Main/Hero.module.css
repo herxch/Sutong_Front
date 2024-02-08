@@ -11,7 +11,6 @@
   color: white; /* Adjust the text color as necessary */
   text-align: center;
   width: 100%;
-  /* margin-top: -18rem; */
   box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -27,19 +26,20 @@
 }
 
 .heroSubtitle {
-  font-size: 1.6rem; /* Adjust the font size as necessary */
+  font-size: 1.8rem; /* Adjust the font size as necessary */
 }
 
 @media only screen and (max-width: 1200px) {
   .heroContainer {
-    /* background-size: contain; */
-    height: 75rem;
+    height: 80rem;
+  }
+  .heroContent {
+    margin-top: 12rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .heroContainer {
-    /* background-size: contain; */
     height: 30rem;
     margin-top: 0;
   }
