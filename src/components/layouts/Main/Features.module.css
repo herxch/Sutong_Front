@@ -22,6 +22,7 @@
 .featuresList {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   max-width: 120rem;
   gap: 10rem;
   margin: 0 auto;

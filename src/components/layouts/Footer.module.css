@@ -65,9 +65,10 @@
     width: 100%;
     margin-bottom: 2rem;
     padding-bottom: 3rem;
+    gap: 2.5rem;
   }
   .navItem {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .copyRight {

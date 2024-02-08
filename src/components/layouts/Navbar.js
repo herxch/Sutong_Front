@@ -98,8 +98,8 @@ const Navbar = ({ styleType, visibility = "show" }) => {
                 : burgerBlack
             }
             alt="Menu"
-            width="18"
-            height="18"
+            width="24"
+            height="24"
           />
         </button>
         <div
