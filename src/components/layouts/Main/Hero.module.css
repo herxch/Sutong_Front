@@ -40,18 +40,16 @@
 @media only screen and (max-width: 600px) {
   .heroContainer {
     /* background-size: contain; */
-    height: 40rem;
+    height: 35rem;
     margin-top: 0;
   }
   .heroContent {
-    width: 30rem;
+    width: 25rem;
   }
   .heroTitle {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
   }
   .heroSubtitle {
     display: none;
-    font-size: 2rem;
   }
 }
