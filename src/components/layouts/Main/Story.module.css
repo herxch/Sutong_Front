@@ -77,4 +77,8 @@
   .storyContent {
     width: 90%;
   }
+
+  .storyParagraph {
+    font-size: 2rem;
+  }
 }

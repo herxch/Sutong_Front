@@ -70,9 +70,9 @@ const Navbar = ({ styleType, visibility = "show" }) => {
             About
           </ScrollToTopNavLink>
 
-          <ScrollToTopNavLink to="/tires" className={getNavLinkClassName}>
+          {/* <ScrollToTopNavLink to="/tires" className={getNavLinkClassName}>
             Tires
-          </ScrollToTopNavLink>
+          </ScrollToTopNavLink> */}
 
           <ScrollToTopNavLink to="/careers" className={getNavLinkClassName}>
             Careers
@@ -104,34 +104,44 @@ const Navbar = ({ styleType, visibility = "show" }) => {
         </button>
         <div
           className={`${styles.mobileNavContainer} ${styles[styleType]} ${mobileNavContainerClass}`}
-        ></div>
-        <nav className={styles.mobilelinks}>
-          <ScrollToTopNavLink to="/about" className={getMobileNavLinkClassName}>
-            About
-          </ScrollToTopNavLink>
+        >
+          <nav className={styles.mobilelinks}>
+            <ScrollToTopNavLink
+              to="/about"
+              className={getMobileNavLinkClassName}
+            >
+              About
+            </ScrollToTopNavLink>
 
-          <ScrollToTopNavLink to="/tires" className={getMobileNavLinkClassName}>
-            Tires
-          </ScrollToTopNavLink>
+            <ScrollToTopNavLink
+              to="/tires"
+              className={getMobileNavLinkClassName}
+            >
+              Tires
+            </ScrollToTopNavLink>
 
-          <ScrollToTopNavLink
-            to="/careers"
-            className={getMobileNavLinkClassName}
-          >
-            Careers
-          </ScrollToTopNavLink>
+            <ScrollToTopNavLink
+              to="/careers"
+              className={getMobileNavLinkClassName}
+            >
+              Careers
+            </ScrollToTopNavLink>
 
-          <ScrollToTopNavLink to="/news" className={getMobileNavLinkClassName}>
-            News
-          </ScrollToTopNavLink>
+            <ScrollToTopNavLink
+              to="/news"
+              className={getMobileNavLinkClassName}
+            >
+              News
+            </ScrollToTopNavLink>
 
-          <ScrollToTopNavLink
-            to="/contact"
-            className={getMobileNavLinkClassName}
-          >
-            Contact
-          </ScrollToTopNavLink>
-        </nav>
+            <ScrollToTopNavLink
+              to="/contact"
+              className={getMobileNavLinkClassName}
+            >
+              Contact
+            </ScrollToTopNavLink>
+          </nav>
+        </div>
       </div>
     </nav>
   );

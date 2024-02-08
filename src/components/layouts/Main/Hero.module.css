@@ -4,21 +4,21 @@
   background-image: url("../../../assets/pic/Hero.jpg"); /* Update with the correct path */
   background-size: cover;
   background-position: center bottom;
-  height: 100vh; /* Adjust the height as necessary */
+  height: 90vh; /* Adjust the height as necessary */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: white; /* Adjust the text color as necessary */
   text-align: center;
   width: 100%;
-  margin-top: -18rem;
+  /* margin-top: -18rem; */
   box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 
 .heroContent {
   max-width: 45rem; /* Adjust the max width as necessary */
-  margin-top: -30rem;
+  margin-top: 6rem;
 }
 
 .heroTitle {
@@ -33,23 +33,24 @@
 @media only screen and (max-width: 1200px) {
   .heroContainer {
     /* background-size: contain; */
-    height: 95rem;
+    height: 75rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .heroContainer {
     /* background-size: contain; */
-    height: 60rem;
+    height: 40rem;
     margin-top: 0;
   }
   .heroContent {
-    width: 30rem;
+    width: 38rem;
   }
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
   .heroSubtitle {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }

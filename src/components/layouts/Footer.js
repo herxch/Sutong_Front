@@ -24,9 +24,9 @@ const Footer = () => {
           About
         </ScrollToTopNavLink>
         {/* The Tires NavLink is commented out, uncomment if needed */}
-        <ScrollToTopNavLink to="/tires" className={getNavLinkClassName}>
+        {/* <ScrollToTopNavLink to="/tires" className={getNavLinkClassName}>
           Tires
-        </ScrollToTopNavLink>
+        </ScrollToTopNavLink> */}
         <ScrollToTopNavLink to="/careers" className={getNavLinkClassName}>
           Careers
         </ScrollToTopNavLink>
