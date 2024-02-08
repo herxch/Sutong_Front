@@ -1,7 +1,7 @@
 .heroContainer {
   background-image: url("../../../assets/pic/ContactHero.jpg"); /* Update with the correct path */
   background-size: cover;
-  background-position: center; /* 确保底部可见 */
+  background-position: center right; /* 确保底部可见 */
   height: 48rem;
   width: 100%;
   /* text-align: center; */
@@ -13,9 +13,16 @@
 }
 
 .heroContent {
-  font-size: 6.4rem; /* Adjust the font size as necessary */
+  font-size: 6rem; /* Adjust the font size as necessary */
   color: #fff;
   margin-left: 24rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .heroContent {
+    font-size: 5rem;
+    margin-left: 18rem;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -27,9 +34,10 @@
 
 @media only screen and (max-width: 600px) {
   .heroContainer {
-    height: 24rem;
+    height: 18rem;
   }
   .heroContent {
     font-size: 2.5rem;
+    margin-left: 6rem;
   }
 }

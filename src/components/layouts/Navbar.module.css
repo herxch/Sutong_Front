@@ -120,11 +120,13 @@
   background: none;
   cursor: pointer;
   position: absolute;
-  top: 2.5rem;
+  top: 1.5rem;
   right: 2.5rem;
   /* display: none; */
   opacity: 0;
   z-index: 100;
+  width: 5rem;
+  height: 5rem;
 }
 
 .mobileNavContainer {
@@ -229,7 +231,7 @@
     width: 10rem;
     position: absolute;
     top: 2.5rem;
-    left: 2.5rem;
+    left: 3.5rem;
   }
 
   .navbar {

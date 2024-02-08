@@ -26,7 +26,7 @@
 }
 
 .storyParagraph {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 
 .storyPhoto {
@@ -61,5 +61,8 @@
 
   .storyText {
     gap: 2rem;
+  }
+  .storyParagraph {
+    font-size: 2.5rem;
   }
 }

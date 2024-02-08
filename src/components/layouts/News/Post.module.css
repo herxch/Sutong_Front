@@ -18,7 +18,7 @@
 }
 
 .subTitle {
-  font-size: 2rem; /* Adjust as needed */
+  font-size: 2.8rem; /* Adjust as needed */
   font-style: italic;
   font-weight: 400;
   color: #303030; /* Adjust as needed */
@@ -26,7 +26,7 @@
 }
 
 .para {
-  font-size: 1.6rem; /* Adjust as needed */
+  font-size: 2.5rem; /* Adjust as needed */
   color: #303030; /* Adjust as needed */
   padding: 1rem;
 }
@@ -34,5 +34,6 @@
 @media (max-width: 1200px) {
   .post {
     width: 90%;
+    gap: 0;
   }
 }

@@ -14,10 +14,7 @@ const AboutUs = () => {
             co ad publicupiem pere comnere num cerum se tam teatilina, notis am
             popon senterudem, et es sere ninti, iam nos ocus, nia cons pullatusa
             rei scipion tra L. Ad confex nicaet? Licaes! Seris is. Veraede
-            ndicibutu quides ceponsulicus essimis ium inequonc opubliciem pos,
-            Ti. Lum quam estarbi furit, movendet, vitiemenin nos abus cul vis,
-            que no. Cator hiculer hostis haciam catia dium steris red signa,
-            Cupiorus viverunt, publin vendach ilintus et? Satem hos
+            ndicibutu quides
           </p>
         </div>
         <div className={styles.storyPhoto}>

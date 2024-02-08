@@ -10,7 +10,7 @@
 }
 @media only screen and (max-width: 600px) {
   .heroContainer {
-    height: 24rem;
+    height: 18rem;
     background-position: left center;
   }
 }
