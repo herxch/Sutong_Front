@@ -113,12 +113,12 @@ const Navbar = ({ styleType, visibility = "show" }) => {
               About
             </ScrollToTopNavLink>
 
-            <ScrollToTopNavLink
+            {/* <ScrollToTopNavLink
               to="/tires"
               className={getMobileNavLinkClassName}
             >
               Tires
-            </ScrollToTopNavLink>
+            </ScrollToTopNavLink> */}
 
             <ScrollToTopNavLink
               to="/careers"
