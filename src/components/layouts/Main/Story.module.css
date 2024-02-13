@@ -55,7 +55,8 @@
 
 .videoPlayer {
   width: 100%;
-  height: auto;
+  min-height: 36rem;
+  /* height: 100%; */
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -76,6 +77,9 @@
   .actionButton {
     font-size: 2.5rem;
   }
+  .videoPlayer {
+    height: 50vh;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,5 +96,10 @@
   }
   .actionButton {
     font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .videoPlayer {
+    height: auto;
   }
 }

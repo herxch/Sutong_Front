@@ -1,11 +1,25 @@
 import styles from "./Story.module.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Story = () => {
   const navigate = useNavigate();
   const buttonClickHandler = () => {
     navigate("/about");
   };
+  const [videoSource, setVideoSource] = useState("");
+  useEffect(() => {
+    const userLocale = navigator.language || navigator.languages[0];
+    if (userLocale.startsWith("en-US")) {
+      setVideoSource(
+        "https://www.youtube.com/embed/o1Sze3riGxQ?si=O8dwqWkXs4pS3do8"
+      );
+    } else if (userLocale.startsWith("zh-CN")) {
+      setVideoSource(
+        "//player.bilibili.com/player.html?bvid=BV1H2421w7B2&page=1"
+      );
+    }
+  }, []);
   return (
     <div className={styles.storyContainer}>
       <div className={styles.storyContent}>
@@ -23,21 +37,16 @@ const Story = () => {
           </button>
         </div>
         <div className={styles.storyVideo}>
-          <video
+          <iframe
+            // width="560"
+            // height="315"
             className={styles.videoPlayer}
-            controls
-            autoPlay
-            loop
-            muted
-            // Add 'playsinline' to allow autoplay on iOS devices
-            playsInline
-          >
-            <source
-              src="https://sutongvideo.s3.us-east-2.amazonaws.com/sutongpromovideo.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+            src={videoSource}
+            title="Sutong Tire Resources, Inc"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullscreen
+          ></iframe>
         </div>
       </div>
     </div>
