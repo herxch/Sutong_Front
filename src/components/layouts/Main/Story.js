@@ -1,22 +1,22 @@
-import styles from "./Story.module.css";
-import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import styles from './Story.module.css';
+import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const Story = () => {
   const navigate = useNavigate();
   const buttonClickHandler = () => {
-    navigate("/about");
+    navigate('/about');
   };
-  const [videoSource, setVideoSource] = useState("");
+  const [videoSource, setVideoSource] = useState('');
   useEffect(() => {
     const userLocale = navigator.language || navigator.languages[0];
-    if (userLocale.startsWith("en-US")) {
+    if (userLocale.startsWith('zh-CN')) {
       setVideoSource(
-        "https://www.youtube.com/embed/o1Sze3riGxQ?si=O8dwqWkXs4pS3do8"
+        '//player.bilibili.com/player.html?bvid=BV1H2421w7B2&page=1'
       );
-    } else if (userLocale.startsWith("zh-CN")) {
+    } else {
       setVideoSource(
-        "//player.bilibili.com/player.html?bvid=BV1H2421w7B2&page=1"
+        'https://www.youtube.com/embed/o1Sze3riGxQ?si=O8dwqWkXs4pS3do8'
       );
     }
   }, []);
@@ -42,9 +42,9 @@ const Story = () => {
             // height="315"
             className={styles.videoPlayer}
             src={videoSource}
-            title="Sutong Tire Resources, Inc"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            title='Sutong Tire Resources, Inc'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullscreen
           ></iframe>
         </div>
