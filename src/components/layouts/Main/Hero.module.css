@@ -5,7 +5,7 @@
 }
 
 .heroContainer {
-  background-image: url("../../../assets/pic/Hero.jpg"); /* Update with the correct path */
+  background-image: url('../../../assets/pic/Hero.jpg'); /* Update with the correct path */
   background-size: cover;
   background-position: center bottom;
   height: 90vh; /* Adjust the height as necessary */
@@ -74,7 +74,7 @@
     margin: 0 auto;
   }
   .heroContent {
-    margin-top: 24rem;
+    margin-top: 12rem;
   }
   .bgContainer {
     background-color: #000000;
