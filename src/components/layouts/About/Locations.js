@@ -1,6 +1,6 @@
 import styles from "./Locations.module.css";
 import Location from "./Location";
-import BrookshireImage from "../../../assets/pic/Brookshire.png";
+import BrookshireImage from "../../../assets/pic/Brookshire.jpg";
 import AndersonImage from "../../../assets/pic/Anderson.jpg";
 import VaughanImage from "../../../assets/pic/Vaughan.jpg";
 import BeijingImage from "../../../assets/pic/Beijing.jpg";
