@@ -19,16 +19,21 @@ const Features = () => {
           />
           <h2 className={styles.featureTitle}>PROFESSIONAL</h2>
           <p className={styles.featureDescription}>
-            Isende ferortu ratime egli vis; elut perferdam pollitburum
-            mantebatum demno nos verem seronimadum viserfectam omaciectam.
+            Dedicated Account Management: You'll have a dedicated account
+            manager as your point of contact. This ensures seamless
+            communication, efficient order processing, and personalized support
+            to address your specific business needs.
           </p>
         </div>
         <div className={styles.featureItem}>
           <img src={IconPrecise} alt="Precise" className={styles.featureIcon} />
           <h2 className={styles.featureTitle}>PRECISE</h2>
           <p className={styles.featureDescription}>
-            Isende ferortu ratime egli vis; elut perferdam pollitburum
-            mantebatum demno nos verem seronimadum viserfectam omaciectam.
+            Unmatched Inventory Depth: We source a vast catalog of tires, tubes,
+            and wheels from leading global manufacturers. This extensive
+            selection ensures you have the right products to meet your
+            customers' diverse needs, from passenger car tires to heavy-duty
+            truck options.
           </p>
         </div>
         <div className={styles.featureItem}>
@@ -39,8 +44,10 @@ const Features = () => {
           />
           <h2 className={styles.featureTitle}>PERSONAL</h2>
           <p className={styles.featureDescription}>
-            Isende ferortu ratime egli vis; elut perferdam pollitburum
-            mantebatum demno nos verem seronimadum viserfectam omaciectam.
+            Sutong Tire Resource goes beyond just being a supplier. We're your
+            strategic partner in optimizing your inventory and maximizing your
+            profitability. Contact us today to discuss your wholesale needs and
+            unlock a world of growth opportunities.
           </p>
         </div>
       </div>

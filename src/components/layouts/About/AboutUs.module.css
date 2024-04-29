@@ -3,13 +3,37 @@
   margin-top: 30px auto;
 }
 
+.storyHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+  max-width: 144rem;
+  margin: 32rem auto 4rem auto;
+  padding: 0 12rem;
+}
+
 .storyContent {
   display: flex;
   justify-content: space-evenly;
   gap: 12rem;
   max-width: 144rem;
-  margin: 32rem auto;
+  margin: 0 auto 4rem auto;
+}
+
+.storyContent2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 4rem;
+  max-width: 144rem;
+  margin: 0 auto 32rem auto;
   padding: 0 12rem;
+}
+
+.storyUL {
+  padding-left: 4rem;
 }
 
 .storyText {
@@ -23,6 +47,10 @@
 
 .storyTitle {
   font-size: 3.2rem;
+}
+
+.storySubTitle {
+  font-size: 2.6rem;
 }
 
 .storyParagraph {
@@ -44,19 +72,42 @@
 }
 
 @media only screen and (max-width: 960px) {
+  .storyHeader,
+  .storyContent2,
   .storyContent {
     flex-direction: column;
-    margin: 20rem auto;
+    /* margin: 20rem auto; */
     gap: 7.5rem;
+  }
+
+  .storyHeader {
+    margin-top: 20rem;
+  }
+
+  .storyContent2 {
+    margin-bottom: 20rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .storyContent {
+  .storyHeader,
+  .storyContent2 {
     width: 90%;
     padding: 0;
-    margin: 12rem auto;
+    /* margin: 12rem auto; */
     gap: 6rem;
+  }
+
+  .storyHeader {
+    margin-top: 12rem;
+  }
+
+  .storyContent2 {
+    margin-bottom: 12rem;
+  }
+
+  .storyContent {
+    width: 100%;
   }
 
   .storyText {

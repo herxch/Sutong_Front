@@ -21,16 +21,16 @@
 
 .featuresList {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 120rem;
-  gap: 10rem;
+  gap: 6rem;
   margin: 0 auto;
   /* margin: 0 auto 32rem auto; */
 }
 
 .featureItem {
-  width: 31rem; /* Adjust the width as needed */
+  width: 35rem; /* Adjust the width as needed */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,8 @@
 }
 
 .featureDescription {
-  font-size: 2.5rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
   color: #303030; /* Adjust the color as needed */
 }
 
