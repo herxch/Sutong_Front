@@ -33,8 +33,8 @@ const AboutUs = () => {
             Empowering Your Business Across North America
           </h2>
           <p className={styles.storyParagraph}>
-            Sutong is your one-stop shop for wholesale tires, catering to a
-            diverse clientele including:
+            Sutong is your one-stop shop, catering to a diverse clientele
+            including:
             <ul className={styles.storyUL}>
               <li>Utility and RV Trailer Industry</li>
               <li>Large National Retail Chains</li>
