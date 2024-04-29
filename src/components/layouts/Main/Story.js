@@ -5,8 +5,13 @@ import { useEffect, useState } from "react";
 const Story = () => {
   const navigate = useNavigate();
   const buttonClickHandler = () => {
-    navigate("/about");
+    navigate("/about", {
+      replace: false,
+      state: {},
+      scroll: { top: 0, left: 0, behavior: "auto" },
+    });
   };
+
   const [videoSource, setVideoSource] = useState("");
   useEffect(() => {
     const userLocale = navigator.language || navigator.languages[0];

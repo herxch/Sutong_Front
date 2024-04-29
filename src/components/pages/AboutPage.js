@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Footer from "../layouts/Footer";
 import Navbar from "../layouts/Navbar";
 import AboutHero from "../layouts/About/AboutHero";
@@ -8,6 +8,10 @@ import useScrollControl from "../hooks/useScrollControl";
 
 const AboutPage = (props) => {
   const { navbarVisible } = useScrollControl(0, 700);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Fragment>
