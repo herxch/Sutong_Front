@@ -34,7 +34,7 @@ const Story = () => {
           </h1>
           <p className={styles.storyParagraph}>
             As a tire distributor, you understand the importance of reliable
-            partners. At Sutong Tire Resource, we're committed to empowering
+            partners. At Sutong Tire Resource, we are committed to empowering
             your business with a winning combination of selection, value, and
             support.
           </p>

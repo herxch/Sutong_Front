@@ -44,7 +44,7 @@ const Features = () => {
           />
           <h2 className={styles.featureTitle}>PERSONAL</h2>
           <p className={styles.featureDescription}>
-            Sutong Tire Resource goes beyond just being a supplier. We're your
+            Sutong Tire Resource goes beyond just being a supplier. We are your
             strategic partner in optimizing your inventory and maximizing your
             profitability. Contact us today to discuss your wholesale needs and
             unlock a world of growth opportunities.
