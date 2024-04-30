@@ -6,7 +6,8 @@ const AboutUs = () => {
     <div className={styles.storyContainer}>
       <div className={styles.storyHeader}>
         <h1 className={styles.storyTitle}>
-          Sutong Tire Resource: Your Trusted Partner for Tires (Since 1993)
+          Sutong Tire Resource: Your Trusted Partner for Tires, Wheels,
+          Assemblies (Since 1993)
         </h1>
         <div className={styles.storyContent}>
           <div className={styles.storyText}>
@@ -16,10 +17,10 @@ const AboutUs = () => {
             <p className={styles.storyParagraph}>
               Established in 1993, Sutong Tire Resource has built a reputation
               for exceptional service and a commitment to sourcing the perfect
-              tires for each customer. Headquartered near Houston, Texas, we
-              operate a vast distribution network across the US and Canada,
-              encompassing over 650,000 square feet of warehousing and office
-              space.
+              tires, wheels, assemblies for each customer. Headquartered near
+              Houston, Texas, we operate a vast distribution network across the
+              US and Canada, encompassing over 65,000 square feet of warehousing
+              and office space.
             </p>
           </div>
           <div className={styles.storyPhoto}>
@@ -38,8 +39,7 @@ const AboutUs = () => {
             <ul className={styles.storyUL}>
               <li>Utility and RV Trailer Industry</li>
               <li>Large National Retail Chains</li>
-              <li>Independent Tire Retailers</li>
-              <li>Wholesalers</li>
+              <li>Independent Tire Retailers and Wholesalers</li>
             </ul>
           </p>
         </div>
@@ -51,15 +51,13 @@ const AboutUs = () => {
             Our extensive global network allows us to import over 5 million
             tires annually, bypassing unnecessary middlemen. This translates to:
             <ul className={styles.storyUL}>
-              <li>Exceptional Wholesale Pricing</li>
+              <li>Exceptional Pricing</li>
               <li>Increased Profit Margins for Your Business</li>
             </ul>
           </p>
         </div>
         <div className={styles.storyText}>
-          <h2 className={styles.storySubTitle}>
-            Beyond Wholesale: Your Strategic Partner
-          </h2>
+          <h2 className={styles.storySubTitle}>Your Strategic Partner</h2>
           <p className={styles.storyParagraph}>
             Sutong Tire Resource goes beyond simply being a supplier. We are
             your strategic partner, committed to your success.

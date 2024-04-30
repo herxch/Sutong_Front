@@ -40,25 +40,25 @@ const Addresses = () => {
   return (
     <div className={styles.addressesContainer}>
       <Address
-        title="Headquarter"
+        title="Headquarters, Hockley TX"
         address={Address1}
         phone="713-690-5500"
         tollFree="888-669-8838"
         fax="713-690-5501"
       />
       <Address
-        title="Brookshire Distribution Center"
+        title="Brookshire, TX Distribution Center"
         address={Address2}
         phone="713-766-9118"
       />
       <Address
-        title="Anderson Distribution Center"
+        title="Anderson, IN Distribution Center"
         address={Address3}
         phone="765-393-3693"
         fax="765-298-8991"
       />
       <Address
-        title="Vaughan Distribution Center"
+        title="Vaughan, Canada Distribution Center"
         address={Address4}
         phone="905-874-8473"
       />

@@ -9,8 +9,8 @@ const Locations = () => {
   return (
     <div className={styles.locationContainer}>
       <Location
-        title="Houston, TX DC"
-        description="160,000 square feet"
+        title="Brookshire, TX DC"
+        description="136,000 square feet"
         photo={BrookshireImage} // Replace with path to your image
       />
       <Location
@@ -20,7 +20,7 @@ const Locations = () => {
       />
       <Location
         title="Vaughan, Canada DC"
-        description="150,000 square feet"
+        description="176,000 square feet"
         photo={VaughanImage} // Replace with path to your image
       />
       <Location
