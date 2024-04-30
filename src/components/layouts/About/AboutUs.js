@@ -12,7 +12,7 @@ const AboutUs = () => {
         <div className={styles.storyContent}>
           <div className={styles.storyText}>
             <h2 className={styles.storySubTitle}>
-              A Legacy of Expertise in Meeting Specific Needs
+              A Legacy of Expertise in Meeting Unique Needs
             </h2>
             <p className={styles.storyParagraph}>
               Established in 1993, Sutong Tire Resource has built a reputation

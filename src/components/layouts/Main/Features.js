@@ -22,7 +22,7 @@ const Features = () => {
             Dedicated Account Management: You'll have a dedicated account
             manager as your point of contact. This ensures seamless
             communication, efficient order processing, and personalized support
-            to address your specific business needs.
+            to address your unique business needs.
           </p>
         </div>
         <div className={styles.featureItem}>
