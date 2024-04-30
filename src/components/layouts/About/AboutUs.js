@@ -19,8 +19,8 @@ const AboutUs = () => {
               for exceptional service and a commitment to sourcing the perfect
               tires, wheels, assemblies for each customer. Headquartered near
               Houston, Texas, we operate a vast distribution network across the
-              US and Canada, encompassing over 65,000 square feet of warehousing
-              and office space.
+              US and Canada, encompassing over 650,000 square feet of
+              warehousing and office space.
             </p>
           </div>
           <div className={styles.storyPhoto}>
