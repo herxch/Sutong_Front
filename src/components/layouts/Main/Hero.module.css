@@ -5,7 +5,7 @@
 }
 
 .heroContainer {
-  background-image: url('../../../assets/pic/Hero.jpg'); /* Update with the correct path */
+  background-image: url("../../../assets/pic/Hero.jpg"); /* Update with the correct path */
   background-size: cover;
   background-position: center bottom;
   height: 90vh; /* Adjust the height as necessary */
@@ -20,17 +20,17 @@
 }
 
 .heroContent {
-  max-width: 45rem; /* Adjust the max width as necessary */
+  max-width: 48rem; /* Adjust the max width as necessary */
   margin-top: 6rem;
 }
 
 .heroTitle {
-  font-size: 3.2rem; /* Adjust the font size as necessary */
+  font-size: 3rem; /* Adjust the font size as necessary */
   margin-bottom: 3.5rem;
 }
 
 .heroSubtitle {
-  font-size: 1.8rem; /* Adjust the font size as necessary */
+  font-size: 1.6rem; /* Adjust the font size as necessary */
 }
 
 @media only screen and (max-width: 1200px) {
@@ -48,7 +48,7 @@
   }
   .heroContent {
     /* margin-top: 12rem; */
-    width: 25rem;
+    width: 16rem;
   }
   .heroTitle {
     font-size: 2.5rem;
