@@ -24,15 +24,23 @@ const Footer = () => {
           About
         </ScrollToTopNavLink>
         {/* The Tires NavLink is commented out, uncomment if needed */}
-        {/* <ScrollToTopNavLink to="/tires" className={getNavLinkClassName}>
-          Tires
-        </ScrollToTopNavLink> */}
+        <ScrollToTopNavLink to="/catalog" className={getNavLinkClassName}>
+          Catalog
+        </ScrollToTopNavLink>
         <ScrollToTopNavLink to="/careers" className={getNavLinkClassName}>
           Careers
         </ScrollToTopNavLink>
         <ScrollToTopNavLink to="/news" className={getNavLinkClassName}>
           News
         </ScrollToTopNavLink>
+        <a
+          href="https://register.cimstireregistration.com/index.cfm?id=sutong"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${styles.navItem}`}
+        >
+          Tire Registration
+        </a>
         <ScrollToTopNavLink to="/contact" className={getNavLinkClassName}>
           Contact Us
         </ScrollToTopNavLink>

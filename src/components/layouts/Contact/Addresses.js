@@ -65,8 +65,8 @@ const Addresses = () => {
       <Address
         title="Beijing Office"
         address={Address5}
-        phone="+86-010-51078677"
-        fax="+86-010-64942781"
+        phone="+86-010-84928100"
+        fax="+86-010-84929883"
       />
     </div>
   );

@@ -61,7 +61,7 @@
     padding: 10rem;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   .footer {
     align-items: flex-start;
     padding: 8rem;

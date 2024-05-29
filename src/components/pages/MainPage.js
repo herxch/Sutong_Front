@@ -5,6 +5,7 @@ import Hero from "../layouts/Main/Hero";
 import Story from "../layouts/Main/Story";
 import Features from "../layouts/Main/Features";
 import useScrollControl from "../hooks/useScrollControl";
+import Brands from "../layouts/Main/Brands";
 
 const MainPage = (props) => {
   const { scrolled, navbarVisible } = useScrollControl(0, 1000);
@@ -18,6 +19,7 @@ const MainPage = (props) => {
       <Hero />
       <Story />
       <Features />
+      <Brands />
       <Footer />
     </Fragment>
   );
