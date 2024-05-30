@@ -28,8 +28,8 @@
 
 .brandLogo {
   display: block;
-  height: 8rem; /* 确保高度自动调整 */
-  min-width: 40rem; /* 确保图片不会超出其容器的最大宽度 */
+  height: 8rem;
+  min-width: 40rem;
 }
 
 .categoryContainer {
@@ -132,5 +132,11 @@
 
   .categoryContainer {
     gap: 3rem;
+  }
+
+  .brandLogo {
+    min-width: unset;
+    max-width: 90%;
+    height: auto;
   }
 }
