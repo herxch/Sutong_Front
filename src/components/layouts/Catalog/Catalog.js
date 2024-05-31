@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import styles from "./Catalog.module.css";
 import synergy from "../../../assets/pic/synergy.png";
 import supercargo from "../../../assets/pic/supercargo.png";
@@ -12,11 +14,22 @@ import tube from "../../../assets/pic/Tube 200-150 AdobeStock_815341115_Preview.
 import Button from "../../ui/Button";
 
 const Catalog = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <div className={styles.brands}>
       <h1 className={styles.brandsTitle}>OUR BRANDS</h1>
       <div className={styles.brandsContainer}>
-        <div className={styles.brand}>
+        <div id="synergy" className={styles.brand}>
           <img src={synergy} alt="Synergy" className={styles.brandLogo} />
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
@@ -43,7 +56,7 @@ const Catalog = () => {
             </div>
           </div>
         </div>
-        <div className={styles.brand}>
+        <div id="supercargo" className={styles.brand}>
           <img src={supercargo} alt="SuperCargo" className={styles.brandLogo} />
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
@@ -70,7 +83,7 @@ const Catalog = () => {
             </div>
           </div>
         </div>
-        <div className={styles.brand}>
+        <div id="roadone" className={styles.brand}>
           <img src={roadone} alt="RoadOne" className={styles.brandLogo} />
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
@@ -97,7 +110,7 @@ const Catalog = () => {
             </div>
           </div>
         </div>
-        <div className={styles.brand}>
+        <div id="hemisphere" className={styles.brand}>
           <img src={hemisphere} alt="Hemisphere" className={styles.brandLogo} />
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
@@ -113,7 +126,7 @@ const Catalog = () => {
             </div>
           </div>
         </div>
-        <div className={styles.brand}>
+        <div id="hirun" className={styles.brand}>
           <img src={hirun} alt="Hi-Run" className={styles.brandLogo} />
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
