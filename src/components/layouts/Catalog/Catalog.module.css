@@ -28,8 +28,8 @@
 
 .brandLogo {
   display: block;
-  height: 8rem;
-  min-width: 40rem;
+  width: 40rem;
+  height: auto;
 }
 
 .categoryContainer {
@@ -135,7 +135,6 @@
   }
 
   .brandLogo {
-    min-width: unset;
     max-width: 90%;
     height: auto;
   }

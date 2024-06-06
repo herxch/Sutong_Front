@@ -6,6 +6,7 @@ import supercargo from "../../../assets/pic/supercargo.png";
 import roadone from "../../../assets/pic/roadone.png";
 import hemisphere from "../../../assets/pic/hemisphere.png";
 import hirun from "../../../assets/pic/hirun.png";
+import longmarch from "../../../assets/pic/longmarch.svg";
 import mtr from "../../../assets/pic/MTR 200-150 AdobeStock_522105192_Preview.jpg";
 import trailer from "../../../assets/pic/Trailer 200-150 AdobeStock_308317141_Preview.jpg";
 import suv from "../../../assets/pic/SUV 200-150 AdobeStock_244223192_Preview.jpg";
@@ -52,6 +53,22 @@ const Catalog = () => {
               <span className={styles.categoryName}>Trailer Tire</span>
               <div className={styles.buttonContainer}>
                 <Button text="View Trailer Tire Brochure" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="longmarch" className={styles.brand}>
+          <img src={longmarch} alt="Long March" className={styles.brandLogo} />
+          <div className={styles.categoryContainer}>
+            <div className={styles.category}>
+              <img
+                src={mtr}
+                alt="Medium Truck Radial"
+                className={styles.categoryIcon}
+              />
+              <span className={styles.categoryName}>Medium Truck Radial</span>
+              <div className={styles.buttonContainer}>
+                <Button text="View MTR Brochure" href="https://midd.me/NARJ" />
               </div>
             </div>
           </div>
