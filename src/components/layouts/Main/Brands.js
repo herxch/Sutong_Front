@@ -5,6 +5,7 @@ import hirun from "../../../assets/pic/hirun.png";
 import supercargo from "../../../assets/pic/supercargo.png";
 import hemisphere from "../../../assets/pic/hemisphere.png";
 import roadone from "../../../assets/pic/roadone.png";
+import longmarch from "../../../assets/pic/longmarch.svg";
 
 const Brands = () => {
   return (
@@ -12,6 +13,12 @@ const Brands = () => {
       <h1 className={styles.brandsTitle}>OUR BRANDS</h1>
       <div className={styles.brandsContainer}>
         <Brand name="Synergy" logo={synergy} url="/catalog" id="synergy" />
+        <Brand
+          name="Long March"
+          logo={longmarch}
+          url="/catalog"
+          id="longmarch"
+        />
         <Brand name="Hi-Run" logo={hirun} url="/catalog" id="hirun" />
         <Brand
           name="SuperCargo"
