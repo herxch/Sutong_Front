@@ -10,6 +10,7 @@
   align-items: flex-start;
   padding: 3.2rem;
   border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contactForm h2 {
