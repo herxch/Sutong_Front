@@ -59,7 +59,7 @@
 
 .categoryName {
   text-wrap: nowrap;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -103,13 +103,14 @@
   }
 
   .categoryContainer {
-    width: unset;
+    max-width: 62rem;
   }
 }
 
 @media only screen and (max-width: 960px) {
   .brandsContainer {
     margin: 20rem auto;
+    width: 90%;
   }
 }
 
@@ -126,7 +127,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 560px) {
   .category {
     flex-direction: column;
   }
