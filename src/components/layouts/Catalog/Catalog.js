@@ -7,11 +7,11 @@ import roadone from "../../../assets/pic/roadone.png";
 import hemisphere from "../../../assets/pic/hemisphere.png";
 import hirun from "../../../assets/pic/hirun.png";
 import longmarch from "../../../assets/pic/longmarch.svg";
-import mtr from "../../../assets/pic/MTR 200-150 AdobeStock_522105192_Preview.jpg";
-import trailer from "../../../assets/pic/Trailer 200-150 AdobeStock_308317141_Preview.jpg";
-import suv from "../../../assets/pic/SUV 200-150 AdobeStock_244223192_Preview.jpg";
-import lg from "../../../assets/pic/LG 200-150 AdobeStock_334878751_Preview.jpg";
-import tube from "../../../assets/pic/Tube 200-150 AdobeStock_815341115_Preview.jpg";
+import mtr from "../../../assets/pic/mtr.svg";
+import trailer from "../../../assets/pic/trailer.svg";
+import suv from "../../../assets/pic/suv.svg";
+import lg from "../../../assets/pic/lg.svg";
+import tube from "../../../assets/pic/tube.svg";
 import Button from "../../ui/Button";
 
 const Catalog = () => {
