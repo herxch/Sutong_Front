@@ -40,6 +40,7 @@
   font-weight: 700;
   border-radius: 10px;
   transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .actionButton:hover {

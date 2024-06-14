@@ -1,6 +1,7 @@
 import styles from "./Story.module.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Button from "../../ui/Button";
 
 const Story = () => {
   const navigate = useNavigate();
@@ -38,9 +39,12 @@ const Story = () => {
             your business with a winning combination of selection, value, and
             support.
           </p>
-          <button className={styles.actionButton} onClick={buttonClickHandler}>
-            Learn More
-          </button>
+          <Button
+            onClick={buttonClickHandler}
+            text="Learn More"
+            href="/about"
+            newWindow={false}
+          />
         </div>
         <div className={styles.storyVideo}>
           <iframe
