@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./Catalog.module.css";
-import synergy from "../../../assets/pic/synergy.png";
-import supercargo from "../../../assets/pic/supercargo.png";
-import roadone from "../../../assets/pic/roadone.png";
+import synergy from "../../../assets/pic/synergy.svg";
+import supercargo from "../../../assets/pic/supercargo.svg";
+import roadone from "../../../assets/pic/roadone.svg";
 import hemisphere from "../../../assets/pic/hemisphere.png";
-import hirun from "../../../assets/pic/hirun.png";
+import hirun from "../../../assets/pic/hirun.svg";
 import longmarch from "../../../assets/pic/longmarch.svg";
 import mtr from "../../../assets/pic/mtr.svg";
 import trailer from "../../../assets/pic/trailer.svg";
