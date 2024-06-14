@@ -47,6 +47,12 @@
   gap: 2rem;
 }
 
+.category > :first-child {
+  height: 6rem; /* 设置你需要的高度 */
+  width: 8rem; /* 宽度自动调整 */
+  /* aspect-ratio: 1; */
+}
+
 .buttonContainer {
   flex-grow: 1;
   display: flex;
