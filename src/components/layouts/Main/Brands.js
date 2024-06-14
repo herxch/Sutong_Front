@@ -6,6 +6,9 @@ import supercargo from "../../../assets/pic/supercargo.svg";
 import hemisphere from "../../../assets/pic/hemisphere.png";
 import roadone from "../../../assets/pic/roadone.svg";
 import longmarch from "../../../assets/pic/longmarch.svg";
+import caraway from "../../../assets/pic/caraway.svg";
+import wolfpack from "../../../assets/pic/wolfpack.svg";
+import superstrong from "../../../assets/pic/superstrong.svg";
 
 const Brands = () => {
   return (
@@ -33,6 +36,14 @@ const Brands = () => {
           id="hemisphere"
         />
         <Brand name="RoadOne" logo={roadone} url="/catalog" id="roadone" />
+        <Brand name="Caraway" logo={caraway} url="/catalog" id="caraway" />
+        <Brand name="WolfPack" logo={wolfpack} url="/catalog" id="wolfpack" />
+        <Brand
+          name="SuperStrong"
+          logo={superstrong}
+          url="/catalog"
+          id="superstrong"
+        />
       </div>
     </div>
   );
