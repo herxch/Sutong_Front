@@ -35,6 +35,10 @@ const Catalog = () => {
     <div className={styles.brands}>
       <h1 className={styles.brandsTitle}>OUR BRANDS</h1>
       <div className={styles.brandsContainer}>
+        <Button
+          text="View ALL Brochures"
+          href="https://catalog.sutongctr.com"
+        />
         <div id="synergy" className={styles.brand}>
           <img src={synergy} alt="Synergy" className={styles.brandLogo} />
           <div className={styles.categoryContainer}>
@@ -46,7 +50,7 @@ const Catalog = () => {
               />
               <span className={styles.categoryName}>Medium Truck Radial</span>
               <div className={styles.buttonContainer}>
-                <Button text="View MTR Brochure" href="https://midd.me/7o61" />
+                <Button text="View MTR Brochure" href="https://midd.me/mZII" />
               </div>
             </div>
             <div className={styles.category}>
@@ -73,7 +77,7 @@ const Catalog = () => {
               />
               <span className={styles.categoryName}>Medium Truck Radial</span>
               <div className={styles.buttonContainer}>
-                <Button text="View MTR Brochure" href="https://midd.me/NARJ" />
+                <Button text="View MTR Brochure" href="https://midd.me/PH2E" />
               </div>
             </div>
           </div>
@@ -89,7 +93,7 @@ const Catalog = () => {
               />
               <span className={styles.categoryName}>Medium Truck Radial</span>
               <div className={styles.buttonContainer}>
-                <Button text="View MTR Brochure" href="https://midd.me/zzDX" />
+                <Button text="View MTR Brochure" href="https://midd.me/Omro" />
               </div>
             </div>
             <div className={styles.category}>
