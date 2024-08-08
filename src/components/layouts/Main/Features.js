@@ -19,21 +19,19 @@ const Features = () => {
           />
           <h2 className={styles.featureTitle}>PROFESSIONAL</h2>
           <p className={styles.featureDescription}>
-            Dedicated Account Management: You'll have a dedicated account
-            manager as your point of contact. This ensures seamless
-            communication, efficient order processing, and personalized support
-            to address your unique business needs.
+            Sutong has over 40 years of experience in the tire industry, serving
+            as a global resource integrator and supply chain expert, with a
+            dedicated team providing 24-hour service worldwide.
           </p>
         </div>
         <div className={styles.featureItem}>
           <img src={IconPrecise} alt="Precise" className={styles.featureIcon} />
           <h2 className={styles.featureTitle}>PRECISE</h2>
           <p className={styles.featureDescription}>
-            Unmatched Inventory Depth: We source a vast catalog of tires, tubes,
-            and wheels from leading global manufacturers. This extensive
-            selection ensures you have the right products to meet your
-            customers' diverse needs, from passenger car tires to heavy-duty
-            truck options.
+            Sutong ensures 90-day delivery for overseas shipments, 5-day
+            delivery from distribution centers, and 24-hour outbound for online
+            orders, maintaining a 98% fill rate for precise and efficient
+            service.
           </p>
         </div>
         <div className={styles.featureItem}>
@@ -44,10 +42,9 @@ const Features = () => {
           />
           <h2 className={styles.featureTitle}>PERSONAL</h2>
           <p className={styles.featureDescription}>
-            Sutong Tire Resource goes beyond just being a supplier. We are your
-            strategic partner in optimizing your inventory and maximizing your
-            profitability. Contact us today to discuss your wholesale needs and
-            unlock a world of growth opportunities.
+            Sutong customizes programs for each customer, treating them like
+            family. We personalize all our services, deeply caring about our
+            customers' success, because their success is our success.
           </p>
         </div>
       </div>
