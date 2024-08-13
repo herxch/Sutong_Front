@@ -61,7 +61,10 @@ const Catalog = () => {
               />
               <span className={styles.categoryName}>Trailer Tire</span>
               <div className={styles.buttonContainer}>
-                <Button text="View Trailer Tire Brochure" />
+                <Button
+                  text="View Trailer Tire Brochure"
+                  href="https://midd.me/iVE1"
+                />
               </div>
             </div>
           </div>
