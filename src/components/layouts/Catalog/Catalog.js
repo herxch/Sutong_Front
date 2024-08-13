@@ -40,7 +40,13 @@ const Catalog = () => {
           href="https://catalog.sutongctr.com"
         />
         <div id="synergy" className={styles.brand}>
-          <img src={synergy} alt="Synergy" className={styles.brandLogo} />
+          <a
+            href="https://catalog.sutongctr.com/synergy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={synergy} alt="Synergy" className={styles.brandLogo} />
+          </a>
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
               <img

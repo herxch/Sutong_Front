@@ -30,6 +30,13 @@
   display: block;
   width: 40rem;
   height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.brandLogo:hover {
+  transform: scale(1.05); /* 放大 */
+  opacity: 0.8; /* 变亮 */
 }
 
 .categoryContainer {
