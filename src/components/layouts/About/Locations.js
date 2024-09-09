@@ -20,7 +20,7 @@ const Locations = () => {
       />
       <Location
         title="Vaughan, Canada DC"
-        description="176,000 square feet"
+        description="76,000 square feet"
         photo={VaughanImage} // Replace with path to your image
       />
       <Location
