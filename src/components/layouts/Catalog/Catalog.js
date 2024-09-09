@@ -113,7 +113,10 @@ const Catalog = () => {
               />
               <span className={styles.categoryName}>Trailer Tire</span>
               <div className={styles.buttonContainer}>
-                <Button text="View Trailer Tire Brochure" />
+                <Button
+                  text="View Trailer Tire Brochure"
+                  href="https://midd.me/n4yV"
+                />
               </div>
             </div>
           </div>
@@ -182,14 +185,17 @@ const Catalog = () => {
               <img src={lg} alt="L&G Tire" className={styles.categoryIcon} />
               <span className={styles.categoryName}>L&G Tire</span>
               <div className={styles.buttonContainer}>
-                <Button text="View L&G Tire Brochure" />
+                <Button
+                  text="View L&G Tire Brochure"
+                  href="https://midd.me/nWCw"
+                />
               </div>
             </div>
             <div className={styles.category}>
               <img src={tube} alt="Tube" className={styles.categoryIcon} />
               <span className={styles.categoryName}>Tube</span>
               <div className={styles.buttonContainer}>
-                <Button text="View Tube Brochure" />
+                <Button text="View Tube Brochure" href="https://midd.me/g5dq" />
               </div>
             </div>
             <div className={styles.category}>
