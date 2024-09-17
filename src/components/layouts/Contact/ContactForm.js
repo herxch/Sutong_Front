@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ContactForm.module.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const [recaptchaValue, setRecaptchaValue] = useState("");
@@ -19,6 +20,7 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -71,8 +73,41 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // Handle form submission logic here, like sending data to a server
-      console.log("Form data submitted:", formData);
+      setIsSubmitting(true);
+      const combinedData = {
+        ...formData,
+        "g-recaptcha-response": recaptchaValue,
+      };
+
+      emailjs
+        .send(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          combinedData,
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            console.log("Form submitted successfully:", result.text);
+            setFormData({
+              name: "",
+              companyName: "",
+              phone: "",
+              email: "",
+              subject: "",
+              message: "",
+            });
+            setRecaptchaValue("");
+            setErrors({});
+            alert("Form submitted successfully! We will contact you soon.");
+            setIsSubmitting(false);
+          },
+          (error) => {
+            console.log("Error submitting form:", error.text);
+            alert("Submission failed, please try again later.");
+            setIsSubmitting(false);
+          }
+        );
     }
   };
 
@@ -148,7 +183,9 @@ const ContactForm = () => {
         onChange={handleRecaptchaChange}
       />
       {errors.reCaptcha && <p className={styles.error}>{errors.reCaptcha}</p>}
-      <button type="submit">SUBMIT</button>
+      <button type="submit" disabled={isSubmitting}>
+        {isSubmitting ? "Submitting..." : "SUBMIT"}
+      </button>
     </form>
   );
 };
