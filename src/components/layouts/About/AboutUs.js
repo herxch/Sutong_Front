@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className={styles.storyContainer}>
       <div className={styles.storyHeader}>
         <h1 className={styles.storyTitle}>
-          Sutong Tire Resource: Your Trusted Partner for Tires, Wheels,
+          Sutong Tire Resources: Your Trusted Partner for Tires, Wheels,
           Assemblies (Since 1993)
         </h1>
         <div className={styles.storyContent}>
@@ -15,7 +15,7 @@ const AboutUs = () => {
               A Legacy of Expertise in Meeting Unique Needs
             </h2>
             <p className={styles.storyParagraph}>
-              Established in 1993, Sutong Tire Resource has built a reputation
+              Established in 1993, Sutong Tire Resources has built a reputation
               for exceptional service and a commitment to sourcing the perfect
               tires, wheels, assemblies for each customer. Headquartered near
               Houston, Texas, we operate a vast distribution network across the
@@ -59,7 +59,7 @@ const AboutUs = () => {
         <div className={styles.storyText}>
           <h2 className={styles.storySubTitle}>Your Strategic Partner</h2>
           <p className={styles.storyParagraph}>
-            Sutong Tire Resource goes beyond simply being a supplier. We are
+            Sutong Tire Resources goes beyond simply being a supplier. We are
             your strategic partner, committed to your success.
           </p>
         </div>

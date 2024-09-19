@@ -31,11 +31,11 @@ const Story = () => {
       <div className={styles.storyContent}>
         <div className={styles.storyText}>
           <h1 className={styles.storyTitle}>
-            Fuel Your Business Growth with Sutong Tire Resource
+            Fuel Your Business Growth with Sutong Tire Resources
           </h1>
           <p className={styles.storyParagraph}>
             As a tire distributor, you understand the importance of reliable
-            partners. At Sutong Tire Resource, we are committed to empowering
+            partners. At Sutong Tire Resources, we are committed to empowering
             your business with a winning combination of selection, value, and
             support.
           </p>
