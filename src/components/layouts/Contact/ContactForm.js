@@ -39,6 +39,11 @@ const ContactForm = () => {
       formIsValid = false;
     }
 
+    if (!formData.companyName.trim()) {
+      errors.companyName = "Company Name is required";
+      formIsValid = false;
+    }
+
     if (!formData.phone.trim()) {
       errors.phone = "Phone is required";
       formIsValid = false;
@@ -129,7 +134,12 @@ const ContactForm = () => {
         value={formData.name}
         onChange={handleChange}
       />
-      <label htmlFor="companyName">Company Name</label>
+      <label htmlFor="companyName">
+        Company Name *{" "}
+        {errors.companyName && (
+          <p className={styles.error}>{errors.companyName}</p>
+        )}
+      </label>
       <input
         type="text"
         id="companyName"
