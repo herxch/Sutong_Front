@@ -30,9 +30,9 @@ const Footer = () => {
         <ScrollToTopNavLink to="/careers" className={getNavLinkClassName}>
           Careers
         </ScrollToTopNavLink>
-        {/* <ScrollToTopNavLink to="/news" className={getNavLinkClassName}>
+        <ScrollToTopNavLink to="/news" className={getNavLinkClassName}>
           News
-        </ScrollToTopNavLink> */}
+        </ScrollToTopNavLink>
         <a
           href="https://register.cimstireregistration.com/index.cfm?id=sutong"
           target="_blank"
