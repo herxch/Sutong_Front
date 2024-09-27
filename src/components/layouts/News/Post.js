@@ -7,6 +7,7 @@ const Post = ({ title, subTitle, para, guid }) => {
       <h2 className={styles.title}>{title}</h2>
       <h3 className={styles.subTitle}>{subTitle}</h3>
       <p className={styles.para}>{para}</p>
+      <p className={styles.sourceText}>Source: Modern Tire Dealer</p>
       {/* 添加一个按钮，点击后打开新标签 */}
       <div className={styles.buttonContainer}>
         <Button text="Read More" href={guid} />

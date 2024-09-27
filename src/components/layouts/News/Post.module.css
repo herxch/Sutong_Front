@@ -38,6 +38,14 @@
   padding: 1rem;
 }
 
+.sourceText {
+  font-size: 1.6rem;
+  color: #606060;
+  margin-top: 1rem;
+  font-style: italic;
+  padding-left: 1rem;
+}
+
 .buttonContainer {
   flex-grow: 1;
   display: flex;
