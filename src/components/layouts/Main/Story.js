@@ -34,7 +34,7 @@ const Story = () => {
             Fuel Your Business Growth with Sutong Tire Resources
           </h1>
           <p className={styles.storyParagraph}>
-            As a tire distributor, we understand the importance of reliable
+            As a tire distributor, we understand the importance of a reliable
             partner. At Sutong Tire Resources, we are committed to empowering
             your business with a winning combination of selection, value, and
             support.
