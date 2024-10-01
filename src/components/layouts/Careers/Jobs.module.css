@@ -11,12 +11,13 @@
 
 .jobsTitle {
   font-size: 3.2rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
-.jobsParagraph {
-  font-size: 2.5rem;
-  padding: 1rem;
+.emailLink {
+  color: var(--main-blue); /* 或者你喜欢的颜色 */
+  text-decoration: underline; /* 添加下划线 */
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 960px) {

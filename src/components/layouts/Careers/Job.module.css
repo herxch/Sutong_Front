@@ -1,0 +1,46 @@
+.jobPosting {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.3rem;
+}
+
+.jobHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+.toggleButton {
+  font-size: 5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+/* Closed state: blue color for plus sign */
+.closedButton {
+  color: var(--main-blue); /* Blue color for + */
+}
+
+/* Open state: yellow color for minus sign */
+.openButton {
+  color: var(--main-orange); /* Yellow color for - */
+}
+
+.jobContent {
+  font-size: 1.6rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.jobContent.open {
+  max-height: 1000px; /* 设置足够大以确保内容可以展开 */
+  padding: 2rem 4rem;
+}
