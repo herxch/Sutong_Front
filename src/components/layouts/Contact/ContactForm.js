@@ -120,7 +120,8 @@ const ContactForm = () => {
     <form className={styles.contactForm} onSubmit={handleSubmit}>
       <span className={styles.warning}>
         * Please note that we are a distributor and wholesaler and do not sell
-        to individual customers. *
+        to individual customers. Due to security concerns, we do not respond to
+        email order inquiry. Please call us instead. *
       </span>
       <h2>Contact Form</h2>
       <label htmlFor="name">
