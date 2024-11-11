@@ -23,7 +23,7 @@ const Jobs = () => {
     <div className={styles.jobsContainer}>
       <h1 className={styles.jobsTitle}>Current Openings</h1>
       {/* Job Posting 1 */}
-      <Job title="Sales Assistant">
+      {/* <Job title="Sales Assistant">
         <p className={styles.jobsParagraph}>
           Sutong is a family-owned tire/wheel import/distribution company with
           Headquarters in Hockley, Texas. We import tire/wheel products direct
@@ -125,10 +125,10 @@ const Jobs = () => {
             hr@sutongctr.com
           </a>
         </p>
-      </Job>
+      </Job> */}
 
       {/* Job Posting 2 */}
-      <Job title="Salesperson(s)">
+      {/* <Job title="Salesperson(s)">
         <p className={styles.jobsParagraph}>
           Sutong is a family-owned tire/wheel import/distribution company with
           Headquarters in Hockley, Texas. We import tire/wheel products directly
@@ -224,14 +224,13 @@ const Jobs = () => {
             hr@sutongctr.com
           </a>
         </p>
-      </Job>
+      </Job> */}
       {/* Job Posting 3 */}
       <Job title="Website Developer">
         <p className={styles.jobsParagraph}>
-          Please email your resumé to{" "}
-          <a href="mailto:hr@sutongctr.com" className={styles.emailLink}>
-            hr@sutongctr.com
-          </a>
+          Sutong Tire Resources, Inc. seeks 1 Website Developer in Hockley,
+          Texas. Please send resume/CV and cover letter to Mr. Dan Hunter, 33402
+          Hwy 290, Suite A, Hockley, Texas 77447
         </p>
       </Job>
     </div>
