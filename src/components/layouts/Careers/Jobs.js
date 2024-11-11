@@ -225,6 +225,15 @@ const Jobs = () => {
           </a>
         </p>
       </Job>
+      {/* Job Posting 3 */}
+      <Job title="Website Developer">
+        <p className={styles.jobsParagraph}>
+          Please email your resumé to{" "}
+          <a href="mailto:hr@sutongctr.com" className={styles.emailLink}>
+            hr@sutongctr.com
+          </a>
+        </p>
+      </Job>
     </div>
   );
 };
