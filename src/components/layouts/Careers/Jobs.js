@@ -226,13 +226,13 @@ const Jobs = () => {
         </p>
       </Job> */}
       {/* Job Posting 3 */}
-      <Job title="Website Developer">
+      {/* <Job title="Website Developer">
         <p className={styles.jobsParagraph}>
           Sutong Tire Resources, Inc. seeks 1 Website Developer in Hockley,
           Texas. Please send resume/CV and cover letter to Mr. Dan Hunter, 33402
           Hwy 290, Suite A, Hockley, Texas 77447
         </p>
-      </Job>
+      </Job> */}
     </div>
   );
 };
