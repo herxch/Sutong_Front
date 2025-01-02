@@ -267,7 +267,7 @@ const Catalog = () => {
               <div className={styles.buttonContainer}>
                 <Button
                   text="View ATV/UTV Tire Brochure"
-                  href="https://midd.me/S3co"
+                  href="https://midd.me/v55B"
                 />
               </div>
             </div>
