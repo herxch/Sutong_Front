@@ -76,7 +76,17 @@ const Catalog = () => {
           </div>
         </div>
         <div id="longmarch" className={styles.brand}>
-          <img src={longmarch} alt="Long March" className={styles.brandLogo} />
+          <a
+            href="https://midd.me/PH2E"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={longmarch}
+              alt="Long March"
+              className={styles.brandLogo}
+            />
+          </a>
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
               <img
@@ -84,6 +94,7 @@ const Catalog = () => {
                 alt="Medium Truck Radial"
                 className={styles.categoryIcon}
               />
+
               <span className={styles.categoryName}>Medium Truck Radial</span>
               <div className={styles.buttonContainer}>
                 <Button text="View MTR Brochure" href="https://midd.me/PH2E" />
@@ -92,7 +103,17 @@ const Catalog = () => {
           </div>
         </div>
         <div id="supercargo" className={styles.brand}>
-          <img src={supercargo} alt="SuperCargo" className={styles.brandLogo} />
+          <a
+            href="https://catalog.sutongctr.com/supercargo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={supercargo}
+              alt="SuperCargo"
+              className={styles.brandLogo}
+            />
+          </a>
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
               <img
@@ -122,7 +143,13 @@ const Catalog = () => {
           </div>
         </div>
         <div id="roadone" className={styles.brand}>
-          <img src={roadone} alt="RoadOne" className={styles.brandLogo} />
+          <a
+            href="https://catalog.sutongctr.com/roadone"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={roadone} alt="RoadOne" className={styles.brandLogo} />
+          </a>
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
               <img
@@ -200,13 +227,13 @@ const Catalog = () => {
             </div>
             <div className={styles.category}>
               <img
-                src={trailer}
-                alt="Trailer Assembly"
+                src={atv}
+                alt="ATV/UTV Tire"
                 className={styles.categoryIcon}
               />
-              <span className={styles.categoryName}>Trailer Assembly</span>
+              <span className={styles.categoryName}>ATV/UTV Tire</span>
               <div className={styles.buttonContainer}>
-                <Button text="View Trailer Assembly Brochure" />
+                <Button text="View ATV/UTV Tire Brochure" />
               </div>
             </div>
           </div>
