@@ -7,16 +7,16 @@ import roadone from "../../../assets/pic/roadone.svg";
 import hemisphere from "../../../assets/pic/hemisphere.png";
 import hirun from "../../../assets/pic/hirun.svg";
 import longmarch from "../../../assets/pic/longmarch.svg";
-import caraway from "../../../assets/pic/caraway.svg";
+// import caraway from "../../../assets/pic/caraway.svg";
 import wolfpack from "../../../assets/pic/wolfpack.svg";
-import superstrong from "../../../assets/pic/superstrong.svg";
+// import superstrong from "../../../assets/pic/superstrong.svg";
 import mtr from "../../../assets/pic/mtr.svg";
 import trailer from "../../../assets/pic/trailer.svg";
 import suv from "../../../assets/pic/suv.svg";
 import lg from "../../../assets/pic/lg.svg";
 import tube from "../../../assets/pic/tube.svg";
 import atv from "../../../assets/pic/atv.svg";
-import farm from "../../../assets/pic/farm.svg";
+// import farm from "../../../assets/pic/farm.svg";
 import Button from "../../ui/Button";
 
 const Catalog = () => {
@@ -159,7 +159,7 @@ const Catalog = () => {
               />
               <span className={styles.categoryName}>Medium Truck Radial</span>
               <div className={styles.buttonContainer}>
-                <Button text="View MTR Brochure" />
+                <Button text="View MTR Brochure" href="https://midd.me/iBv8" />
               </div>
             </div>
             <div className={styles.category}>
@@ -170,13 +170,26 @@ const Catalog = () => {
               />
               <span className={styles.categoryName}>Consumer Tire</span>
               <div className={styles.buttonContainer}>
-                <Button text="View Consumer Tire Brochure" />
+                <Button
+                  text="View Consumer Tire Brochure"
+                  href="https://midd.me/07hK"
+                />
               </div>
             </div>
           </div>
         </div>
         <div id="hemisphere" className={styles.brand}>
-          <img src={hemisphere} alt="Hemisphere" className={styles.brandLogo} />
+          <a
+            href="https://catalog.sutongctr.com/hemisphere"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={hemisphere}
+              alt="Hemisphere"
+              className={styles.brandLogo}
+            />
+          </a>
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
               <img
@@ -195,7 +208,13 @@ const Catalog = () => {
           </div>
         </div>
         <div id="hirun" className={styles.brand}>
-          <img src={hirun} alt="Hi-Run" className={styles.brandLogo} />
+          <a
+            href="https://catalog.sutongctr.com/specialtylg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={hirun} alt="Hi-Run" className={styles.brandLogo} />
+          </a>
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
               <img
@@ -233,12 +252,15 @@ const Catalog = () => {
               />
               <span className={styles.categoryName}>ATV/UTV Tire</span>
               <div className={styles.buttonContainer}>
-                <Button text="View ATV/UTV Tire Brochure" />
+                <Button
+                  text="View ATV/UTV Tire Brochure"
+                  href="https://midd.me/S3co"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div id="caraway" className={styles.brand}>
+        {/* <div id="caraway" className={styles.brand}>
           <img src={caraway} alt="Caraway" className={styles.brandLogo} />
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
@@ -253,9 +275,15 @@ const Catalog = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div id="wolfpack" className={styles.brand}>
-          <img src={wolfpack} alt="Wolf Pack" className={styles.brandLogo} />
+          <a
+            href="https://catalog.sutongctr.com/wolfpack"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={wolfpack} alt="Wolf Pack" className={styles.brandLogo} />
+          </a>
           <div className={styles.categoryContainer}>
             <div className={styles.category}>
               <img
@@ -280,7 +308,7 @@ const Catalog = () => {
             </div>
           </div>
         </div>
-        <div id="superstrong" className={styles.brand}>
+        {/* <div id="superstrong" className={styles.brand}>
           <img
             src={superstrong}
             alt="Super Strong"
@@ -295,7 +323,7 @@ const Catalog = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
