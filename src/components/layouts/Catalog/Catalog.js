@@ -209,7 +209,7 @@ const Catalog = () => {
         </div>
         <div id="hirun" className={styles.brand}>
           <a
-            href="https://catalog.sutongctr.com/specialtylg"
+            href="https://catalog.sutongctr.com/hirun"
             target="_blank"
             rel="noopener noreferrer"
           >
