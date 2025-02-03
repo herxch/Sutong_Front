@@ -61,6 +61,7 @@ const Addresses = () => {
         title="Vaughan, Canada Distribution Center"
         address={Address4}
         phone="905-874-8473"
+        fax="905-874-8476"
       />
       <Address
         title="Beijing Office"
