@@ -234,13 +234,13 @@ const Jobs = () => {
         </p>
       </Job> */}
       {/* Job Posting 4 */}
-      <Job title="Business Operations Specialist ">
+      {/* <Job title="Business Operations Specialist ">
         <p className={styles.jobsParagraph}>
           Sutong Tire Resources, Inc. seeks 1 experienced Business Operations
           Specialist in Hockley, Texas. Please send resume/CV and cover letter
           to Mr. Daniel Hunter, 33402 Hwy 290, Suite A, Hockley, Texas 77447
         </p>
-      </Job>
+      </Job> */}
     </div>
   );
 };
