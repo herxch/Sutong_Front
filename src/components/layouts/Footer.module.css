@@ -20,12 +20,14 @@
 }
 
 .nav {
-  max-width: 90rem;
+  width: 100%; /* 强制容器占满可用宽度 */
+  max-width: 110rem; /* 稍微调大一点，给 7 个项更多呼吸空间 */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* 菜单项会在白线上均匀分布 */
   align-items: center;
-  gap: 3.6rem;
+  gap: 2rem; /* 缩小间距，防止在较窄屏幕溢出 */
   border-bottom: 3px solid #fff;
+  padding-bottom: 1rem; /* 给文字和白线留一点间隙 */
 }
 
 .navItem {
@@ -71,10 +73,11 @@
   .nav {
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 100%; /* 确保移动端线也是满宽的 */
     margin-bottom: 2rem;
     padding-bottom: 3rem;
     gap: 2.5rem;
+    max-width: none; /* 取消 90rem 的限制 */
   }
   .navItem {
     font-size: 2.5rem;

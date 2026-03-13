@@ -1,10 +1,10 @@
 import React from "react";
 import ScrollToTopNavLink from "../ui/ScrollToTopNavLink";
-import styles from "./Footer.module.css"; // Ensure the path to your CSS module is correct
-import Logo from "../../assets/pic/Sutong Logo White.png"; // Import your logo as an image
+import styles from "./Footer.module.css";
+import Logo from "../../assets/pic/Sutong Logo White.png";
+import { NAV_LINKS } from "../config/navigation";
 
 const Footer = () => {
-  // Function to get the appropriate class name depending on the active state
   const getNavLinkClassName = ({ isActive }) =>
     isActive ? `${styles.navItem} ${styles.active}` : styles.navItem;
 
@@ -19,32 +19,32 @@ const Footer = () => {
           />
         </ScrollToTopNavLink>
       </div>
+
       <nav className={styles.nav}>
-        <ScrollToTopNavLink to="/about" className={getNavLinkClassName}>
-          About
-        </ScrollToTopNavLink>
-        {/* The Tires NavLink is commented out, uncomment if needed */}
-        <ScrollToTopNavLink to="/catalog" className={getNavLinkClassName}>
-          Catalog
-        </ScrollToTopNavLink>
-        <ScrollToTopNavLink to="/careers" className={getNavLinkClassName}>
-          Careers
-        </ScrollToTopNavLink>
-        <ScrollToTopNavLink to="/news" className={getNavLinkClassName}>
-          News
-        </ScrollToTopNavLink>
-        <a
-          href="https://register.cimstireregistration.com/index.cfm?id=sutong"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${styles.navItem}`}
-        >
-          Tire Registration
-        </a>
-        <ScrollToTopNavLink to="/contact" className={getNavLinkClassName}>
-          Contact Us
-        </ScrollToTopNavLink>
+        {NAV_LINKS.map((link) =>
+          link.href ? (
+            <a
+              key={link.name}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.navItem}
+            >
+              {link.name}
+            </a>
+          ) : (
+            <ScrollToTopNavLink
+              key={link.to}
+              to={link.to}
+              className={getNavLinkClassName}
+            >
+              {/* 这里做个小优化：Footer 习惯显示 "Contact Us" 而非 "Contact" */}
+              {link.name === "Contact" ? "Contact Us" : link.name}
+            </ScrollToTopNavLink>
+          ),
+        )}
       </nav>
+
       <div className={styles.copyRight}>
         © 1993 - {new Date().getFullYear()} Sutong Tire Resources, Inc
       </div>

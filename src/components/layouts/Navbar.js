@@ -1,91 +1,112 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import ScrollToTopNavLink from "../ui/ScrollToTopNavLink";
+import { NAV_LINKS } from "../config/navigation"; // 确保路径指向你的配置文件
+
+// 导入图片资源
 import logoW from "../../assets/pic/Sutong Logo White.png";
 import logoC from "../../assets/pic/Sutong Logo Color.png";
 import burgerBlack from "../../assets/pic/burger_black.svg";
 import burgerWhite from "../../assets/pic/burger_white.svg";
 import crossBlack from "../../assets/pic/cross_black.svg";
 import crossWhite from "../../assets/pic/cross_white.svg";
-import { useState, useEffect } from "react";
 
 const Navbar = ({ styleType, visibility = "show" }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  // Function to determine the class name based on the active state
-  const getNavLinkClassName = ({ isActive }) =>
-    isActive ? `${styles.linkItem} ${styles.active}` : styles.linkItem;
 
-  const getMobileNavLinkClassName = ({ isActive }) =>
-    isActive
-      ? showMobileMenu
-        ? `${styles.mobileLinkItem} ${styles.active} ${styles.mobileLinkItemVisible}`
-        : `${styles.mobileLinkItem} ${styles.active} ${styles.mobileLinkItemHidden}`
-      : showMobileMenu
-      ? `${styles.mobileLinkItem}  ${styles.mobileLinkItemVisible}`
-      : `${styles.mobileLinkItem}  ${styles.mobileLinkItemHidden}`;
-
-  const toggleMobileMenu = () => {
-    setShowMobileMenu(!showMobileMenu);
-  };
-
-  // 使用 useEffect 钩子来处理媒体查询
+  // 1. 响应式处理：屏幕变宽时自动关闭移动端菜单
   useEffect(() => {
     const handleResize = () => {
       if (window.matchMedia("(min-width: 600px)").matches) {
-        setShowMobileMenu(false); // 当屏幕宽度大于600px时， 关闭移动菜单
+        setShowMobileMenu(false);
       }
     };
-
-    // 监听屏幕宽度变化
     window.addEventListener("resize", handleResize);
-
-    // 初始化检查
     handleResize();
-
-    // 清理函数：组件卸载时移除监听器
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // 空依赖数组确保effect只在挂载时运行一次
+  }, []);
 
-  const mobileNavContainerClass = showMobileMenu
-    ? styles.mobileNavContainerVisible
-    : styles.mobileNavContainerHidden;
+  const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
+
+  // 2. 样式辅助函数
+  const getNavLinkClass = ({ isActive }) =>
+    isActive ? `${styles.linkItem} ${styles.active}` : styles.linkItem;
+
+  const getMobileNavLinkClass = ({ isActive }) => {
+    const base = styles.mobileLinkItem;
+    const activeState = isActive ? styles.active : "";
+    const visibilityState = showMobileMenu
+      ? styles.mobileLinkItemVisible
+      : styles.mobileLinkItemHidden;
+    return `${base} ${activeState} ${visibilityState}`;
+  };
+
+  // 3. 核心渲染逻辑
+  const renderLinks = (isMobile = false) => {
+    return (
+      NAV_LINKS
+        // 过滤掉标记为 hideInNavbar 的项 (如 Tire Registration)
+        .filter((link) => !link.hideInNavbar)
+        .map((link) => {
+          // 情况 A: 外部链接 (例如 Warranty)
+          if (link.href) {
+            const desktopClass = styles.linkItem;
+            const mobileClass = `${styles.mobileLinkItem} ${
+              showMobileMenu
+                ? styles.mobileLinkItemVisible
+                : styles.mobileLinkItemHidden
+            }`;
+
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={isMobile ? mobileClass : desktopClass}
+              >
+                {link.name}
+              </a>
+            );
+          }
+
+          // 情况 B: 内部路由链接 (About, News, Contact 等)
+          return (
+            <ScrollToTopNavLink
+              key={link.to}
+              to={link.to}
+              className={isMobile ? getMobileNavLinkClass : getNavLinkClass}
+              // 移动端点击链接后自动收起菜单
+              onClick={() => isMobile && setShowMobileMenu(false)}
+            >
+              {link.name}
+            </ScrollToTopNavLink>
+          );
+        })
+    );
+  };
 
   return (
     <nav
       className={`${styles.navbar} ${styles[styleType]} ${styles[visibility]}`}
     >
       <div className={styles.navContainer}>
+        {/* Logo 区域 */}
         {!showMobileMenu && (
           <div className={styles.logo}>
             <ScrollToTopNavLink to="/">
               <img
                 src={styleType === "blackbg" ? logoW : logoC}
-                alt="Sutong Company Logo"
+                alt="Sutong Logo"
               />
             </ScrollToTopNavLink>
           </div>
         )}
-        <nav className={styles.links}>
-          <ScrollToTopNavLink to="/about" className={getNavLinkClassName}>
-            About
-          </ScrollToTopNavLink>
 
-          <ScrollToTopNavLink to="/catalog" className={getNavLinkClassName}>
-            Catalog
-          </ScrollToTopNavLink>
+        {/* 桌面端导航菜单 */}
+        <nav className={styles.links}>{renderLinks(false)}</nav>
 
-          <ScrollToTopNavLink to="/careers" className={getNavLinkClassName}>
-            Careers
-          </ScrollToTopNavLink>
-
-          <ScrollToTopNavLink to="/news" className={getNavLinkClassName}>
-            News
-          </ScrollToTopNavLink>
-
-          <ScrollToTopNavLink to="/contact" className={getNavLinkClassName}>
-            Contact
-          </ScrollToTopNavLink>
-        </nav>
+        {/* 移动端汉堡按钮 */}
         <button onClick={toggleMobileMenu} className={styles.mobileMenuButton}>
           <img
             src={
@@ -94,53 +115,24 @@ const Navbar = ({ styleType, visibility = "show" }) => {
                   ? crossWhite
                   : burgerWhite
                 : showMobileMenu
-                ? crossBlack
-                : burgerBlack
+                  ? crossBlack
+                  : burgerBlack
             }
-            alt="Menu"
+            alt="Menu Toggle"
             width="24"
             height="24"
           />
         </button>
+
+        {/* 移动端菜单遮罩容器 */}
         <div
-          className={`${styles.mobileNavContainer} ${styles[styleType]} ${mobileNavContainerClass}`}
+          className={`${styles.mobileNavContainer} ${styles[styleType]} ${
+            showMobileMenu
+              ? styles.mobileNavContainerVisible
+              : styles.mobileNavContainerHidden
+          }`}
         >
-          <nav className={styles.mobilelinks}>
-            <ScrollToTopNavLink
-              to="/about"
-              className={getMobileNavLinkClassName}
-            >
-              About
-            </ScrollToTopNavLink>
-
-            <ScrollToTopNavLink
-              to="/catalog"
-              className={getMobileNavLinkClassName}
-            >
-              Catalog
-            </ScrollToTopNavLink>
-
-            <ScrollToTopNavLink
-              to="/careers"
-              className={getMobileNavLinkClassName}
-            >
-              Careers
-            </ScrollToTopNavLink>
-
-            <ScrollToTopNavLink
-              to="/news"
-              className={getMobileNavLinkClassName}
-            >
-              News
-            </ScrollToTopNavLink>
-
-            <ScrollToTopNavLink
-              to="/contact"
-              className={getMobileNavLinkClassName}
-            >
-              Contact
-            </ScrollToTopNavLink>
-          </nav>
+          <nav className={styles.mobilelinks}>{renderLinks(true)}</nav>
         </div>
       </div>
     </nav>

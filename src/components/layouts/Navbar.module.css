@@ -14,7 +14,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px); /* 轻微向上偏移 */
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
@@ -38,7 +38,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 1.6rem 10.8rem; */
   height: 18rem;
   position: sticky;
   top: 0;
@@ -74,6 +73,7 @@
   white-space: nowrap;
 }
 
+/* Hover & Active States */
 .blackbg .linkItem:hover,
 .whitebg .linkItem:hover,
 .blackbg .mobileLinkItem:hover,
@@ -83,15 +83,17 @@
 
 .blackbg .linkItem.active,
 .whitebg .linkItem.active,
-.blackbg .mobileLnkItem.active,
+.blackbg .mobileLinkItem.active, /* 修正了这里的拼写 */
 .whitebg .mobileLinkItem.active {
   color: var(--main-orange);
 }
 
-/* Black Background */
+/* Background Variations */
 .blackbg {
   background-color: #000;
-  transition: background-color 0.7s ease, opacity 0.7s ease,
+  transition:
+    background-color 0.7s ease,
+    opacity 0.7s ease,
     visibility 0.7s ease;
 }
 
@@ -100,10 +102,11 @@
   color: #fff;
 }
 
-/* White Background */
 .whitebg {
   background-color: #fff;
-  transition: background-color 0.7s ease, opacity 0.7s ease,
+  transition:
+    background-color 0.7s ease,
+    opacity 0.7s ease,
     visibility 0.7s ease;
 }
 
@@ -122,6 +125,7 @@
   opacity: 0;
 }
 
+/* Mobile Specific */
 .mobileMenuButton {
   border: none;
   background: none;
@@ -129,7 +133,6 @@
   position: absolute;
   top: 1.5rem;
   right: 2.5rem;
-  /* display: none; */
   opacity: 0;
   z-index: 100;
   width: 5rem;
@@ -147,33 +150,19 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 4rem;
+  overflow-y: auto; /* 增加滚动支持 */
 }
 
 .mobilelinks {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem; /* 稍微缩小间距以适应更多项 */
   padding: 8rem 8rem;
 }
 
-/* .mobilelinks {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 4rem;
-  height: 100%;
-  padding: 12rem;
-} */
-
 .mobileLinkItem {
-  opacity: 0;
+  opacity: 0; /* 默认隐藏，靠动画唤醒 */
   font-size: 3.5rem;
   font-weight: 700;
   padding: 1rem;
@@ -181,39 +170,41 @@
   transition: color 0.3s ease;
   white-space: nowrap;
 }
-/* 
-.mobileLinkItemVisible {
-  opacity: 1;
-}
 
-.mobileLinkItemHidden {
-  opacity: 0;
-} */
-
-/* 设置动画和动画延迟 */
+/* --- 核心修复：菜单项动画 --- */
+/* 使用 .mobileLinkItemVisible 确保只在菜单打开时运行动画 */
 .mobileLinkItemVisible.mobileLinkItem:nth-child(1) {
   animation: fadeIn 0.2s ease-out forwards;
   animation-delay: 0.1s;
 }
-
 .mobileLinkItemVisible.mobileLinkItem:nth-child(2) {
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 0.15s;
+}
+.mobileLinkItemVisible.mobileLinkItem:nth-child(3) {
   animation: fadeIn 0.2s ease-out forwards;
   animation-delay: 0.2s;
 }
-
-.mobileLinkItemVisible.mobileLinkItem:nth-child(3) {
+.mobileLinkItemVisible.mobileLinkItem:nth-child(4) {
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 0.25s;
+}
+.mobileLinkItemVisible.mobileLinkItem:nth-child(5) {
   animation: fadeIn 0.2s ease-out forwards;
   animation-delay: 0.3s;
 }
-
-.mobileLinkItemVisible.mobileLinkItem:nth-child(4) {
+.mobileLinkItemVisible.mobileLinkItem:nth-child(6) {
+  animation: fadeIn 0.2s ease-out forwards;
+  animation-delay: 0.35s;
+}
+.mobileLinkItemVisible.mobileLinkItem:nth-child(7) {
   animation: fadeIn 0.2s ease-out forwards;
   animation-delay: 0.4s;
 }
-
-.mobileLinkItemVisible.mobileLinkItem:nth-child(5) {
+/* 容错：如果以后有更多项 */
+.mobileLinkItemVisible.mobileLinkItem:nth-child(n + 8) {
   animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.45s;
 }
 
 .mobileNavContainer.mobileNavContainerVisible {
@@ -226,6 +217,8 @@
   opacity: 0;
   animation: collapseHeight 0.3s ease-out forwards;
 }
+
+/* Media Queries */
 @media only screen and (max-width: 1200px) {
   .navbar {
     height: 15rem;
@@ -245,22 +238,16 @@
   .links {
     display: none;
   }
-
   .mobileMenuButton {
     opacity: 1;
   }
-
   .logo img {
     width: 10rem;
     position: absolute;
     top: 2.5rem;
     left: 3.5rem;
   }
-
   .navbar {
     height: 8rem;
   }
-  /* .mobilelinks {
-    display: flex;
-  } */
 }
