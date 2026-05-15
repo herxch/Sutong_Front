@@ -222,14 +222,14 @@
     display: none;
   }
   .navbar {
-    height: 11rem;
+    height: 9rem;
   }
   .mobileMenuButton {
     opacity: 1;
     top: 50%;
     right: 3rem;
-    width: 7rem;
-    height: 7rem;
+    width: 5.5rem;
+    height: 5.5rem;
     transform: translateY(-50%);
   }
   .mobileMenuButton img {
@@ -237,13 +237,13 @@
     height: 100%;
   }
   .logo img {
-    width: 18rem;
+    width: 16rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .mobileNavContainer {
-    margin-top: 11rem;
+    margin-top: 9rem;
   }
 }

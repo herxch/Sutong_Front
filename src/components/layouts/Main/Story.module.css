@@ -92,9 +92,14 @@
   .inner {
     grid-template-columns: 1fr;
     gap: var(--space-9);
+    max-width: 72rem;
   }
   .title {
     font-size: var(--font-h3);
+    max-width: none;
+  }
+  .paragraph {
+    max-width: none;
   }
 }
 

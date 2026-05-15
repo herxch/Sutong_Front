@@ -151,13 +151,13 @@ a {
 
 @media screen and (max-width: 75em) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 }
 
 @media screen and (max-width: 40em) {
   html {
-    font-size: 37.5%;
+    font-size: 50%;
   }
 }
 

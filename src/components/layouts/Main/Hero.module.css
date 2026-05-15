@@ -124,7 +124,7 @@
 
 @media (max-width: 60em) {
   .hero {
-    min-height: calc(100vh - 11rem);
+    min-height: calc(100vh - 9rem);
     align-items: center;
   }
   .title {

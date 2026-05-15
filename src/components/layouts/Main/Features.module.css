@@ -105,6 +105,7 @@
   .featuresList {
     grid-template-columns: 1fr;
     gap: var(--space-6);
+    max-width: 72rem;
   }
   .featuresTitle {
     font-size: var(--font-h2);
