@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ErrorBoundary from "./components/ui/ErrorBoundary";
 import PageLoader from "./components/ui/PageLoader";
+import BackToTop from "./components/ui/BackToTop";
 
 const MainPage = lazy(() => import("./components/pages/MainPage"));
 const AboutPage = lazy(() => import("./components/pages/AboutPage"));
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
+      <BackToTop />
     </BrowserRouter>
   </ErrorBoundary>
 );
