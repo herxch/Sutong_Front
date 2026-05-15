@@ -1,25 +1,21 @@
 .locationContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10.8rem;
-  margin: 0 auto 32rem auto;
-  justify-items: center; /* 水平居中所有网格项 */
-  align-items: start; /* 垂直居中所有网格项 */
-  max-width: 144rem;
-  padding: 0 12rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding) var(--space-12);
 }
-@media only screen and (max-width: 960px) {
+
+@media (max-width: 75em) {
   .locationContainer {
     grid-template-columns: 1fr;
-    margin: 0 auto 20rem auto;
+    gap: var(--space-7);
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 37.5em) {
   .locationContainer {
-    width: 90%;
-    padding: 0;
-    margin: 0 auto 12rem auto;
-    gap: 6rem;
+    padding: 0 var(--space-5) var(--space-10);
   }
 }

@@ -24,7 +24,13 @@ const AboutUs = () => {
             </p>
           </div>
           <div className={styles.storyPhoto}>
-            <img src={HQ} alt="Sutong HQ" className={styles.photoDisplay} />
+            <img
+              src={HQ}
+              alt="Sutong HQ"
+              className={styles.photoDisplay}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </div>
@@ -36,12 +42,12 @@ const AboutUs = () => {
           <p className={styles.storyParagraph}>
             Sutong is your one-stop shop, catering to a diverse clientele
             including:
-            <ul className={styles.storyUL}>
-              <li>Utility and RV Trailer Industry</li>
-              <li>Large National Retail Chains</li>
-              <li>Independent Tire Retailers and Wholesalers</li>
-            </ul>
           </p>
+          <ul className={styles.storyUL}>
+            <li>Utility and RV Trailer Industry</li>
+            <li>Large National Retail Chains</li>
+            <li>Independent Tire Retailers and Wholesalers</li>
+          </ul>
         </div>
         <div className={styles.storyText}>
           <h2 className={styles.storySubTitle}>
@@ -50,11 +56,11 @@ const AboutUs = () => {
           <p className={styles.storyParagraph}>
             Our extensive global network allows us to import over 5 million
             tires annually, bypassing unnecessary middlemen. This translates to:
-            <ul className={styles.storyUL}>
-              <li>Exceptional Pricing</li>
-              <li>Increased Profit Margins for Your Business</li>
-            </ul>
           </p>
+          <ul className={styles.storyUL}>
+            <li>Exceptional Pricing</li>
+            <li>Increased Profit Margins for Your Business</li>
+          </ul>
         </div>
         <div className={styles.storyText}>
           <h2 className={styles.storySubTitle}>Your Strategic Partner</h2>

@@ -1,31 +1,53 @@
-/* Brand.module.css */
-
 .brand {
-  text-align: left;
+  background: var(--color-surface);
   display: flex;
-  flex-direction: column;
-  gap: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 10;
+  transition: background var(--duration-normal) var(--easing-standard),
+    transform var(--duration-normal) var(--easing-standard);
+}
+
+.brand a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 100%;
+  padding: var(--space-7);
+  text-decoration: none;
 }
 
-.name {
-  font-size: 3rem; /* Adjust as needed */
-  color: #303030; /* Adjust as needed */
+.brand a:focus-visible {
+  outline: 3px solid var(--color-brand-orange);
+  outline-offset: -3px;
 }
 
-.description {
-  font-size: 2.5rem; /* Adjust as needed */
-  color: #303030; /* Adjust as needed */
+.brand:hover {
+  background: var(--color-steel-50);
 }
 
-.logoContainer {
-  width: 100%;
+.brand:hover .logo {
+  transform: scale(1.04);
 }
 
 .logo {
-  width: 100%; /* Adjust as needed */
+  width: 100%;
+  max-width: 24rem;
   height: auto;
   object-fit: contain;
-  /* border-radius: 15px; Optional for rounded corners */
-  /* box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25); */
+  filter: grayscale(20%);
+  opacity: 0.85;
+  transition: filter var(--duration-normal) var(--easing-standard),
+    opacity var(--duration-normal) var(--easing-standard),
+    transform var(--duration-normal) var(--easing-emphasized);
+}
+
+.brand:hover .logo {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.description {
+  display: none;
 }

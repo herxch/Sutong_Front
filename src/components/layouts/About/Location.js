@@ -6,7 +6,13 @@ const Location = ({ title, description, photo }) => {
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{description}</p>
       <div className={styles.photoContainer}>
-        <img src={photo} alt={title} className={styles.photo} />
+        <img
+          src={photo}
+          alt={title}
+          className={styles.photo}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     </div>
   );

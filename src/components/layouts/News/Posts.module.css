@@ -1,24 +1,22 @@
 .postsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 10.8rem;
-  margin: 32rem auto;
-  justify-items: start; /* 水平居中所有网格项 */
-  align-items: center; /* 垂直居中所有网格项 */
-  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: var(--space-12) var(--container-padding);
 }
 
-@media only screen and (max-width: 960px) {
+@media (max-width: 37.5em) {
   .postsContainer {
-    margin: 20rem auto;
+    padding: var(--space-10) var(--space-5);
+    gap: var(--space-5);
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .postsContainer {
-    width: 90%;
-    padding: 0;
-    margin: 12rem auto;
-    gap: 6rem;
-  }
+.statusMessage {
+  font-size: var(--font-body-lg);
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-9) var(--space-5);
 }

@@ -1,26 +1,28 @@
 import styles from "./Hero.module.css";
 
-const Hero = () => {
-  return (
-    <div className={styles.bgContainer}>
-      <div className={styles.heroContainer}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Professional, Precise, Personal.</h1>
-          <p className={styles.heroSubtitle}>
-            Tires are not just black and round anymore, sometimes managing them
-            can be complicated, and that is what we are here for, to make
-            everything simple and efficient. We are more than just a tire
-            company.
-          </p>
-        </div>
-      </div>
+const Hero = () => (
+  <section className={styles.hero}>
+    <div className={styles.overlay} aria-hidden="true" />
+    <div className={styles.inner}>
+      <span className={styles.kicker}>SINCE 1993 · TIRE & WHEEL DISTRIBUTION</span>
+      <h1 className={styles.title}>
+        Professional.
+        <br />
+        Precise.
+        <br />
+        <span className={styles.titleAccent}>Personal.</span>
+      </h1>
+      <p className={styles.subtitle}>
+        Tires are not just black and round anymore. We make managing them simple
+        and efficient — more than just a tire company.
+      </p>
+      <span className={styles.accentBar} aria-hidden="true" />
     </div>
-  );
-};
-export default Hero;
+    <div className={styles.scrollHint} aria-hidden="true">
+      <span>SCROLL</span>
+      <span className={styles.scrollLine} />
+    </div>
+  </section>
+);
 
-// const Hero = () => {
-//     return (
-//         <></>
-//     )}
-// export default Hero
+export default Hero;

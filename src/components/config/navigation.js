@@ -1,3 +1,6 @@
+// Single source of truth for site navigation.
+// Navbar filters out `hideInNavbar`; Footer filters out `hideInFooter`.
+// `footerName` overrides `name` when rendered inside the footer.
 export const NAV_LINKS = [
   { name: "About", to: "/about" },
   { name: "Catalog", to: "/catalog" },
@@ -6,11 +9,11 @@ export const NAV_LINKS = [
   {
     name: "Tire Registration",
     href: "https://register.cimstireregistration.com/index.cfm?id=sutong",
-    hideInNavbar: true, // <-- 新增：标记在 Navbar 中隐藏
+    hideInNavbar: true,
   },
   {
     name: "Warranty",
     href: "https://warranty.sutongctr.com/warranty",
   },
-  { name: "Contact", to: "/contact" },
+  { name: "Contact", footerName: "Contact Us", to: "/contact" },
 ];

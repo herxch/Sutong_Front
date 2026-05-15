@@ -1,35 +1,42 @@
 .jobsContainer {
-  background-color: #fff;
+  background: var(--color-surface);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 1.3rem;
-  max-width: 144rem;
-  margin: 32rem auto;
-  padding: 0 12rem;
+  gap: var(--space-4);
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: var(--space-12) var(--container-padding);
 }
 
 .jobsTitle {
-  font-size: 3.2rem;
-  padding: 1.5rem;
+  font-size: var(--font-h2);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  border-left: var(--border-accent);
+  padding-left: var(--space-4);
+  margin-bottom: var(--space-5);
 }
 
-.emailLink {
-  color: var(--main-blue); /* 或者你喜欢的颜色 */
-  text-decoration: underline; /* 添加下划线 */
-  cursor: pointer;
+.noOpenings {
+  font-size: var(--font-body-lg);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+  background: var(--color-surface-alt);
+  border: var(--border-hairline);
+  border-left: var(--border-accent);
+  padding: var(--space-6);
 }
 
-@media only screen and (max-width: 960px) {
+.noOpenings a {
+  color: var(--color-brand-blue);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+}
+
+@media (max-width: 37.5em) {
   .jobsContainer {
-    margin: 20rem auto;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .jobsContainer {
-    width: 90%;
-    padding: 0;
-    margin: 12rem auto;
+    padding: var(--space-10) var(--space-5);
   }
 }

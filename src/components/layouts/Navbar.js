@@ -17,7 +17,7 @@ const Navbar = ({ styleType, visibility = "show" }) => {
   // 1. 响应式处理：屏幕变宽时自动关闭移动端菜单
   useEffect(() => {
     const handleResize = () => {
-      if (window.matchMedia("(min-width: 600px)").matches) {
+      if (window.matchMedia("(min-width: 960px)").matches) {
         setShowMobileMenu(false);
       }
     };
@@ -64,6 +64,7 @@ const Navbar = ({ styleType, visibility = "show" }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={isMobile ? mobileClass : desktopClass}
+                onClick={() => isMobile && setShowMobileMenu(false)}
               >
                 {link.name}
               </a>
@@ -107,7 +108,14 @@ const Navbar = ({ styleType, visibility = "show" }) => {
         <nav className={styles.links}>{renderLinks(false)}</nav>
 
         {/* 移动端汉堡按钮 */}
-        <button onClick={toggleMobileMenu} className={styles.mobileMenuButton}>
+        <button
+          type="button"
+          onClick={toggleMobileMenu}
+          className={styles.mobileMenuButton}
+          aria-label={showMobileMenu ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={showMobileMenu}
+          aria-controls="mobile-nav"
+        >
           <img
             src={
               styleType === "blackbg"
@@ -118,7 +126,7 @@ const Navbar = ({ styleType, visibility = "show" }) => {
                   ? crossBlack
                   : burgerBlack
             }
-            alt="Menu Toggle"
+            alt=""
             width="24"
             height="24"
           />
@@ -126,13 +134,14 @@ const Navbar = ({ styleType, visibility = "show" }) => {
 
         {/* 移动端菜单遮罩容器 */}
         <div
+          id="mobile-nav"
           className={`${styles.mobileNavContainer} ${styles[styleType]} ${
             showMobileMenu
               ? styles.mobileNavContainerVisible
               : styles.mobileNavContainerHidden
           }`}
         >
-          <nav className={styles.mobilelinks}>{renderLinks(true)}</nav>
+          <nav className={styles.mobilelinks} aria-label="Mobile">{renderLinks(true)}</nav>
         </div>
       </div>
     </nav>

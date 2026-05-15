@@ -1,94 +1,91 @@
-/* Footer.module.css */
-
-/* ... other styles ... */
 .footer {
-  background-color: var(--main-blue);
+  background: var(--color-ink);
+  color: var(--color-text-on-dark);
+  padding: var(--space-10) var(--container-padding) var(--space-7);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 4.4rem;
-  padding: 16rem;
+  gap: var(--space-7);
+  border-top: var(--border-accent);
 }
 
-/* .logoContainer {
-  margin-top: 16rem;
-} */
+.logoContainer {
+  display: flex;
+}
+
+.logoLink {
+  display: inline-block;
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.logoLink:focus-visible {
+  outline: 2px solid var(--color-brand-orange);
+  outline-offset: 4px;
+}
 
 .logo {
-  width: 20rem;
+  width: 18rem;
 }
 
 .nav {
-  width: 100%; /* 强制容器占满可用宽度 */
-  max-width: 110rem; /* 稍微调大一点，给 7 个项更多呼吸空间 */
+  width: 100%;
+  max-width: 110rem;
   display: flex;
-  justify-content: space-evenly; /* 菜单项会在白线上均匀分布 */
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 2rem; /* 缩小间距，防止在较窄屏幕溢出 */
-  border-bottom: 3px solid #fff;
-  padding-bottom: 1rem; /* 给文字和白线留一点间隙 */
+  gap: var(--space-7);
+  border-top: 1px solid var(--color-steel-700);
+  border-bottom: 1px solid var(--color-steel-700);
+  padding: var(--space-5) 0;
 }
 
 .navItem {
-  color: #fff;
+  color: var(--color-text-on-dark-muted);
   text-decoration: none;
-  padding: 1rem;
-  font-size: 2rem;
-  transition: color 0.3s ease;
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
   white-space: nowrap;
+  padding: var(--space-2) var(--space-3);
+  transition: color var(--duration-normal) var(--easing-standard);
+  border-radius: var(--radius-sm);
 }
 
-.navItem:hover {
-  color: var(--main-orange); /* Lighter blue on hover */
-}
-
+.navItem:hover,
 .active {
-  color: var(--main-orange); /* Lighter blue for active link */
-  /* or any other styles you want to apply to the active link */
+  color: var(--color-brand-orange);
+}
+
+.navItem:focus-visible {
+  outline: 2px solid var(--color-brand-orange);
+  outline-offset: 4px;
 }
 
 .copyRight {
-  /* margin-bottom: 16rem; */
-  color: #fff;
-  font-size: 1.8rem;
+  color: var(--color-steel-300);
+  font-size: var(--font-caption);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
 }
-@media only screen and (max-width: 1200px) {
-  .footer {
-    padding: 12rem;
-  }
-}
-@media only screen and (max-width: 960px) {
-  .footer {
-    padding: 10rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .footer {
-    align-items: flex-start;
-    padding: 8rem;
-    gap: 3.5rem;
-  }
 
+@media (max-width: 60em) {
+  .footer {
+    padding: var(--space-9) var(--space-6) var(--space-6);
+    gap: var(--space-6);
+  }
+  .nav {
+    gap: var(--space-5);
+  }
+}
+
+@media (max-width: 37.5em) {
   .nav {
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%; /* 确保移动端线也是满宽的 */
-    margin-bottom: 2rem;
-    padding-bottom: 3rem;
-    gap: 2.5rem;
-    max-width: none; /* 取消 90rem 的限制 */
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-6) 0;
   }
-  .navItem {
-    font-size: 2.5rem;
-  }
-
-  .copyRight {
-    /* margin-bottom: 16rem; */
-    color: #fff;
-  }
-
-  /* .logoContainer {
-    margin-top: 8rem;
-  } */
 }

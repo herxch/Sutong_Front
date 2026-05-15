@@ -1,35 +1,13 @@
 /* Navbar.module.css */
 
-@keyframes expandHeight {
-  from {
-    visibility: hidden;
-    height: 0;
-  }
-  to {
-    visibility: visible;
-    height: 100vh;
-  }
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-1rem);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes collapseHeight {
-  from {
-    visibility: visible;
-    height: 100vh;
-  }
-  to {
-    visibility: hidden;
-    height: 0;
   }
 }
 
@@ -44,6 +22,8 @@
   z-index: 10;
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
   width: 100%;
+  will-change: transform, opacity;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .navContainer {
@@ -66,11 +46,21 @@
 }
 
 .links .linkItem {
-  padding: 1rem;
+  padding: 1rem 1.4rem;
   text-decoration: none;
-  font-size: 2rem;
-  transition: color 0.3s ease;
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  transition: color var(--duration-normal) var(--easing-standard);
   white-space: nowrap;
+  border-radius: var(--radius-sm);
+}
+
+.links .linkItem:focus-visible,
+.mobilelinks .mobileLinkItem:focus-visible {
+  outline: 3px solid var(--main-orange);
+  outline-offset: 4px;
 }
 
 /* Hover & Active States */
@@ -83,7 +73,7 @@
 
 .blackbg .linkItem.active,
 .whitebg .linkItem.active,
-.blackbg .mobileLinkItem.active, /* 修正了这里的拼写 */
+.blackbg .mobileLinkItem.active,
 .whitebg .mobileLinkItem.active {
   color: var(--main-orange);
 }
@@ -93,8 +83,8 @@
   background-color: #000;
   transition:
     background-color 0.7s ease,
-    opacity 0.7s ease,
-    visibility 0.7s ease;
+    opacity 0.4s ease,
+    transform 0.4s ease;
 }
 
 .blackbg .linkItem,
@@ -106,8 +96,8 @@
   background-color: #fff;
   transition:
     background-color 0.7s ease,
-    opacity 0.7s ease,
-    visibility 0.7s ease;
+    opacity 0.4s ease,
+    transform 0.4s ease;
 }
 
 .whitebg .linkItem,
@@ -115,14 +105,25 @@
   color: #303030;
 }
 
+/* GPU-accelerated show/hide via opacity + transform; visibility delayed for a11y */
 .show {
-  visibility: visible;
   opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0s linear 0s;
 }
 
 .hide {
-  visibility: hidden;
   opacity: 0;
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0s linear 0.4s;
 }
 
 /* Mobile Specific */
@@ -137,86 +138,77 @@
   z-index: 100;
   width: 5rem;
   height: 5rem;
+  border-radius: 4px;
 }
 
+.mobileMenuButton:focus-visible {
+  outline: 3px solid var(--main-orange);
+  outline-offset: 2px;
+}
+
+/* Mobile menu drawer — GPU-accelerated (opacity + transform), visibility delayed */
 .mobileNavContainer {
-  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: auto; /* 增加滚动支持 */
+  overflow-y: auto;
+  opacity: 0;
+  transform: translateY(-1rem);
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0s linear 0.3s;
+}
+
+.mobileNavContainer.mobileNavContainerVisible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0s linear 0s;
 }
 
 .mobilelinks {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem; /* 稍微缩小间距以适应更多项 */
+  gap: 3rem;
   padding: 8rem 8rem;
 }
 
 .mobileLinkItem {
-  opacity: 0; /* 默认隐藏，靠动画唤醒 */
+  opacity: 0;
   font-size: 3.5rem;
   font-weight: 700;
   padding: 1rem;
   text-decoration: none;
   transition: color 0.3s ease;
   white-space: nowrap;
+  border-radius: 4px;
 }
 
-/* --- 核心修复：菜单项动画 --- */
-/* 使用 .mobileLinkItemVisible 确保只在菜单打开时运行动画 */
-.mobileLinkItemVisible.mobileLinkItem:nth-child(1) {
+/* Staggered fade-in for menu items */
+.mobileLinkItemVisible.mobileLinkItem {
   animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.1s;
 }
-.mobileLinkItemVisible.mobileLinkItem:nth-child(2) {
-  animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.15s;
-}
-.mobileLinkItemVisible.mobileLinkItem:nth-child(3) {
-  animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.2s;
-}
-.mobileLinkItemVisible.mobileLinkItem:nth-child(4) {
-  animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.25s;
-}
-.mobileLinkItemVisible.mobileLinkItem:nth-child(5) {
-  animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.3s;
-}
-.mobileLinkItemVisible.mobileLinkItem:nth-child(6) {
-  animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.35s;
-}
-.mobileLinkItemVisible.mobileLinkItem:nth-child(7) {
-  animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.4s;
-}
-/* 容错：如果以后有更多项 */
-.mobileLinkItemVisible.mobileLinkItem:nth-child(n + 8) {
-  animation: fadeIn 0.2s ease-out forwards;
-  animation-delay: 0.45s;
-}
-
-.mobileNavContainer.mobileNavContainerVisible {
-  visibility: visible;
-  animation: expandHeight 0.3s ease-out forwards;
-}
-
-.mobileNavContainer.mobileNavContainerHidden {
-  visibility: hidden;
-  opacity: 0;
-  animation: collapseHeight 0.3s ease-out forwards;
-}
+.mobileLinkItemVisible.mobileLinkItem:nth-child(1) { animation-delay: 0.10s; }
+.mobileLinkItemVisible.mobileLinkItem:nth-child(2) { animation-delay: 0.15s; }
+.mobileLinkItemVisible.mobileLinkItem:nth-child(3) { animation-delay: 0.20s; }
+.mobileLinkItemVisible.mobileLinkItem:nth-child(4) { animation-delay: 0.25s; }
+.mobileLinkItemVisible.mobileLinkItem:nth-child(5) { animation-delay: 0.30s; }
+.mobileLinkItemVisible.mobileLinkItem:nth-child(6) { animation-delay: 0.35s; }
+.mobileLinkItemVisible.mobileLinkItem:nth-child(7) { animation-delay: 0.40s; }
+.mobileLinkItemVisible.mobileLinkItem:nth-child(n + 8) { animation-delay: 0.45s; }
 
 /* Media Queries */
 @media only screen and (max-width: 1200px) {
@@ -226,28 +218,32 @@
 }
 
 @media only screen and (max-width: 960px) {
-  .navbar {
-    height: 16rem;
-  }
-  .links .linkItem {
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .links {
     display: none;
   }
+  .navbar {
+    height: 11rem;
+  }
   .mobileMenuButton {
     opacity: 1;
+    top: 50%;
+    right: 3rem;
+    width: 7rem;
+    height: 7rem;
+    transform: translateY(-50%);
+  }
+  .mobileMenuButton img {
+    width: 100%;
+    height: 100%;
   }
   .logo img {
-    width: 10rem;
+    width: 18rem;
     position: absolute;
-    top: 2.5rem;
-    left: 3.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  .navbar {
-    height: 8rem;
+  .mobileNavContainer {
+    margin-top: 11rem;
   }
 }

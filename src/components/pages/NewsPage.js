@@ -4,9 +4,15 @@ import Navbar from "../layouts/Navbar";
 import NewsHero from "../layouts/News/NewsHero";
 import Posts from "../layouts/News/Posts";
 import useScrollControl from "../hooks/useScrollControl";
+import usePageTop from "../hooks/usePageTop";
+import { SCROLL_THRESHOLDS } from "../config/scroll";
 
-const NewsPage = (props) => {
-  const { navbarVisible } = useScrollControl(0, 700);
+const NewsPage = () => {
+  const { navbarVisible } = useScrollControl(
+    SCROLL_THRESHOLDS.inner.style,
+    SCROLL_THRESHOLDS.inner.hide
+  );
+  usePageTop();
 
   return (
     <Fragment>

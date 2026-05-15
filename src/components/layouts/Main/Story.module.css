@@ -1,108 +1,105 @@
-.storyContainer {
-  background-color: #fff;
-  margin: 32rem auto;
-  padding: 0 12rem;
+.section {
+  background: var(--color-surface);
+  padding: var(--space-12) var(--container-padding);
 }
 
-.storyContent {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 12rem;
-  max-width: 144rem;
-  width: 100%;
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  max-width: var(--container-max);
   margin: 0 auto;
-  /* margin: 32rem auto; */
+  align-items: center;
 }
 
-.storyText {
+.text {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
-  justify-content: center;
   align-items: flex-start;
-  flex: 1;
+  gap: var(--space-5);
 }
 
-.storyTitle {
-  font-size: 3.2rem;
+.kicker {
+  font-size: var(--font-caption);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-brand-orange);
+  border-left: var(--border-accent);
+  padding-left: var(--space-3);
 }
 
-.storyParagraph {
-  font-size: 2.5rem;
+.title {
+  font-size: var(--font-h2);
+  font-weight: var(--font-weight-black);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+  max-width: 56rem;
 }
 
-.actionButton {
-  padding: 8px 16px; /* Adjust padding as needed */
-  background-color: var(--main-blue); /* Button background color */
-  color: #fff; /* Button text color */
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+.paragraph {
+  font-size: var(--font-body-lg);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+  max-width: 56rem;
 }
 
-.actionButton:hover {
-  background-color: var(--main-orange);
-}
-
-.storyVideo {
+.videoFrame {
+  position: relative;
   width: 100%;
-  max-width: 800px;
-  margin: auto;
-  flex: 1;
+  aspect-ratio: 16 / 9;
+  background: var(--color-ink);
+  box-shadow: var(--shadow-lg);
+}
+
+.videoFrame::before,
+.videoFrame::after {
+  content: "";
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 4px solid var(--color-brand-orange);
+  z-index: 2;
+}
+
+.videoFrame::before {
+  top: -4px;
+  left: -4px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.videoFrame::after {
+  bottom: -4px;
+  right: -4px;
+  border-left: none;
+  border-top: none;
+}
+
+.frameCorner {
+  display: none;
 }
 
 .videoPlayer {
   width: 100%;
-  min-height: 36rem;
-  /* height: 100%; */
-  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  height: 100%;
   border: none;
-  border-radius: 10px;
+  display: block;
 }
 
-@media only screen and (max-width: 1200px) {
-  .storyContainer {
-    margin: 20rem auto;
+@media (max-width: 75em) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-9);
   }
-  .storyContent {
-    flex-direction: column;
-    gap: 8rem;
-  }
-  .storyVideo {
-    max-width: none;
-  }
-  .storyParagraph {
-    font-size: 2.5rem;
-  }
-  .actionButton {
-    font-size: 2.5rem;
-  }
-  .videoPlayer {
-    height: 50vh;
+  .title {
+    font-size: var(--font-h3);
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .storyContainer {
-    margin: 12rem auto;
-    padding: 0%;
-  }
-  .storyContent {
-    width: 90%;
-  }
-
-  .storyParagraph {
-    font-size: 2.5rem;
-  }
-  .actionButton {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .videoPlayer {
-    height: auto;
+@media (max-width: 37.5em) {
+  .section {
+    padding: var(--space-10) var(--space-5);
   }
 }

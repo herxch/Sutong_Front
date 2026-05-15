@@ -10,43 +10,36 @@ import caraway from "../../../assets/pic/caraway.svg";
 import wolfpack from "../../../assets/pic/wolfpack.svg";
 import superstrong from "../../../assets/pic/superstrong.svg";
 
-const Brands = () => {
-  return (
-    <div className={styles.brands}>
-      <h1 className={styles.brandsTitle}>OUR BRANDS</h1>
-      <div className={styles.brandsContainer}>
-        <Brand name="Synergy" logo={synergy} url="/catalog" id="synergy" />
+const BRAND_LIST = [
+  { name: "Synergy", logo: synergy, id: "synergy" },
+  { name: "Long March", logo: longmarch, id: "longmarch" },
+  { name: "Hi-Run", logo: hirun, id: "hirun" },
+  { name: "SuperCargo", logo: supercargo, id: "supercargo" },
+  { name: "Hemisphere", logo: hemisphere, id: "hemisphere" },
+  { name: "RoadOne", logo: roadone, id: "roadone" },
+  { name: "Caraway", logo: caraway, id: "caraway" },
+  { name: "WolfPack", logo: wolfpack, id: "wolfpack" },
+  { name: "SuperStrong", logo: superstrong, id: "superstrong" },
+];
+
+const Brands = () => (
+  <section className={styles.brands}>
+    <header className={styles.brandsHeader}>
+      <span className={styles.brandsKicker}>Trusted Portfolio</span>
+      <h2 className={styles.brandsTitle}>Our Brands</h2>
+    </header>
+    <div className={styles.brandsContainer}>
+      {BRAND_LIST.map((brand) => (
         <Brand
-          name="Long March"
-          logo={longmarch}
+          key={brand.id}
+          name={brand.name}
+          logo={brand.logo}
           url="/catalog"
-          id="longmarch"
+          id={brand.id}
         />
-        <Brand name="Hi-Run" logo={hirun} url="/catalog" id="hirun" />
-        <Brand
-          name="SuperCargo"
-          logo={supercargo}
-          url="/catalog"
-          id="supercargo"
-        />
-        <Brand
-          name="Hemisphere"
-          logo={hemisphere}
-          url="/catalog"
-          id="hemisphere"
-        />
-        <Brand name="RoadOne" logo={roadone} url="/catalog" id="roadone" />
-        <Brand name="Caraway" logo={caraway} url="/catalog" id="caraway" />
-        <Brand name="WolfPack" logo={wolfpack} url="/catalog" id="wolfpack" />
-        <Brand
-          name="SuperStrong"
-          logo={superstrong}
-          url="/catalog"
-          id="superstrong"
-        />
-      </div>
+      ))}
     </div>
-  );
-};
+  </section>
+);
 
 export default Brands;

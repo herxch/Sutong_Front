@@ -1,46 +1,78 @@
 .jobPosting {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background: var(--color-surface);
+  border: var(--border-hairline);
   overflow: hidden;
-  margin-bottom: 1.3rem;
+  transition: border-color var(--duration-normal) var(--easing-standard);
+}
+
+.jobPosting:hover {
+  border-color: var(--color-brand-orange);
 }
 
 .jobHeader {
+  appearance: none;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f7f7f7;
-  padding: 1.5rem;
-  font-size: 2rem;
+  background: var(--color-surface-alt);
+  padding: var(--space-5) var(--space-6);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  transition: background var(--duration-normal) var(--easing-standard);
+}
+
+.jobHeader:hover {
+  background: var(--color-steel-50);
+}
+
+.jobHeader:focus-visible {
+  outline: 3px solid var(--color-brand-blue);
+  outline-offset: -3px;
+}
+
+.jobsTitle {
+  font-size: var(--font-h4);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
 }
 
 .toggleButton {
-  font-size: 5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  transition: color 0.3s ease;
+  font-size: 4rem;
+  line-height: 1;
+  padding: 0 var(--space-3);
+  font-weight: var(--font-weight-regular);
 }
 
-/* Closed state: blue color for plus sign */
 .closedButton {
-  color: var(--main-blue); /* Blue color for + */
+  color: var(--color-brand-blue);
 }
 
-/* Open state: yellow color for minus sign */
 .openButton {
-  color: var(--main-orange); /* Yellow color for - */
+  color: var(--color-brand-orange);
 }
 
 .jobContent {
-  font-size: 1.6rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  font-size: var(--font-body);
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms var(--easing-emphasized);
 }
 
-.jobContent.open {
-  max-height: 1000px; /* 设置足够大以确保内容可以展开 */
-  padding: 2rem 4rem;
+.jobContent[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.jobContentInner {
+  overflow: hidden;
+  padding: 0 var(--space-6);
+  transition: padding 300ms var(--easing-emphasized);
+}
+
+.jobContent[data-open="true"] .jobContentInner {
+  padding: var(--space-5) var(--space-6) var(--space-6);
 }

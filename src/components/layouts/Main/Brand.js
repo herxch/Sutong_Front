@@ -6,7 +6,13 @@ const Brand = ({ name, description, logo, url, id }) => {
     <div className={styles.brand}>
       <div className={styles.logoContainer}>
         <NavLink to={`${url}#${id}`}>
-          <img src={logo} alt={name} className={styles.logo} />
+          <img
+            src={logo}
+            alt={`${name} logo`}
+            className={styles.logo}
+            loading="lazy"
+            decoding="async"
+          />
           <p className={styles.description}>{description}</p>
         </NavLink>
       </div>

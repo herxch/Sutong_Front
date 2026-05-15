@@ -1,17 +1,17 @@
-import { Fragment, useEffect } from "react";
+import { Fragment } from "react";
 import Footer from "../layouts/Footer";
 import Navbar from "../layouts/Navbar";
-import useScrollControl from "../hooks/useScrollControl";
 import Catalog from "../layouts/Catalog/Catalog";
+import useScrollControl from "../hooks/useScrollControl";
+import usePageTop from "../hooks/usePageTop";
+import { SCROLL_THRESHOLDS } from "../config/scroll";
 
-const CatalogPage = (props) => {
-  const { navbarVisible } = useScrollControl(0, 250);
-
-  useEffect(() => {
-    if (!window.location.hash) {
-      window.scrollTo(0, 0);
-    }
-  }, []);
+const CatalogPage = () => {
+  const { navbarVisible } = useScrollControl(
+    SCROLL_THRESHOLDS.catalog.style,
+    SCROLL_THRESHOLDS.catalog.hide
+  );
+  usePageTop({ respectHash: true });
 
   return (
     <Fragment>

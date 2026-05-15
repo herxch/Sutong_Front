@@ -4,9 +4,15 @@ import Navbar from "../layouts/Navbar";
 import ContactHero from "../layouts/Contact/ContactHero";
 import ContactContent from "../layouts/Contact/ContactContent";
 import useScrollControl from "../hooks/useScrollControl";
+import usePageTop from "../hooks/usePageTop";
+import { SCROLL_THRESHOLDS } from "../config/scroll";
 
-const ContactPage = (props) => {
-  const { navbarVisible } = useScrollControl(0, 700);
+const ContactPage = () => {
+  const { navbarVisible } = useScrollControl(
+    SCROLL_THRESHOLDS.inner.style,
+    SCROLL_THRESHOLDS.inner.hide
+  );
+  usePageTop();
 
   return (
     <Fragment>

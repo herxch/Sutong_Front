@@ -1,85 +1,155 @@
-/* HeroSection.module.css */
-
-.bgContainer {
-  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
-}
-
-.heroContainer {
-  background-image: url("../../../assets/pic/Hero.jpg"); /* Update with the correct path */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 18rem);
+  background-color: var(--color-ink);
+  background-image: url("../../../assets/pic/Hero.jpg");
   background-size: cover;
-  background-position: center bottom;
-  height: 90vh; /* Adjust the height as necessary */
+  background-position: center 75%;
+  overflow: hidden;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  color: white; /* Adjust the text color as necessary */
-  text-align: center;
+  color: var(--color-text-on-dark);
+  border-bottom: var(--border-accent);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(13, 17, 23, 0.85) 0%,
+    rgba(13, 17, 23, 0.55) 55%,
+    rgba(13, 17, 23, 0.35) 100%
+  );
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
   width: 100%;
-
-  z-index: 10;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-7) var(--container-padding) var(--space-9);
 }
 
-.heroContent {
-  max-width: 48rem; /* Adjust the max width as necessary */
-  margin-top: 6rem;
+.kicker {
+  display: inline-block;
+  font-size: var(--font-caption);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-brand-orange);
+  margin-bottom: var(--space-5);
+  border-left: var(--border-accent);
+  padding-left: var(--space-3);
 }
 
-.heroTitle {
-  font-size: 3rem; /* Adjust the font size as necessary */
-  margin-bottom: 3.5rem;
+.title {
+  font-size: var(--font-display);
+  font-weight: var(--font-weight-black);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  margin-bottom: var(--space-5);
+  max-width: 90rem;
 }
 
-.heroSubtitle {
-  font-size: 1.6rem; /* Adjust the font size as necessary */
+.titleAccent {
+  color: var(--color-brand-orange);
 }
 
-@media only screen and (max-width: 1200px) {
-  .heroContainer {
-    height: 80rem;
+.subtitle {
+  font-size: var(--font-body-lg);
+  line-height: var(--leading-normal);
+  color: var(--color-text-on-dark-muted);
+  max-width: 56rem;
+  margin-bottom: var(--space-7);
+}
+
+.accentBar {
+  display: block;
+  width: 8rem;
+  height: 4px;
+  background: var(--color-brand-orange);
+}
+
+.scrollHint {
+  position: absolute;
+  bottom: var(--space-6);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-caption);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-text-on-dark-muted);
+  z-index: 1;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 4rem;
+  background: linear-gradient(
+    to bottom,
+    var(--color-brand-orange),
+    transparent
+  );
+  animation: scrollPulse 2s var(--easing-emphasized) infinite;
+}
+
+@keyframes scrollPulse {
+  0%,
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
   }
-  .heroContent {
-    margin-top: 12rem;
+  50% {
+    transform: scaleY(0.6);
+    opacity: 0.5;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .heroContainer {
-    height: 60rem;
+@media (max-width: 75em) {
+  .hero {
+    min-height: calc(100vh - 15rem);
   }
-  .heroContent {
-    /* margin-top: 12rem; */
-    width: 16rem;
+  .title {
+    font-size: var(--font-h1);
   }
-  .heroTitle {
-    font-size: 2.5rem;
+}
+
+@media (max-width: 60em) {
+  .hero {
+    min-height: calc(100vh - 11rem);
+    align-items: center;
   }
-  .heroSubtitle {
+  .title {
+    font-size: var(--font-h2);
+  }
+  .inner {
+    padding: var(--space-5) var(--space-5) 25vh;
+  }
+}
+
+@media (min-width: 40em) and (max-width: 75em) {
+  .inner {
+    max-width: 56rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .subtitle {
     display: none;
   }
-}
-
-@media only screen and (max-width: 450px) {
-  .heroContainer {
-    height: 35rem;
+  .title {
+    font-size: 5.6rem;
   }
-  .heroContent {
-    margin-top: 8rem;
-  }
-}
-
-@media only screen and (min-width: 2000px) {
-  .heroContainer {
-    width: 100%;
-    max-width: 200rem;
-    margin: 0 auto;
-  }
-  .heroSubtitle {
-    display: none;
-  }
-  .heroContent {
-    margin-top: 12rem;
-  }
-  .bgContainer {
-    background-color: #000000;
+  .inner {
+    width: fit-content;
+    max-width: 100%;
   }
 }

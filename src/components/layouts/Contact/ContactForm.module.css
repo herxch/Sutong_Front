@@ -1,39 +1,49 @@
-/* ContactForm.module.css */
-
 .contactForm {
   width: 100%;
-  background-color: #f5f5f5;
+  background: var(--color-surface);
+  border: var(--border-hairline);
+  border-top: var(--border-accent);
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 1.6rem;
-  align-items: flex-start;
-  padding: 3.2rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: var(--space-3);
+  align-items: stretch;
+  padding: var(--space-7);
+  box-shadow: var(--shadow-card);
 }
 
 .warning {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--main-orange);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-orange);
+  background: rgba(238, 135, 85, 0.08);
+  border-left: 3px solid var(--color-brand-orange);
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-3);
 }
 
 .contactForm h2 {
-  text-align: center;
-  margin: 3.2rem auto;
-  font-size: 3.2rem;
+  text-align: left;
+  margin: 0 0 var(--space-4);
+  font-size: var(--font-h3);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  border-bottom: var(--border-hairline);
+  padding-bottom: var(--space-3);
 }
 
 .contactForm label {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
 }
 
 .contactForm input[type="text"],
@@ -41,41 +51,72 @@
 .contactForm input[type="email"],
 .contactForm textarea {
   width: 100%;
-  padding: 1rem 2rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-bottom: 2.5rem;
-  font-size: 2.8rem;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-steel-100);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-3);
+  font-size: var(--font-body);
+  font-family: inherit;
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  transition: border-color var(--duration-normal) var(--easing-standard),
+    box-shadow var(--duration-normal) var(--easing-standard);
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: var(--color-brand-blue);
+  box-shadow: 0 0 0 3px rgba(40, 58, 142, 0.15);
+}
+
+.contactForm .inputError {
+  border-color: var(--color-error);
+}
+
+.contactForm .inputError:focus {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 3px rgba(214, 69, 69, 0.18);
 }
 
 .contactForm button {
-  padding: 8px 16px; /* Adjust padding as needed */
-  background-color: var(--main-blue); /* Button background color */
-  color: #fff; /* Button text color */
+  appearance: none;
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-brand-blue);
+  color: var(--color-text-on-dark);
   border: none;
   cursor: pointer;
-  font-weight: 700;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  margin-bottom: 3.2rem;
-  font-size: 2.5rem;
-  margin-top: 2.5rem;
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-normal) var(--easing-standard),
+    transform var(--duration-normal) var(--easing-standard);
+  margin-top: var(--space-5);
+  font-size: var(--font-small);
+  align-self: flex-start;
 }
 
-.contactForm button:hover {
-  background-color: var(--main-orange);
+.contactForm button:hover:not(:disabled) {
+  background: var(--color-brand-orange);
+  transform: translateY(-1px);
 }
 
-#recaptcha-placeholder {
-  margin: 1rem 0;
-  /* Add additional styling for the reCAPTCHA placeholder as needed */
+.contactForm button:focus-visible {
+  outline: 3px solid var(--color-brand-orange);
+  outline-offset: 3px;
+}
+
+.contactForm button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .error {
-  color: red; /* Choose a color that fits your design */
-  /* margin-bottom: 1rem; */
-  font-size: 2rem;
-  font-weight: 400;
-  margin-left: 2rem;
+  color: var(--color-error);
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-medium);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: var(--space-3);
 }

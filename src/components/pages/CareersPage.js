@@ -4,9 +4,15 @@ import Navbar from "../layouts/Navbar";
 import CareersHero from "../layouts/Careers/CareersHero";
 import Jobs from "../layouts/Careers/Jobs";
 import useScrollControl from "../hooks/useScrollControl";
+import usePageTop from "../hooks/usePageTop";
+import { SCROLL_THRESHOLDS } from "../config/scroll";
 
-const CareersPage = (props) => {
-  const { navbarVisible } = useScrollControl(0, 700);
+const CareersPage = () => {
+  const { navbarVisible } = useScrollControl(
+    SCROLL_THRESHOLDS.inner.style,
+    SCROLL_THRESHOLDS.inner.hide
+  );
+  usePageTop();
 
   return (
     <Fragment>

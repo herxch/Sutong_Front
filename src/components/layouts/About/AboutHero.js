@@ -1,13 +1,13 @@
-import styles from "./AboutHero.module.css";
+import PageHero from "../../ui/PageHero";
+import image from "../../../assets/pic/AboutHero.jpg";
 
-const AboutHero = () => {
-  return (
-    <div className={styles.heroContainer}>
-      <h1 className={styles.heroContent}>
-        {/* OUR CUSTOMERS' SUCCESS IS OUR SUCCESS */}
-      </h1>
-    </div>
-  );
-};
+const AboutHero = () => (
+  <PageHero
+    image={image}
+    kicker="About Us"
+    title="Our Customers' Success Is Our Success"
+    focal="center bottom"
+  />
+);
 
 export default AboutHero;

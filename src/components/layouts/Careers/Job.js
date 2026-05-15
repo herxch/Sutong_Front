@@ -8,24 +8,33 @@ const Job = ({ title, children }) => {
     setIsOpen(!isOpen);
   };
 
+  const contentId = `job-content-${title.replace(/\s+/g, "-").toLowerCase()}`;
+
   return (
     <div className={styles.jobPosting}>
-      <div
+      <button
+        type="button"
         className={styles.jobHeader}
-        onClick={toggleOpen} // 绑定点击事件到整个 jobHeader 区域
-        style={{ cursor: "pointer" }} // 鼠标样式为点击手势
+        onClick={toggleOpen}
+        aria-expanded={isOpen}
+        aria-controls={contentId}
       >
         <h2 className={styles.jobsTitle}>{title}</h2>
-        <button
+        <span
+          aria-hidden="true"
           className={`${styles.toggleButton} ${
             isOpen ? styles.openButton : styles.closedButton
           }`}
         >
           {isOpen ? "−" : "+"}
-        </button>
-      </div>
-      <div className={`${styles.jobContent} ${isOpen ? styles.open : ""}`}>
-        {children}
+        </span>
+      </button>
+      <div
+        id={contentId}
+        className={styles.jobContent}
+        data-open={isOpen}
+      >
+        <div className={styles.jobContentInner}>{children}</div>
       </div>
     </div>
   );
