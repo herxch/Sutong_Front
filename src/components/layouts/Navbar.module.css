@@ -222,14 +222,14 @@
     display: none;
   }
   .navbar {
-    height: 9rem;
+    height: 7rem;
   }
   .mobileMenuButton {
     opacity: 1;
     top: 50%;
-    right: 3rem;
-    width: 5.5rem;
-    height: 5.5rem;
+    right: 2.4rem;
+    width: 4rem;
+    height: 4rem;
     transform: translateY(-50%);
   }
   .mobileMenuButton img {
@@ -237,13 +237,21 @@
     height: 100%;
   }
   .logo img {
-    width: 16rem;
+    width: 13rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .mobileNavContainer {
-    margin-top: 9rem;
+    margin-top: 7rem;
+  }
+  .mobilelinks {
+    gap: 1rem;
+    padding: 3rem 4rem;
+  }
+  .mobileLinkItem {
+    font-size: 2.2rem;
+    padding: 0.8rem;
   }
 }
