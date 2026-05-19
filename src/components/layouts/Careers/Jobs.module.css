@@ -35,6 +35,24 @@
   text-decoration: underline;
 }
 
+.jobBody {
+  font-size: var(--font-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+}
+
+.applyLink {
+  color: var(--color-brand-blue);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--duration-normal) var(--easing-standard);
+}
+
+.applyLink:hover {
+  color: var(--color-brand-orange);
+}
+
 @media (max-width: 37.5em) {
   .jobsContainer {
     padding: var(--space-10) var(--space-5);

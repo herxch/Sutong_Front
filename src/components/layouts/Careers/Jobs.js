@@ -1,6 +1,6 @@
 import styles from "./Jobs.module.css";
 import Job from "./Job";
-import { JOBS, HR_EMAIL } from "../../config/jobs";
+import { JOBS, HR_EMAIL, APPLY_URL } from "../../config/jobs";
 
 const Jobs = () => (
   <div className={styles.jobsContainer}>
@@ -15,7 +15,18 @@ const Jobs = () => (
     ) : (
       JOBS.map((job) => (
         <Job key={job.id} title={job.title}>
-          {job.body}
+          <p className={styles.jobBody}>
+            View the full description and apply on our{" "}
+            <a
+              href={APPLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.applyLink}
+            >
+              recruiting portal
+            </a>
+            .
+          </p>
         </Job>
       ))
     )}
