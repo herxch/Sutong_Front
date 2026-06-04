@@ -10,6 +10,7 @@ const CatalogPage = lazy(() => import("./components/pages/CatalogPage"));
 const CareersPage = lazy(() => import("./components/pages/CareersPage"));
 const NewsPage = lazy(() => import("./components/pages/NewsPage"));
 const ContactPage = lazy(() => import("./components/pages/ContactPage"));
+const BrochurePage = lazy(() => import("./components/pages/BrochurePage"));
 
 const App = () => (
   <ErrorBoundary>
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/brochures/:id" element={<BrochurePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>

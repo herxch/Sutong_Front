@@ -25,3 +25,6 @@ yarn-error.log*
 .env
 /.vscode
 /.claude
+
+# local file drop-off (not committed)
+/_inbox
