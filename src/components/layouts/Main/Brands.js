@@ -4,11 +4,12 @@ import synergy from "../../../assets/pic/synergy.svg";
 import hirun from "../../../assets/pic/hirun.svg";
 import supercargo from "../../../assets/pic/supercargo.svg";
 import hemisphere from "../../../assets/pic/hemisphere.png";
-import roadone from "../../../assets/pic/roadone.svg";
 import longmarch from "../../../assets/pic/longmarch.svg";
 import caraway from "../../../assets/pic/caraway.svg";
 import wolfpack from "../../../assets/pic/wolfpack.svg";
 import superstrong from "../../../assets/pic/superstrong.svg";
+
+const roadone = process.env.PUBLIC_URL + "/roadone.svg";
 
 const BRAND_LIST = [
   { name: "Synergy", logo: synergy, id: "synergy" },
