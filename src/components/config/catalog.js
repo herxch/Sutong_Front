@@ -1,6 +1,6 @@
 import synergy from "../../assets/pic/synergy.svg";
 import supercargo from "../../assets/pic/supercargo.svg";
-import roadone from "../../assets/pic/roadone.png";
+import roadone from "../../assets/pic/roadone.svg";
 import hemisphere from "../../assets/pic/hemisphere.png";
 import hirun from "../../assets/pic/hirun.svg";
 import longmarch from "../../assets/pic/longmarch.svg";
