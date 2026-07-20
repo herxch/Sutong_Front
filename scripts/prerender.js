@@ -82,6 +82,7 @@ function brochureRoutes() {
       title: `${m.title} Brochure — ${BRAND}`,
       description: `${m.title} tire brochure from ${BRAND}: ${m.pages} pages of sizes, specifications and load ratings. Read online or download the PDF.`,
       image: `/brochures/${m.id}/cover.jpg`,
+      dirServed: true,
     }));
 }
 
@@ -91,6 +92,7 @@ function warrantyRoutes() {
     route: `/warranty/${w.id}`,
     title: `${w.brand} ${w.line} Limited Warranty — ${BRAND}`,
     description: `The Limited Warranty covering ${w.brand} ${w.line} tires from ${BRAND}. Read online or download the PDF.`,
+    dirServed: true,
   }));
 }
 
@@ -101,8 +103,19 @@ const escape = (s) =>
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 
-function headFor({ route, title, description, image }) {
-  const url = `${SITE}${route === "/" ? "" : route}`;
+/**
+ * Amplify serves a `dirServed` route from its directory index, and redirects
+ * the slashless form there, so the canonical URL has to carry the slash or it
+ * points at a 301.
+ */
+function canonicalUrl({ route, dirServed }) {
+  if (route === "/") return `${SITE}/`;
+  return `${SITE}${route}${dirServed ? "/" : ""}`;
+}
+
+function headFor(page) {
+  const { title, description, image } = page;
+  const url = canonicalUrl(page);
   const img = `${SITE}${image || "/apple-touch-icon.jpg"}`;
   return [
     `<title>${escape(title)}</title>`,
@@ -156,10 +169,10 @@ function main() {
   const sitemap = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...pages.map(({ route }) =>
+    ...pages.map((page) =>
       [
         "  <url>",
-        `    <loc>${SITE}${route === "/" ? "/" : route}</loc>`,
+        `    <loc>${canonicalUrl(page)}</loc>`,
         `    <lastmod>${today}</lastmod>`,
         "  </url>",
       ].join("\n")
