@@ -1,0 +1,93 @@
+.wrapper {
+  background: var(--color-surface);
+  padding: var(--space-7) var(--container-padding) var(--space-9);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  max-width: 90rem;
+  margin: 0 auto var(--space-6);
+}
+
+.title {
+  flex: 1 1 30rem;
+  margin: 0;
+  font-size: var(--font-h3);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.back,
+.download {
+  flex-shrink: 0;
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-normal) var(--easing-standard);
+}
+
+.back {
+  color: var(--color-text-primary);
+  border: var(--border-hairline);
+}
+
+.back:hover {
+  background: var(--color-surface-alt);
+}
+
+.download {
+  background: var(--color-brand-blue);
+  color: var(--color-text-on-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.download:hover {
+  background: var(--color-brand-orange);
+}
+
+.back:focus-visible,
+.download:focus-visible {
+  outline: 3px solid var(--color-brand-orange);
+  outline-offset: 3px;
+}
+
+.viewer {
+  display: block;
+  width: 100%;
+  max-width: 90rem;
+  /* Tall enough to show a full US Letter page without inner scrolling. */
+  height: min(85vh, 100rem);
+  margin: 0 auto;
+  border: var(--border-hairline);
+  background: var(--color-surface-alt);
+}
+
+.fallback {
+  padding: var(--space-7);
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 50em) {
+  .header {
+    flex-direction: column;
+  }
+  .title {
+    flex: 1 1 auto;
+    order: -1;
+  }
+  .viewer {
+    height: 70vh;
+  }
+}

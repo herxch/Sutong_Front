@@ -11,6 +11,10 @@ const CareersPage = lazy(() => import("./components/pages/CareersPage"));
 const NewsPage = lazy(() => import("./components/pages/NewsPage"));
 const ContactPage = lazy(() => import("./components/pages/ContactPage"));
 const BrochurePage = lazy(() => import("./components/pages/BrochurePage"));
+const WarrantyPage = lazy(() => import("./components/pages/WarrantyPage"));
+const WarrantyDocPage = lazy(() =>
+  import("./components/pages/WarrantyDocPage")
+);
 
 const App = () => (
   <ErrorBoundary>
@@ -24,6 +28,8 @@ const App = () => (
           <Route path="/news" element={<NewsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/brochures/:id" element={<BrochurePage />} />
+          <Route path="/warranty" element={<WarrantyPage />} />
+          <Route path="/warranty/:id" element={<WarrantyDocPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
