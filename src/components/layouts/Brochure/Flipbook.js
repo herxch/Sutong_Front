@@ -137,7 +137,18 @@ const Flipbook = ({ brochure }) => {
 
   const handleInit = useCallback(() => {
     const pf = bookRef.current?.pageFlip?.();
-    if (pf) setCount(pf.getPageCount());
+    if (!pf) return;
+    const total = pf.getPageCount();
+    setCount(total);
+
+    // showCover makes StPageFlip treat the first page -- and the last one too,
+    // whenever it ends up alone in a spread -- as a stiff cover that flips
+    // rigidly with no corner to drag. These are saddle-stitched brochures
+    // printed on one paper stock, so every sheet should behave the same. The
+    // spread layout still keeps the cover on its own.
+    for (const i of [0, total - 1]) {
+      pf.getPage(i)?.setDensity("soft");
+    }
   }, []);
 
   const openZoom = useCallback(
