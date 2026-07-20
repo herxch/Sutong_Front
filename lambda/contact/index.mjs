@@ -1,31 +1,58 @@
 /**
- * Contact form handler: validates input, verifies reCAPTCHA server-side,
- * and relays the message through Mailgun.
+ * Shared contact form handler for sutongctr.com, synergytire.com and
+ * hemispheretires.com. Validates input, verifies reCAPTCHA server-side, and
+ * relays the message through Mailgun.
  *
- * Deployed as a Lambda Function URL and proxied from the site at /api/contact
+ * Deployed as a Lambda Function URL. Each site proxies to it from /api/contact
  * via an Amplify rewrite, so requests arrive same-origin.
+ *
+ * The three forms do not share a field layout, so rather than encoding each
+ * one here, only the fields common to all of them are required and anything
+ * else submitted is rendered in the order below. A new site needs an entry in
+ * SITES and nothing more.
  *
  * Required environment variables:
  *   MAILGUN_API_KEY    Mailgun private API key
- *   MAILGUN_DOMAIN     verified sending domain, e.g. sutongctr.com
- *   RECAPTCHA_SECRET   reCAPTCHA v2 secret key (pairs with the site key)
+ *   MAILGUN_DOMAIN     verified sending domain, e.g. relay.sutongctr.com
+ *   RECAPTCHA_SECRET   reCAPTCHA secret (one key covers all three domains)
  *   TO_EMAIL           where submissions land
- *   FROM_EMAIL         e.g. "Sutong Website <noreply@sutongctr.com>"
+ *   FROM_EMAIL         bare address, e.g. no-reply@relay.sutongctr.com
  * Optional:
  *   MAILGUN_BASE_URL   https://api.eu.mailgun.net for EU accounts
  *                      (default https://api.mailgun.net)
  */
 
-const FIELDS = ["name", "companyName", "phone", "email", "subject", "message"];
+const SITES = {
+  sutong: "Sutong Website Contact Form",
+  synergy: "Synergy Tire Website",
+  hemisphere: "Hemisphere Tires Website",
+};
+const DEFAULT_SITE = "sutong";
+
+// Every form collects at least these three.
+const REQUIRED_FIELDS = ["name", "email", "message"];
+
+// Render order for the notification body. Fields absent from a given form are
+// simply skipped; `message` is rendered separately as a block at the end.
+const FIELD_LABELS = {
+  name: "Name",
+  companyName: "Company",
+  phone: "Phone",
+  email: "Email",
+  category: "Category",
+  subject: "Subject",
+};
 
 const MAX_LENGTH = {
   name: 100,
   companyName: 150,
   phone: 40,
   email: 254,
+  category: 100,
   subject: 200,
   message: 5000,
 };
+const DEFAULT_MAX_LENGTH = 200;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -59,16 +86,18 @@ const json = (statusCode, body) => ({
 
 const validate = (data) => {
   const errors = [];
-  for (const field of FIELDS) {
-    const value = String(data[field] ?? "").trim();
-    if (!value) {
-      errors.push(`${field} is required`);
-    } else if (value.length > MAX_LENGTH[field]) {
-      errors.push(`${field} exceeds ${MAX_LENGTH[field]} characters`);
-    }
+  for (const field of REQUIRED_FIELDS) {
+    if (!String(data[field] ?? "").trim()) errors.push(`${field} is required`);
   }
   if (data.email && !EMAIL_RE.test(String(data.email).trim())) {
     errors.push("email is invalid");
+  }
+  // Length-check everything present, not just the required fields, so an
+  // oversized optional field cannot pad the message body.
+  for (const [field, value] of Object.entries(data)) {
+    if (field === "source" || typeof value !== "string") continue;
+    const limit = MAX_LENGTH[field] ?? DEFAULT_MAX_LENGTH;
+    if (value.length > limit) errors.push(`${field} exceeds ${limit} characters`);
   }
   return errors;
 };
@@ -94,31 +123,35 @@ const verifyRecaptcha = async (token, ip) => {
   return result.success === true;
 };
 
+const buildBody = (data, meta) => {
+  const lines = [];
+  for (const [field, label] of Object.entries(FIELD_LABELS)) {
+    const value = String(data[field] ?? "").trim();
+    if (value) lines.push(`${label.padEnd(12)}${value}`);
+  }
+  lines.push("", "Message:", String(data.message).trim(), "");
+  lines.push("---");
+  lines.push(`Site:       ${meta.siteLabel}`);
+  lines.push(`Submitted:  ${meta.timestamp}`);
+  lines.push(`Source IP:  ${meta.ip}`);
+  lines.push(`User agent: ${meta.userAgent}`);
+  return lines.join("\n");
+};
+
 const sendMail = async (data, meta) => {
   const baseUrl = process.env.MAILGUN_BASE_URL || "https://api.mailgun.net";
   const domain = process.env.MAILGUN_DOMAIN;
 
-  const text = [
-    `Name:         ${data.name}`,
-    `Company:      ${data.companyName}`,
-    `Phone:        ${data.phone}`,
-    `Email:        ${data.email}`,
-    `Subject:      ${data.subject}`,
-    "",
-    "Message:",
-    data.message,
-    "",
-    "---",
-    `Submitted:    ${meta.timestamp}`,
-    `Source IP:    ${meta.ip}`,
-    `User agent:   ${meta.userAgent}`,
-  ].join("\n");
+  // Tolerate FROM_EMAIL being either a bare address or "Name <address>".
+  const fromAddress = (process.env.FROM_EMAIL.match(/<([^>]+)>/)?.[1] ?? process.env.FROM_EMAIL).trim();
+
+  const subject = oneLine(data.subject) || oneLine(data.category) || "Website enquiry";
 
   const form = new URLSearchParams({
-    from: process.env.FROM_EMAIL,
+    from: `${meta.siteLabel} <${fromAddress}>`,
     to: process.env.TO_EMAIL,
-    subject: `[Website] ${oneLine(data.subject)}`,
-    text,
+    subject: `[${meta.siteLabel}] ${subject}`,
+    text: buildBody(data, meta),
     // Lets staff reply straight to the sender from their mail client.
     "h:Reply-To": `${oneLine(data.name)} <${oneLine(data.email)}>`,
   });
@@ -199,15 +232,20 @@ export const handler = async (event) => {
     return json(502, { error: "Could not verify reCAPTCHA" });
   }
 
+  // Only picks the label and subject prefix, so an unrecognised value is
+  // harmless — the recipient is fixed by TO_EMAIL either way.
+  const siteLabel = SITES[body.source] ?? SITES[DEFAULT_SITE];
+
   try {
     const result = await sendMail(body, {
       ip,
+      siteLabel,
       timestamp: new Date().toISOString(),
       userAgent: event.headers?.["user-agent"] ?? "unknown",
     });
     // Correlates with the Mailgun dashboard, which is searchable by recipient,
     // so delivery can be traced without logging the submitter's details here.
-    console.log("Mailgun accepted message:", result.id);
+    console.log(`Mailgun accepted message from ${siteLabel}:`, result.id);
   } catch (err) {
     console.error("Mailgun send failed:", err);
     return json(502, { error: "Could not send message" });
