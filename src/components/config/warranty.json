@@ -1,0 +1,20 @@
+[
+  { "id": "synergy-mtr", "brand": "Synergy", "line": "MTR", "pages": 2 },
+  { "id": "longmarch-mtr", "brand": "Long March", "line": "MTR", "pages": 2 },
+  { "id": "supercargo-mtr", "brand": "SuperCargo", "line": "MTR", "pages": 2 },
+  { "id": "cavalry-mtr", "brand": "Cavalry", "line": "MTR", "pages": 2 },
+  { "id": "roadone-mtr", "brand": "RoadOne", "line": "MTR", "pages": 2 },
+  {
+    "id": "roadone-passenger",
+    "brand": "RoadOne",
+    "line": "Passenger & Light Truck",
+    "pages": 3
+  },
+  {
+    "id": "hemisphere-passenger",
+    "brand": "Hemisphere",
+    "line": "Passenger & Light Truck",
+    "pages": 3
+  },
+  { "id": "specialty-tire", "brand": "Hi-Run", "line": "Specialty Tire", "pages": 1 }
+]

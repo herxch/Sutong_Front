@@ -28,3 +28,4 @@ yarn-error.log*
 
 # local file drop-off (not committed)
 /_inbox
+__pycache__/

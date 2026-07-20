@@ -32,6 +32,27 @@ DPI = 144
 QUALITY = 80
 
 
+# Open Graph previews are cropped to roughly 1.91:1 by every platform, so the
+# cover page is letterboxed onto a card of that shape rather than shipped tall.
+OG_SIZE = (1200, 630)
+OG_BG = (31, 41, 55)  # matches the flipbook stage
+
+
+def write_cover(page_one, out_dir):
+    """Letterbox page 1 onto a 1200x630 card for og:image."""
+    card = Image.new("RGB", OG_SIZE, OG_BG)
+    page = Image.open(page_one).convert("RGB")
+    margin = 24
+    scale = (OG_SIZE[1] - margin * 2) / page.height
+    page = page.resize(
+        (round(page.width * scale), round(page.height * scale)), Image.LANCZOS
+    )
+    card.paste(page, ((OG_SIZE[0] - page.width) // 2, margin))
+    dest = out_dir / "cover.jpg"
+    card.save(dest, "JPEG", quality=82, optimize=True)
+    print(f"  cover.jpg     {OG_SIZE[0]}x{OG_SIZE[1]}  {dest.stat().st_size // 1024} KB")
+
+
 def render(pdf_path, out_dir, dpi, quality):
     doc = fitz.open(pdf_path)
     zoom = dpi / 72
@@ -51,6 +72,7 @@ def render(pdf_path, out_dir, dpi, quality):
         print(f"  page-{i:02d}.webp  {img.width}x{img.height}  {size // 1024} KB")
 
     print(f"  {doc.page_count} pages, {total / 1024 / 1024:.1f} MB total")
+    write_cover(out_dir / "page-01.webp", out_dir)
     return doc.page_count
 
 
