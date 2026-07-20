@@ -112,6 +112,15 @@
   cursor: not-allowed;
 }
 
+/* Bot trap: off-screen rather than display:none, which scripted fillers skip. */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .error {
   color: var(--color-error);
   font-size: var(--font-small);

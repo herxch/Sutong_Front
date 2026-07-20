@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import emailjs from "emailjs-com";
 import styles from "./ContactForm.module.css";
 import Modal from "../../ui/Modal";
 
@@ -11,6 +10,8 @@ const INITIAL_FORM = {
   email: "",
   subject: "",
   message: "",
+  // Honeypot: stays empty for real users. See styles.honeypot.
+  website: "",
 };
 
 const FIELDS = [
@@ -73,6 +74,14 @@ const ContactForm = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [modal, setModal] = useState(null);
+  const recaptchaRef = useRef(null);
+
+  // reCAPTCHA tokens are single-use, so the widget has to be reset after every
+  // attempt or the next submit is rejected server-side.
+  const resetRecaptcha = () => {
+    recaptchaRef.current?.reset();
+    setRecaptchaValue("");
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -80,7 +89,7 @@ const ContactForm = () => {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: undefined }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate(formData, recaptchaValue);
     if (Object.keys(validationErrors).length > 0) {
@@ -90,34 +99,38 @@ const ContactForm = () => {
     setErrors({});
     setIsSubmitting(true);
 
-    emailjs
-      .send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        { ...formData, "g-recaptcha-response": recaptchaValue },
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setFormData(INITIAL_FORM);
-          setRecaptchaValue("");
-          setIsSubmitting(false);
-          setModal({
-            variant: "success",
-            title: "Message Sent",
-            message: "Thank you for reaching out. Our team will get back to you shortly.",
-          });
-        },
-        (error) => {
-          console.error("Error submitting form:", error);
-          setIsSubmitting(false);
-          setModal({
-            variant: "error",
-            title: "Submission Failed",
-            message: "We couldn't send your message right now. Please try again, or call us at 713-690-5500.",
-          });
-        }
-      );
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          "g-recaptcha-response": recaptchaValue,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+
+      setFormData(INITIAL_FORM);
+      resetRecaptcha();
+      setModal({
+        variant: "success",
+        title: "Message Sent",
+        message: "Thank you for reaching out. Our team will get back to you shortly.",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      resetRecaptcha();
+      setModal({
+        variant: "error",
+        title: "Submission Failed",
+        message: "We couldn't send your message right now. Please try again, or call us at 713-690-5500.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -140,7 +153,21 @@ const ContactForm = () => {
           />
         ))}
 
+        <div className={styles.honeypot} aria-hidden="true">
+          <label htmlFor="website">Website</label>
+          <input
+            type="text"
+            id="website"
+            name="website"
+            value={formData.website}
+            onChange={handleChange}
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
+
         <ReCAPTCHA
+          ref={recaptchaRef}
           sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
           onChange={setRecaptchaValue}
         />
