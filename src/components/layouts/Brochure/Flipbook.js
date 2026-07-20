@@ -12,6 +12,14 @@ import styles from "./Flipbook.module.css";
 
 const PUBLIC = process.env.PUBLIC_URL || "";
 
+// A US Letter page is 0.773 as wide as it is tall.
+const PAGE_RATIO = 0.773;
+// Halo kept around the book: a dragged page corner may swing this far out
+// before it is clipped. Zero means nothing ever paints outside the book's own
+// footprint -- raise it to give the lifted corner room, at the cost of letting
+// it show past the page edges.
+const CLIP_SLACK = 0;
+
 const Page = forwardRef(({ src, number, hotspot, onZoom }, ref) => {
   const r = hotspot?.rect;
   return (
@@ -55,26 +63,39 @@ Page.displayName = "BrochurePage";
 const Flipbook = ({ brochure }) => {
   const bookRef = useRef(null);
   const wrapRef = useRef(null);
+  const stageRef = useRef(null);
   const [page, setPage] = useState(0);
   const [count, setCount] = useState(brochure.pages);
   const [hotspots, setHotspots] = useState({});
   const [lightbox, setLightbox] = useState(null);
   const [logoOpen, setLogoOpen] = useState(false);
   const [bookMaxH, setBookMaxH] = useState(640);
+  const [stageW, setStageW] = useState(0);
 
   // Fit the book (plus title + toolbar) into the viewport below the navbar,
   // so the brochure shows in one screen without page scrolling.
   useLayoutEffect(() => {
     const calc = () => {
-      const top = wrapRef.current?.getBoundingClientRect().top ?? 0;
+      // offsetTop, not getBoundingClientRect().top: the latter is relative to
+      // the viewport, so arriving here from a scrolled catalog page measured a
+      // negative offset and sized the book roughly twice too large.
+      const top = wrapRef.current?.offsetTop ?? 0; // navbar height
       const avail = window.innerHeight - top; // space left under the navbar
-      const reserve = 168; // title + toolbar + hint + paddings
+      // title + toolbar + hint + paddings (168), plus the clip halo above and
+      // below the book.
+      const reserve = 168 + CLIP_SLACK * 2;
       setBookMaxH(Math.max(320, Math.min(900, Math.round(avail - reserve))));
+
+      // How much width the book may use: the stage minus the arrows beside it,
+      // which the CSS hides below 640px. Without this the spread is sized from
+      // height alone and runs off the sides of a phone.
+      const arrows = window.innerWidth > 640 ? 2 * (48 + 10) : 0;
+      setStageW(Math.max(0, (stageRef.current?.clientWidth ?? 0) - arrows));
     };
     calc();
     window.addEventListener("resize", calc);
     return () => window.removeEventListener("resize", calc);
-  }, []);
+  }, [brochure.id]);
 
   useEffect(() => {
     let alive = true;
@@ -86,6 +107,16 @@ const Flipbook = ({ brochure }) => {
       alive = false;
     };
   }, [brochure.basePath]);
+
+  const hasZoomable = Object.values(hotspots).some((h) => h?.image);
+  // Keep in step with minWidth below, or the two constraints fight and
+  // StPageFlip sizes the spread inconsistently.
+  const pageW = Math.max(260, Math.round(bookMaxH * PAGE_RATIO));
+  // On a narrow screen the stage wins, and StPageFlip falls back to showing a
+  // single page inside it.
+  const clipW = stageW
+    ? Math.min(pageW * 2 + CLIP_SLACK * 2, stageW)
+    : pageW * 2 + CLIP_SLACK * 2;
 
   const pageUrls = Array.from(
     { length: brochure.pages },
@@ -139,7 +170,7 @@ const Flipbook = ({ brochure }) => {
     <section className={styles.wrapper} ref={wrapRef}>
       <h1 className={styles.title}>{brochure.title}</h1>
 
-      <div className={styles.stage}>
+      <div className={styles.stage} ref={stageRef}>
         <button
           className={`${styles.nav} ${styles.navLeft}`}
           onClick={flipPrev}
@@ -148,37 +179,48 @@ const Flipbook = ({ brochure }) => {
           ‹
         </button>
 
-        <HTMLFlipBook
-          key={bookMaxH}
-          ref={bookRef}
-          className={styles.book}
-          width={550}
-          height={711}
-          size="stretch"
-          minWidth={260}
-          maxWidth={Math.round(bookMaxH * 0.773)}
-          minHeight={336}
-          maxHeight={bookMaxH}
-          drawShadow
-          maxShadowOpacity={0.4}
-          showCover
-          mobileScrollSupport
-          flippingTime={700}
-          useMouseEvents
-          disableFlipByClick
-          onInit={handleInit}
-          onFlip={(e) => setPage(e.data)}
+        <div
+          className={styles.bookClip}
+          /* Width is explicit because StPageFlip measures its parent to size
+             the spread. Height is left to the flex box so the clip hugs
+             whatever height the book settles on -- on a phone the book is
+             width-constrained and ends up shorter than bookMaxH. */
+          style={{ width: clipW, padding: CLIP_SLACK }}
         >
-          {pageUrls.map((src, i) => (
-            <Page
-              key={i}
-              src={src}
-              number={i + 1}
-              hotspot={hotspots[i + 1]}
-              onZoom={openZoom}
-            />
-          ))}
-        </HTMLFlipBook>
+          <HTMLFlipBook
+            /* Remount when either dimension changes so StPageFlip re-measures
+               its parent. */
+            key={`${bookMaxH}-${clipW}`}
+            ref={bookRef}
+            className={styles.book}
+            width={550}
+            height={711}
+            size="stretch"
+            minWidth={260}
+            maxWidth={pageW}
+            minHeight={336}
+            maxHeight={bookMaxH}
+            drawShadow
+            maxShadowOpacity={0.4}
+            showCover
+            mobileScrollSupport
+            flippingTime={700}
+            useMouseEvents
+            disableFlipByClick
+            onInit={handleInit}
+            onFlip={(e) => setPage(e.data)}
+          >
+            {pageUrls.map((src, i) => (
+              <Page
+                key={i}
+                src={src}
+                number={i + 1}
+                hotspot={hotspots[i + 1]}
+                onZoom={openZoom}
+              />
+            ))}
+          </HTMLFlipBook>
+        </div>
 
         <button
           className={`${styles.nav} ${styles.navRight}`}
@@ -247,9 +289,14 @@ const Flipbook = ({ brochure }) => {
       </div>
 
       <p className={styles.hint}>
-        Drag a page corner or use the arrows / ← → keys to flip. Click the
-        <span className={styles.inlineIcon}> ⌕ </span> icon on a tire to view a
-        hi-res image.
+        Drag a page corner or use the arrows / ← → keys to flip.
+        {hasZoomable && (
+          <>
+            {" "}
+            Click the <span className={styles.inlineIcon}> ⌕ </span> icon on a
+            tire to view a hi-res image.
+          </>
+        )}
       </p>
 
       {lightbox && (
