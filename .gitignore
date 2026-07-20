@@ -25,3 +25,10 @@ yarn-error.log*
 .env
 /.vscode
 /.claude
+
+# local file drop-off (not committed)
+/_inbox
+__pycache__/
+
+# cached CloudFront logs pulled by scripts/access_report.py
+/.access-logs

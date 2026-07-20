@@ -14,8 +14,8 @@ import lg from "../../assets/pic/lg.svg";
 import tube from "../../assets/pic/tube.svg";
 import atv from "../../assets/pic/atv.svg";
 
-export const ALL_BROCHURES_URL = "https://catalog.sutongctr.com";
-
+// brochureId keys into src/components/config/brochures.js, which the flipbook
+// build script generates. A category with no brochureId has no brochure yet.
 const CATEGORY = {
   mtr: { icon: mtr, name: "Medium Truck Radial", short: "MTR" },
   trailer: { icon: trailer, name: "Trailer Tire", short: "Trailer Tire" },
@@ -30,77 +30,64 @@ export const BRANDS = [
     id: "synergy",
     name: "Synergy",
     logo: synergy,
-    brandUrl: "https://catalog.sutongctr.com/synergy",
     categories: [
-      { ...CATEGORY.mtr, brochureUrl: "https://midd.me/mZII" },
-      { ...CATEGORY.trailer, brochureUrl: "https://midd.me/iVE1" },
+      { ...CATEGORY.mtr, brochureId: "synergy-mtr" },
+      { ...CATEGORY.trailer, brochureId: "synergy-str" },
     ],
   },
   {
     id: "longmarch",
     name: "Long March",
     logo: longmarch,
-    brandUrl: "https://midd.me/PH2E",
-    categories: [
-      { ...CATEGORY.mtr, brochureUrl: "https://midd.me/PH2E" },
-    ],
+    categories: [{ ...CATEGORY.mtr, brochureId: "longmarch-mtr" }],
   },
   {
     id: "supercargo",
     name: "SuperCargo",
     logo: supercargo,
-    brandUrl: "https://catalog.sutongctr.com/supercargo",
     categories: [
-      { ...CATEGORY.mtr, brochureUrl: "https://midd.me/Omro" },
-      { ...CATEGORY.trailer, brochureUrl: "https://midd.me/SP1F" },
+      { ...CATEGORY.mtr, brochureId: "supercargo-mtr" },
+      { ...CATEGORY.trailer, brochureId: "supercargo-str" },
     ],
   },
   {
     id: "roadone",
     name: "RoadOne",
     logo: roadone,
-    brandUrl: "https://catalog.sutongctr.com/roadone",
     categories: [
-      { ...CATEGORY.mtr, brochureUrl: "https://midd.me/iBv8" },
-      { ...CATEGORY.consumer, brochureUrl: "https://midd.me/07hK" },
+      { ...CATEGORY.mtr, brochureId: "roadone-mtr" },
+      { ...CATEGORY.consumer, brochureId: "roadone-plt" },
     ],
   },
   {
     id: "hemisphere",
     name: "Hemisphere",
     logo: hemisphere,
-    brandUrl: "https://catalog.sutongctr.com/hemisphere",
-    categories: [
-      { ...CATEGORY.consumer, brochureUrl: "https://midd.me/xAhb" },
-    ],
+    categories: [{ ...CATEGORY.consumer, brochureId: "hemisphere-plt" }],
   },
   {
     id: "hirun",
     name: "Hi-Run",
     logo: hirun,
-    brandUrl: "https://catalog.sutongctr.com/hirun",
     categories: [
-      { ...CATEGORY.trailer, brochureUrl: "https://midd.me/jj3t" },
-      { ...CATEGORY.lg, brochureUrl: "https://midd.me/nWCw" },
-      { ...CATEGORY.tube, brochureUrl: "https://midd.me/g5dq" },
-      { ...CATEGORY.atv, brochureUrl: "https://midd.me/S3co" },
+      { ...CATEGORY.trailer, brochureId: "hirun-st" },
+      { ...CATEGORY.lg, brochureId: "hirun-specialty" },
+      { ...CATEGORY.tube, brochureId: "hirun-tube" },
+      { ...CATEGORY.atv, brochureId: "hirun-atvutv" },
     ],
   },
   {
     id: "caraway",
     name: "Caraway",
     logo: caraway,
-    categories: [
-      { ...CATEGORY.trailer, brochureUrl: "https://midd.me/ebFH" },
-    ],
+    categories: [{ ...CATEGORY.trailer, brochureId: "caraway-st" }],
   },
   {
     id: "wolfpack",
     name: "Wolf Pack",
     logo: wolfpack,
-    brandUrl: "https://catalog.sutongctr.com/wolfpack",
     categories: [
-      { ...CATEGORY.atv, brochureUrl: "https://midd.me/v55B" },
+      { ...CATEGORY.atv, brochureId: "wolfpack-atvutv" },
       { ...CATEGORY.lg },
     ],
   },

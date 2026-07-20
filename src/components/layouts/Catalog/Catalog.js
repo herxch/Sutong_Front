@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Catalog.module.css";
-import { BRANDS, ALL_BROCHURES_URL } from "../../config/catalog";
+import { BRANDS } from "../../config/catalog";
 
-const ExternalIcon = ({ className }) => (
+const ArrowIcon = ({ className }) => (
   <svg
     className={className}
     viewBox="0 0 24 24"
@@ -16,9 +16,8 @@ const ExternalIcon = ({ className }) => (
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-    <polyline points="15 3 21 3 21 9" />
-    <line x1="10" y1="14" x2="21" y2="3" />
+    <line x1="4" y1="12" x2="19" y2="12" />
+    <polyline points="13 6 19 12 13 18" />
   </svg>
 );
 
@@ -37,47 +36,36 @@ const CategoryRow = ({ cat, brandName }) => {
       </div>
       <span className={styles.categoryCta}>
         {cat.short} Brochure
-        <ExternalIcon className={styles.categoryCtaArrow} />
+        <ArrowIcon className={styles.categoryCtaArrow} />
       </span>
     </>
   );
 
-  if (!cat.brochureUrl) {
+  if (!cat.brochureId) {
     return <div className={styles.category}>{content}</div>;
   }
 
   return (
-    <a
-      href={cat.brochureUrl}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      to={`/brochures/${cat.brochureId}`}
       className={`${styles.category} ${styles.categoryLink}`}
       aria-label={`View ${cat.short} brochure for ${brandName}`}
     >
       {content}
-    </a>
+    </Link>
   );
 };
 
 const BrandCard = ({ brand }) => {
-  const logo = (
-    <img
-      src={brand.logo}
-      alt={`${brand.name} logo`}
-      className={styles.brandLogo}
-      loading="lazy"
-      decoding="async"
-    />
-  );
   return (
     <div id={brand.id} className={styles.brand}>
-      {brand.brandUrl ? (
-        <a href={brand.brandUrl} target="_blank" rel="noopener noreferrer">
-          {logo}
-        </a>
-      ) : (
-        logo
-      )}
+      <img
+        src={brand.logo}
+        alt={`${brand.name} logo`}
+        className={styles.brandLogo}
+        loading="lazy"
+        decoding="async"
+      />
       <div className={styles.categoryContainer}>
         {brand.categories.map((cat) => (
           <CategoryRow
@@ -104,15 +92,6 @@ const Catalog = () => {
     <div className={styles.brands}>
       <h1 className={styles.brandsTitle}>OUR BRANDS</h1>
       <div className={styles.brandsContainer}>
-        <a
-          href={ALL_BROCHURES_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.allBrochuresCta}
-        >
-          ALL Brochures
-          <ExternalIcon className={styles.categoryCtaArrow} />
-        </a>
         {BRANDS.map((brand) => (
           <BrandCard key={brand.id} brand={brand} />
         ))}

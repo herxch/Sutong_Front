@@ -68,21 +68,6 @@
   box-shadow: var(--shadow-card-hover);
 }
 
-.brand > a {
-  display: block;
-  border-radius: var(--radius-sm);
-  transition: transform var(--duration-normal) var(--easing-standard);
-}
-
-.brand > a:hover {
-  transform: translateY(-2px);
-}
-
-.brand > a:focus-visible {
-  outline: 3px solid var(--color-brand-orange);
-  outline-offset: 4px;
-}
-
 .brandLogo {
   display: block;
   width: 100%;
@@ -166,9 +151,9 @@
   border-left-color: var(--color-brand-orange);
 }
 
-.categoryCta,
-.allBrochuresCta {
+.categoryCta {
   flex-shrink: 0;
+  width: 36rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,30 +174,6 @@
     box-shadow var(--duration-normal) var(--easing-standard);
 }
 
-.categoryCta {
-  width: 36rem;
-}
-
-.allBrochuresCta {
-  align-self: center;
-  min-width: 24rem;
-}
-
-.allBrochuresCta:hover {
-  background: var(--color-brand-orange);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
-
-.allBrochuresCta:hover .categoryCtaArrow {
-  transform: translate(2px, -2px);
-}
-
-.allBrochuresCta:focus-visible {
-  outline: 3px solid var(--color-brand-orange);
-  outline-offset: 3px;
-}
-
 .categoryCtaArrow {
   display: block;
   flex-shrink: 0;
@@ -224,7 +185,7 @@
 }
 
 .categoryLink:hover .categoryCtaArrow {
-  transform: translate(2px, -2px);
+  transform: translateX(3px);
 }
 
 @media (max-width: 75em) {

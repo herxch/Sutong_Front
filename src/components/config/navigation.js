@@ -11,9 +11,6 @@ export const NAV_LINKS = [
     href: "https://register.cimstireregistration.com/index.cfm?id=sutong",
     hideInNavbar: true,
   },
-  {
-    name: "Warranty",
-    href: "https://warranty.sutongctr.com/warranty",
-  },
+  { name: "Warranty", to: "/warranty" },
   { name: "Contact", footerName: "Contact Us", to: "/contact" },
 ];
