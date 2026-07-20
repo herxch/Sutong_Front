@@ -200,11 +200,14 @@ export const handler = async (event) => {
   }
 
   try {
-    await sendMail(body, {
+    const result = await sendMail(body, {
       ip,
       timestamp: new Date().toISOString(),
       userAgent: event.headers?.["user-agent"] ?? "unknown",
     });
+    // Correlates with the Mailgun dashboard, which is searchable by recipient,
+    // so delivery can be traced without logging the submitter's details here.
+    console.log("Mailgun accepted message:", result.id);
   } catch (err) {
     console.error("Mailgun send failed:", err);
     return json(502, { error: "Could not send message" });
