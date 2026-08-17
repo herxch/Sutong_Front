@@ -3,7 +3,7 @@ import { XMLParser } from "fast-xml-parser";
 import Post from "./Post";
 import styles from "./Posts.module.css";
 
-const RSS_URL = "https://wlc.sutongctr.com/rss";
+const RSS_URL = "https://www.sutongctr.com/__rss/all-published-content.xml";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
