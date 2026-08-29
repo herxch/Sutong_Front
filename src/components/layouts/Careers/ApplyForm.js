@@ -1,6 +1,16 @@
 import { useState } from "react";
 import styles from "./ApplyForm.module.css";
 import { CAREERS_API, HR_EMAIL } from "../../config/jobs";
+import {
+  ANCHORS,
+  Education,
+  References,
+  WorkHistory,
+  blankJob,
+  blankReference,
+  blankSchool,
+  clean,
+} from "./ApplyBackground";
 
 const MAX_RESUME_BYTES = 8 * 1024 * 1024;
 
@@ -32,6 +42,9 @@ const ApplyForm = ({ slug, questions }) => {
     ethnicity: "",
     veteran: "",
   });
+  const [work, setWork] = useState([blankJob()]);
+  const [education, setEducation] = useState([blankSchool()]);
+  const [refs, setRefs] = useState([blankReference()]);
   const [resume, setResume] = useState(null);
   const [state, setState] = useState("idle"); // idle | sending | sent | error
   const [error, setError] = useState("");
@@ -65,6 +78,17 @@ const ApplyForm = ({ slug, questions }) => {
       Object.entries(demographics).filter(([, v]) => v)
     );
     if (Object.keys(demo).length) fd.append("demographics", JSON.stringify(demo));
+
+    // Blocks the candidate opened and left empty are dropped here rather than
+    // sent as noise. The API drops them again — this is convenience, not the
+    // check.
+    [
+      ["workHistory", clean(work, ANCHORS.work)],
+      ["education", clean(education, ANCHORS.education)],
+      ["references", clean(refs, ANCHORS.references)],
+    ].forEach(([name, rows]) => {
+      if (rows.length) fd.append(name, JSON.stringify(rows));
+    });
 
     if (resume) fd.append("resume", resume);
 
@@ -187,6 +211,10 @@ const ApplyForm = ({ slug, questions }) => {
         <span className={styles.label}>How did you hear about us?</span>
         <input type="text" value={values.source} onChange={set("source")} />
       </label>
+
+      <WorkHistory rows={work} onChange={setWork} />
+      <Education rows={education} onChange={setEducation} />
+      <References rows={refs} onChange={setRefs} />
 
       {questions.length > 0 && (
         <fieldset className={styles.fieldset}>
