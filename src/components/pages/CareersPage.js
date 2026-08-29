@@ -3,6 +3,7 @@ import Footer from "../layouts/Footer";
 import Navbar from "../layouts/Navbar";
 import CareersHero from "../layouts/Careers/CareersHero";
 import Jobs from "../layouts/Careers/Jobs";
+import CareersNotices from "../layouts/Careers/CareersNotices";
 import useScrollControl from "../hooks/useScrollControl";
 import usePageTop from "../hooks/usePageTop";
 import { SCROLL_THRESHOLDS } from "../config/scroll";
@@ -22,6 +23,7 @@ const CareersPage = () => {
       />
       <CareersHero />
       <Jobs />
+      <CareersNotices />
       <Footer />
     </Fragment>
   );

@@ -1,0 +1,145 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: var(--border-hairline);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.label {
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"],
+.field select,
+.field textarea {
+  font: inherit;
+  font-size: var(--font-body);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  width: 100%;
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+  outline: 2px solid var(--color-brand-blue);
+  outline-offset: 1px;
+}
+
+.field input[type="file"] {
+  font-size: var(--font-body);
+  color: var(--color-text-secondary);
+}
+
+.fieldset,
+.voluntary {
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0;
+}
+
+/* Set apart so nobody mistakes it for part of the application itself. */
+.voluntary {
+  background: var(--color-surface-alt);
+}
+
+.legend {
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  padding: 0 var(--space-2);
+}
+
+.note {
+  font-size: var(--font-small);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.error {
+  font-size: var(--font-body);
+  line-height: var(--leading-normal);
+  color: var(--color-error);
+  background: var(--color-surface-alt);
+  border-left: 3px solid var(--color-error);
+  padding: var(--space-3) var(--space-4);
+  margin: 0;
+}
+
+.submit {
+  align-self: flex-start;
+  font: inherit;
+  font-size: var(--font-body);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-on-dark);
+  background: var(--color-brand-blue);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-8);
+  cursor: pointer;
+  transition: background var(--duration-normal) var(--easing-standard);
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--color-brand-orange);
+}
+
+.submit:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.done {
+  margin-top: var(--space-6);
+  padding: var(--space-6);
+  background: var(--color-surface-alt);
+  border-left: var(--border-accent);
+  font-size: var(--font-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+}
+
+.doneTitle {
+  font-size: var(--font-body-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-2);
+}
+
+@media (max-width: 37.5em) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

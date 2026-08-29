@@ -1,0 +1,27 @@
+.body {
+  font-size: var(--font-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+  /* Descriptions are typed as plain text in OA, so line breaks are meaningful. */
+  white-space: pre-wrap;
+  margin: 0 0 var(--space-4);
+}
+
+.subhead {
+  font-size: var(--font-h4);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+  margin: var(--space-6) 0 var(--space-2);
+}
+
+.link {
+  color: var(--color-brand-blue);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link:hover {
+  color: var(--color-brand-orange);
+}
