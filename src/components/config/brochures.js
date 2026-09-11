@@ -110,7 +110,7 @@ export const BROCHURES = {
     id: "wolfpack-atvutv",
     title: "WolfPack ATV / UTV",
     basePath: "/brochures/wolfpack-atvutv",
-    pages: 18,
+    pages: 19,
     ext: "webp",
     pdfUrl: "/brochures/wolfpack-atvutv/source.pdf",
     logo: {
