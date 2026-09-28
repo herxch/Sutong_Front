@@ -32,3 +32,6 @@ __pycache__/
 
 # cached CloudFront logs pulled by scripts/access_report.py
 /.access-logs
+
+# brochure photo ZIPs are built by scripts/pack_images.js, never committed
+/public/brochures/*/*-images.zip

@@ -7,5 +7,6 @@
     "label": "WolfPack",
     "svg": "/brochures/wolfpack-atvutv/logo/wolfpack.svg",
     "png": "/brochures/wolfpack-atvutv/logo/wolfpack.png"
-  }
+  },
+  "images": true
 }

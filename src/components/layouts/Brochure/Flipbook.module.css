@@ -137,6 +137,15 @@
   background: #4b5563;
 }
 
+.btn.accent {
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+
+.btn.accent:hover {
+  background: #991b1b;
+}
+
 .counter {
   color: #e5e7eb;
   min-width: 70px;

@@ -1,0 +1,795 @@
+{
+  "zip": {
+    "url": "/brochures/roadone-plt/roadone-plt-images.zip",
+    "filename": "RoadOne Passenger & Light Truck Images.zip",
+    "bytes": 36027614,
+    "entries": [
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY AS/CAVALRY AS_0°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-0deg.png",
+        "bytes": 459377
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY AS/CAVALRY AS_35°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-35deg.png",
+        "bytes": 1167017
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY AS/CAVALRY AS_90°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-90deg.png",
+        "bytes": 1321500
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HP/CAVALRY HP.png",
+        "src": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp.png",
+        "bytes": 1261781
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HP/CAVALRY HP 0°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-0deg.png",
+        "bytes": 681660
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HP/CAVALRY HP 30°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-30deg.png",
+        "bytes": 1272360
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HP/CAVALRY HP 90°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-90deg.png",
+        "bytes": 1157263
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY UHP/CAVALRY UHP.png",
+        "src": "/brochures/roadone-plt/images/cavalry-uhp/cavalry-uhp.png",
+        "bytes": 1674274
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY UHP II/CAVALRY UHP II.png",
+        "src": "/brochures/roadone-plt/images/cavalry-uhp-ii/cavalry-uhp-ii.png",
+        "bytes": 373910
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY UHP III/CAVALRY UHP III.png",
+        "src": "/brochures/roadone-plt/images/cavalry-uhp-iii/cavalry-uhp-iii.png",
+        "bytes": 1451539
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY AT/CAVALRY AT_0°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-0deg.png",
+        "bytes": 646399
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY AT/CAVALRY AT_35°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-35deg.png",
+        "bytes": 1329514
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY AT/CAVALRY AT_90°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-90deg.png",
+        "bytes": 1492213
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HT/CAVALRY HT.png",
+        "src": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht.png",
+        "bytes": 928157
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HT/CAVALRY HT 0°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-0deg.png",
+        "bytes": 803673
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HT/CAVALRY HT 30°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-30deg.png",
+        "bytes": 1420656
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HT/CAVALRY HT 90°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-90deg.png",
+        "bytes": 1378100
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY HT II/CAVALRY HT II.png",
+        "src": "/brochures/roadone-plt/images/cavalry-ht-ii/cavalry-ht-ii.png",
+        "bytes": 626739
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY 4X4 HP/CAVALRY 4X4 HP.png",
+        "src": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp.png",
+        "bytes": 1563954
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY 4X4 HP/CAVALRY 4X4 HP 0.png",
+        "src": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-0.png",
+        "bytes": 841299
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY 4X4 HP/CAVALRY 4X4 HP 30.png",
+        "src": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-30.png",
+        "bytes": 1346650
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY 4X4 HP/CAVALRY 4X4 HP 90.png",
+        "src": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-90.png",
+        "bytes": 1462731
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/AETHON MT/CAVALRY MT_0°.png",
+        "src": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-0deg.png",
+        "bytes": 551145
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/AETHON MT/CAVALRY MT_30°.png",
+        "src": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-30deg.png",
+        "bytes": 1159746
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/AETHON MT/CAVALRY MT_35°.png",
+        "src": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-35deg.png",
+        "bytes": 1287331
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/AETHON MT/CAVALRY MT_90°.png",
+        "src": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-90deg.png",
+        "bytes": 1558178
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY RT/CAVALRY RT_0°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-0deg.png",
+        "bytes": 596586
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY RT/CAVALRY RT_35°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-35deg.png",
+        "bytes": 1471033
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/CAVALRY RT/CAVALRY RT_90°.png",
+        "src": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-90deg.png",
+        "bytes": 1642290
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/AETHON MT X/AETHON MT X.png",
+        "src": "/brochures/roadone-plt/images/aethon-mt-x/aethon-mt-x.png",
+        "bytes": 573388
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/AETHON HT III/AETHON HT III.png",
+        "src": "/brochures/roadone-plt/images/aethon-ht-iii/aethon-ht-iii.png",
+        "bytes": 1259121
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/Logo/ROADONE LOGO PNG.png",
+        "src": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO PNG.png",
+        "bytes": 285929
+      },
+      {
+        "path": "RoadOne Passenger & Light Truck Images/Logo/ROADONE LOGO SVG.svg",
+        "src": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO SVG.svg",
+        "bytes": 975029
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "cavalry-as",
+      "label": "CAVALRY AS",
+      "pages": [
+        2,
+        3
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-0deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-0deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-0deg.png",
+          "filename": "CAVALRY AS_0°.png",
+          "w": 474,
+          "h": 1280,
+          "bytes": 459377,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-35deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-35deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-35deg.png",
+          "filename": "CAVALRY AS_35°.png",
+          "w": 897,
+          "h": 1280,
+          "bytes": 1167017,
+          "label": "35°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-90deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-90deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-as/cavalry-as-90deg.png",
+          "filename": "CAVALRY AS_90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1321500,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "cavalry-hp",
+      "label": "CAVALRY HP",
+      "pages": [
+        4,
+        5
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp.png",
+          "filename": "CAVALRY HP.png",
+          "w": 857,
+          "h": 1280,
+          "bytes": 1261781,
+          "label": ""
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-0deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-0deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-0deg.png",
+          "filename": "CAVALRY HP 0°.png",
+          "w": 494,
+          "h": 1280,
+          "bytes": 681660,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-30deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-30deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-30deg.png",
+          "filename": "CAVALRY HP 30°.png",
+          "w": 956,
+          "h": 1280,
+          "bytes": 1272360,
+          "label": "30°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-90deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-90deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-hp/cavalry-hp-90deg.png",
+          "filename": "CAVALRY HP 90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1157263,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "cavalry-uhp",
+      "label": "CAVALRY UHP",
+      "pages": [
+        6,
+        7
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-uhp/cavalry-uhp.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-uhp/cavalry-uhp.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-uhp/cavalry-uhp.png",
+          "filename": "CAVALRY UHP.png",
+          "w": 976,
+          "h": 1280,
+          "bytes": 1674274,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "cavalry-uhp-ii",
+      "label": "CAVALRY UHP II",
+      "pages": [
+        8
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-uhp-ii/cavalry-uhp-ii.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-uhp-ii/cavalry-uhp-ii.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-uhp-ii/cavalry-uhp-ii.png",
+          "filename": "CAVALRY UHP II.png",
+          "w": 437,
+          "h": 709,
+          "bytes": 373910,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "cavalry-uhp-iii",
+      "label": "CAVALRY UHP III",
+      "pages": [
+        9
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-uhp-iii/cavalry-uhp-iii.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-uhp-iii/cavalry-uhp-iii.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-uhp-iii/cavalry-uhp-iii.png",
+          "filename": "CAVALRY UHP III.png",
+          "w": 993,
+          "h": 1280,
+          "bytes": 1451539,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "cavalry-at",
+      "label": "CAVALRY AT",
+      "pages": [
+        10,
+        11
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-0deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-0deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-0deg.png",
+          "filename": "CAVALRY AT_0°.png",
+          "w": 502,
+          "h": 1280,
+          "bytes": 646399,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-35deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-35deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-35deg.png",
+          "filename": "CAVALRY AT_35°.png",
+          "w": 984,
+          "h": 1280,
+          "bytes": 1329514,
+          "label": "35°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-90deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-90deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-at/cavalry-at-90deg.png",
+          "filename": "CAVALRY AT_90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1492213,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "cavalry-ht",
+      "label": "CAVALRY HT",
+      "pages": [
+        12,
+        13
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht.png",
+          "filename": "CAVALRY HT.png",
+          "w": 869,
+          "h": 1280,
+          "bytes": 928157,
+          "label": ""
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-0deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-0deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-0deg.png",
+          "filename": "CAVALRY HT 0°.png",
+          "w": 463,
+          "h": 1280,
+          "bytes": 803673,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-30deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-30deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-30deg.png",
+          "filename": "CAVALRY HT 30°.png",
+          "w": 924,
+          "h": 1280,
+          "bytes": 1420656,
+          "label": "30°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-90deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-90deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-ht/cavalry-ht-90deg.png",
+          "filename": "CAVALRY HT 90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1378100,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "cavalry-ht-ii",
+      "label": "CAVALRY HT II",
+      "pages": [
+        14
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-ht-ii/cavalry-ht-ii.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-ht-ii/cavalry-ht-ii.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-ht-ii/cavalry-ht-ii.png",
+          "filename": "CAVALRY HT II.png",
+          "w": 854,
+          "h": 1280,
+          "bytes": 626739,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "cavalry-4x4-hp",
+      "label": "CAVALRY 4X4 HP",
+      "pages": [
+        15
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp.png",
+          "filename": "CAVALRY 4X4 HP.png",
+          "w": 931,
+          "h": 1280,
+          "bytes": 1563954,
+          "label": ""
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-0.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-0.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-0.png",
+          "filename": "CAVALRY 4X4 HP 0.png",
+          "w": 430,
+          "h": 1280,
+          "bytes": 841299,
+          "label": "0"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-30.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-30.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-30.png",
+          "filename": "CAVALRY 4X4 HP 30.png",
+          "w": 903,
+          "h": 1280,
+          "bytes": 1346650,
+          "label": "30"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-90.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-90.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-4x4-hp/cavalry-4x4-hp-90.png",
+          "filename": "CAVALRY 4X4 HP 90.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1462731,
+          "label": "90"
+        }
+      ]
+    },
+    {
+      "id": "aethon-mt",
+      "label": "AETHON MT",
+      "pages": [
+        16,
+        17
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-0deg.webp",
+          "thumb": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-0deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-0deg.png",
+          "filename": "CAVALRY MT_0°.png",
+          "w": 473,
+          "h": 1280,
+          "bytes": 551145,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-30deg.webp",
+          "thumb": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-30deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-30deg.png",
+          "filename": "CAVALRY MT_30°.png",
+          "w": 902,
+          "h": 1280,
+          "bytes": 1159746,
+          "label": "30°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-35deg.webp",
+          "thumb": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-35deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-35deg.png",
+          "filename": "CAVALRY MT_35°.png",
+          "w": 972,
+          "h": 1280,
+          "bytes": 1287331,
+          "label": "35°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-90deg.webp",
+          "thumb": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-90deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/aethon-mt/cavalry-mt-90deg.png",
+          "filename": "CAVALRY MT_90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1558178,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "cavalry-rt",
+      "label": "CAVALRY RT",
+      "pages": [
+        18
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-0deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-0deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-0deg.png",
+          "filename": "CAVALRY RT_0°.png",
+          "w": 498,
+          "h": 1280,
+          "bytes": 596586,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-35deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-35deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-35deg.png",
+          "filename": "CAVALRY RT_35°.png",
+          "w": 999,
+          "h": 1280,
+          "bytes": 1471033,
+          "label": "35°"
+        },
+        {
+          "src": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-90deg.webp",
+          "thumb": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-90deg.thumb.webp",
+          "original": "/brochures/roadone-plt/images/cavalry-rt/cavalry-rt-90deg.png",
+          "filename": "CAVALRY RT_90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1642290,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "aethon-mt-x",
+      "label": "AETHON MT X",
+      "pages": [
+        19
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/aethon-mt-x/aethon-mt-x.webp",
+          "thumb": "/brochures/roadone-plt/images/aethon-mt-x/aethon-mt-x.thumb.webp",
+          "original": "/brochures/roadone-plt/images/aethon-mt-x/aethon-mt-x.png",
+          "filename": "AETHON MT X.png",
+          "w": 1248,
+          "h": 1280,
+          "bytes": 573388,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "aethon-ht-iii",
+      "label": "AETHON HT III",
+      "pages": [
+        20
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-plt/images/aethon-ht-iii/aethon-ht-iii.webp",
+          "thumb": "/brochures/roadone-plt/images/aethon-ht-iii/aethon-ht-iii.thumb.webp",
+          "original": "/brochures/roadone-plt/images/aethon-ht-iii/aethon-ht-iii.png",
+          "filename": "AETHON HT III.png",
+          "w": 805,
+          "h": 1280,
+          "bytes": 1259121,
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "2": {
+      "pattern": "cavalry-as",
+      "rect": {
+        "x": 49.2,
+        "y": 20.2,
+        "w": 46.5,
+        "h": 35.4
+      }
+    },
+    "3": {
+      "pattern": "cavalry-as",
+      "rect": {
+        "x": 49.2,
+        "y": 20.2,
+        "w": 46.5,
+        "h": 35.4
+      }
+    },
+    "4": {
+      "pattern": "cavalry-hp",
+      "rect": {
+        "x": 44.3,
+        "y": 20.2,
+        "w": 52.8,
+        "h": 35.4
+      }
+    },
+    "5": {
+      "pattern": "cavalry-hp",
+      "rect": {
+        "x": 44.3,
+        "y": 20.2,
+        "w": 52.8,
+        "h": 35.4
+      }
+    },
+    "6": {
+      "pattern": "cavalry-uhp",
+      "rect": {
+        "x": 42.6,
+        "y": 11.4,
+        "w": 54.4,
+        "h": 35.4
+      }
+    },
+    "7": {
+      "pattern": "cavalry-uhp",
+      "rect": {
+        "x": 42.6,
+        "y": 7.2,
+        "w": 54.4,
+        "h": 35.4
+      }
+    },
+    "8": {
+      "pattern": "cavalry-uhp-ii",
+      "rect": {
+        "x": 47.6,
+        "y": 29.0,
+        "w": 49.1,
+        "h": 35.4
+      }
+    },
+    "9": {
+      "pattern": "cavalry-uhp-iii",
+      "rect": {
+        "x": 40.3,
+        "y": 29.8,
+        "w": 56.5,
+        "h": 35.5
+      }
+    },
+    "10": {
+      "pattern": "cavalry-at",
+      "rect": {
+        "x": 42.6,
+        "y": 11.4,
+        "w": 54.1,
+        "h": 35.4
+      }
+    },
+    "11": {
+      "pattern": "cavalry-at",
+      "rect": {
+        "x": 42.6,
+        "y": 11.4,
+        "w": 54.1,
+        "h": 35.4
+      }
+    },
+    "12": {
+      "pattern": "cavalry-ht",
+      "rect": {
+        "x": 44.3,
+        "y": 11.4,
+        "w": 52.5,
+        "h": 35.4
+      }
+    },
+    "13": {
+      "pattern": "cavalry-ht",
+      "rect": {
+        "x": 44.3,
+        "y": 11.4,
+        "w": 52.5,
+        "h": 35.4
+      }
+    },
+    "14": {
+      "pattern": "cavalry-ht-ii",
+      "rect": {
+        "x": 45.0,
+        "y": 11.4,
+        "w": 51.8,
+        "h": 36.2
+      }
+    },
+    "15": {
+      "pattern": "cavalry-4x4-hp",
+      "rect": {
+        "x": 44.8,
+        "y": 11.4,
+        "w": 52.0,
+        "h": 35.4
+      }
+    },
+    "16": {
+      "pattern": "aethon-mt",
+      "rect": {
+        "x": 44.8,
+        "y": 11.4,
+        "w": 52.0,
+        "h": 35.4
+      }
+    },
+    "17": {
+      "pattern": "aethon-mt",
+      "rect": {
+        "x": 44.8,
+        "y": 11.4,
+        "w": 52.0,
+        "h": 35.4
+      }
+    },
+    "18": {
+      "pattern": "cavalry-rt",
+      "rect": {
+        "x": 44.8,
+        "y": 11.4,
+        "w": 52.0,
+        "h": 34.8
+      }
+    },
+    "19": {
+      "pattern": "aethon-mt-x",
+      "rect": {
+        "x": 38.2,
+        "y": 37.9,
+        "w": 58.6,
+        "h": 35.4
+      }
+    },
+    "20": {
+      "pattern": "aethon-ht-iii",
+      "rect": {
+        "x": 47.6,
+        "y": 37.9,
+        "w": 49.4,
+        "h": 37.8
+      }
+    }
+  }
+}

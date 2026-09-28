@@ -9,6 +9,7 @@ export const BROCHURES = {
     pages: 4,
     ext: "webp",
     pdfUrl: "/brochures/caraway-st/source.pdf",
+    imagesUrl: "/brochures/caraway-st/images.json",
   },
   "hemisphere-plt": {
     id: "hemisphere-plt",
@@ -17,6 +18,7 @@ export const BROCHURES = {
     pages: 14,
     ext: "webp",
     pdfUrl: "/brochures/hemisphere-plt/source.pdf",
+    imagesUrl: "/brochures/hemisphere-plt/images.json",
   },
   "hirun-atvutv": {
     id: "hirun-atvutv",
@@ -25,6 +27,7 @@ export const BROCHURES = {
     pages: 24,
     ext: "webp",
     pdfUrl: "/brochures/hirun-atvutv/source.pdf",
+    imagesUrl: "/brochures/hirun-atvutv/images.json",
   },
   "hirun-specialty": {
     id: "hirun-specialty",
@@ -33,6 +36,7 @@ export const BROCHURES = {
     pages: 44,
     ext: "webp",
     pdfUrl: "/brochures/hirun-specialty/source.pdf",
+    imagesUrl: "/brochures/hirun-specialty/images.json",
   },
   "hirun-st": {
     id: "hirun-st",
@@ -41,6 +45,7 @@ export const BROCHURES = {
     pages: 4,
     ext: "webp",
     pdfUrl: "/brochures/hirun-st/source.pdf",
+    imagesUrl: "/brochures/hirun-st/images.json",
   },
   "hirun-tube": {
     id: "hirun-tube",
@@ -57,6 +62,7 @@ export const BROCHURES = {
     pages: 16,
     ext: "webp",
     pdfUrl: "/brochures/longmarch-mtr/source.pdf",
+    imagesUrl: "/brochures/longmarch-mtr/images.json",
   },
   "roadone-mtr": {
     id: "roadone-mtr",
@@ -65,6 +71,7 @@ export const BROCHURES = {
     pages: 24,
     ext: "webp",
     pdfUrl: "/brochures/roadone-mtr/source.pdf",
+    imagesUrl: "/brochures/roadone-mtr/images.json",
   },
   "roadone-plt": {
     id: "roadone-plt",
@@ -73,6 +80,7 @@ export const BROCHURES = {
     pages: 21,
     ext: "webp",
     pdfUrl: "/brochures/roadone-plt/source.pdf",
+    imagesUrl: "/brochures/roadone-plt/images.json",
   },
   "supercargo-mtr": {
     id: "supercargo-mtr",
@@ -81,6 +89,7 @@ export const BROCHURES = {
     pages: 15,
     ext: "webp",
     pdfUrl: "/brochures/supercargo-mtr/source.pdf",
+    imagesUrl: "/brochures/supercargo-mtr/images.json",
   },
   "supercargo-str": {
     id: "supercargo-str",
@@ -89,6 +98,7 @@ export const BROCHURES = {
     pages: 3,
     ext: "webp",
     pdfUrl: "/brochures/supercargo-str/source.pdf",
+    imagesUrl: "/brochures/supercargo-str/images.json",
   },
   "synergy-mtr": {
     id: "synergy-mtr",
@@ -97,6 +107,7 @@ export const BROCHURES = {
     pages: 14,
     ext: "webp",
     pdfUrl: "/brochures/synergy-mtr/source.pdf",
+    imagesUrl: "/brochures/synergy-mtr/images.json",
   },
   "synergy-str": {
     id: "synergy-str",
@@ -105,6 +116,7 @@ export const BROCHURES = {
     pages: 4,
     ext: "webp",
     pdfUrl: "/brochures/synergy-str/source.pdf",
+    imagesUrl: "/brochures/synergy-str/images.json",
   },
   "wolfpack-atvutv": {
     id: "wolfpack-atvutv",
@@ -113,6 +125,7 @@ export const BROCHURES = {
     pages: 19,
     ext: "webp",
     pdfUrl: "/brochures/wolfpack-atvutv/source.pdf",
+    imagesUrl: "/brochures/wolfpack-atvutv/images.json",
     logo: {
       label: "WolfPack",
       svg: "/brochures/wolfpack-atvutv/logo/wolfpack.svg",

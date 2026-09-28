@@ -1,0 +1,485 @@
+{
+  "zip": {
+    "url": "/brochures/hemisphere-plt/hemisphere-plt-images.zip",
+    "filename": "Hemisphere Passenger & Light Truck Images.zip",
+    "bytes": 14264445,
+    "entries": [
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON HP/AETHON HP 1.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-1.png",
+        "bytes": 873981
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON HP/AETHON HP 2.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-2.png",
+        "bytes": 900093
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON HP/AETHON HP 3.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-3.png",
+        "bytes": 507893
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON 4x4 HP/AETHON 4x4 HP 1.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-1.png",
+        "bytes": 875171
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON 4x4 HP/AETHON 4X4 HP 2.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-2.png",
+        "bytes": 810084
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON 4x4 HP/AETHON 4X4 HP 3.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-3.png",
+        "bytes": 457111
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON AT/AETHON AT 1.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-at/aethon-at-1.png",
+        "bytes": 900506
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON AT/AETHON AT 2.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-at/aethon-at-2.png",
+        "bytes": 818220
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON HT/AETHON HT 1.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-1.png",
+        "bytes": 765187
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON HT/AETHON HT 2.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-2.png",
+        "bytes": 896877
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON HT/AETHON HT 3.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-3.png",
+        "bytes": 454337
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON RT/AETHON RT 1.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-rt/aethon-rt-1.png",
+        "bytes": 882512
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON RT/AETHON RT 2.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-rt/aethon-rt-2.png",
+        "bytes": 757924
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON UHP II/AETHON UHP II 1.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-1.png",
+        "bytes": 881074
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON UHP II/AETHON UHP II 2.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-2.png",
+        "bytes": 661145
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON UHP II/AETHON UHP II 3.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-3.png",
+        "bytes": 489100
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON UHP III/AETHON UHP III.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-uhp-iii/aethon-uhp-iii.png",
+        "bytes": 1451539
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/AETHON UHP/AETHON UHP.png",
+        "src": "/brochures/hemisphere-plt/images/aethon-uhp/aethon-uhp.png",
+        "bytes": 802046
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/Logo/HEMISPHERE LOGO PNG.png",
+        "src": "/brochures/hemisphere-plt/images/_logo/HEMISPHERE LOGO PNG.png",
+        "bytes": 69133
+      },
+      {
+        "path": "Hemisphere Passenger & Light Truck Images/Logo/HEMISPHERE LOGO SVG.svg",
+        "src": "/brochures/hemisphere-plt/images/_logo/HEMISPHERE LOGO SVG.svg",
+        "bytes": 6166
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "aethon-hp",
+      "label": "AETHON HP",
+      "pages": [
+        2,
+        3
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-1.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-1.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-1.png",
+          "filename": "AETHON HP 1.png",
+          "w": 1060,
+          "h": 1280,
+          "bytes": 873981,
+          "label": "1"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-2.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-2.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-2.png",
+          "filename": "AETHON HP 2.png",
+          "w": 1280,
+          "h": 1250,
+          "bytes": 900093,
+          "label": "2"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-3.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-3.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-hp/aethon-hp-3.png",
+          "filename": "AETHON HP 3.png",
+          "w": 493,
+          "h": 1280,
+          "bytes": 507893,
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "id": "aethon-4x4-hp",
+      "label": "AETHON 4x4 HP",
+      "pages": [
+        4,
+        5
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-1.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-1.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-1.png",
+          "filename": "AETHON 4x4 HP 1.png",
+          "w": 1037,
+          "h": 1280,
+          "bytes": 875171,
+          "label": "1"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-2.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-2.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-2.png",
+          "filename": "AETHON 4X4 HP 2.png",
+          "w": 1280,
+          "h": 1267,
+          "bytes": 810084,
+          "label": "2"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-3.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-3.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-4x4-hp/aethon-4x4-hp-3.png",
+          "filename": "AETHON 4X4 HP 3.png",
+          "w": 483,
+          "h": 1280,
+          "bytes": 457111,
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "id": "aethon-at",
+      "label": "AETHON AT",
+      "pages": [
+        6,
+        7
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-at/aethon-at-1.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-at/aethon-at-1.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-at/aethon-at-1.png",
+          "filename": "AETHON AT 1.png",
+          "w": 1058,
+          "h": 1280,
+          "bytes": 900506,
+          "label": "1"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-at/aethon-at-2.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-at/aethon-at-2.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-at/aethon-at-2.png",
+          "filename": "AETHON AT 2.png",
+          "w": 1280,
+          "h": 1266,
+          "bytes": 818220,
+          "label": "2"
+        }
+      ]
+    },
+    {
+      "id": "aethon-ht",
+      "label": "AETHON HT",
+      "pages": [
+        8
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-1.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-1.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-1.png",
+          "filename": "AETHON HT 1.png",
+          "w": 1015,
+          "h": 1280,
+          "bytes": 765187,
+          "label": "1"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-2.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-2.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-2.png",
+          "filename": "AETHON HT 2.png",
+          "w": 1280,
+          "h": 1277,
+          "bytes": 896877,
+          "label": "2"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-3.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-3.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-ht/aethon-ht-3.png",
+          "filename": "AETHON HT 3.png",
+          "w": 453,
+          "h": 1280,
+          "bytes": 454337,
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "id": "aethon-rt",
+      "label": "AETHON RT",
+      "pages": [
+        9
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-rt/aethon-rt-1.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-rt/aethon-rt-1.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-rt/aethon-rt-1.png",
+          "filename": "AETHON RT 1.png",
+          "w": 1078,
+          "h": 1280,
+          "bytes": 882512,
+          "label": "1"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-rt/aethon-rt-2.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-rt/aethon-rt-2.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-rt/aethon-rt-2.png",
+          "filename": "AETHON RT 2.png",
+          "w": 1280,
+          "h": 1264,
+          "bytes": 757924,
+          "label": "2"
+        }
+      ]
+    },
+    {
+      "id": "aethon-uhp-ii",
+      "label": "AETHON UHP II",
+      "pages": [
+        10
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-1.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-1.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-1.png",
+          "filename": "AETHON UHP II 1.png",
+          "w": 986,
+          "h": 1280,
+          "bytes": 881074,
+          "label": "1"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-2.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-2.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-2.png",
+          "filename": "AETHON UHP II 2.png",
+          "w": 1280,
+          "h": 1263,
+          "bytes": 661145,
+          "label": "2"
+        },
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-3.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-3.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-uhp-ii/aethon-uhp-ii-3.png",
+          "filename": "AETHON UHP II 3.png",
+          "w": 524,
+          "h": 1280,
+          "bytes": 489100,
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "id": "aethon-uhp-iii",
+      "label": "AETHON UHP III",
+      "pages": [
+        11
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-uhp-iii/aethon-uhp-iii.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-uhp-iii/aethon-uhp-iii.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-uhp-iii/aethon-uhp-iii.png",
+          "filename": "AETHON UHP III.png",
+          "w": 993,
+          "h": 1280,
+          "bytes": 1451539,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "aethon-uhp",
+      "label": "AETHON UHP",
+      "pages": [
+        12,
+        13
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hemisphere-plt/images/aethon-uhp/aethon-uhp.webp",
+          "thumb": "/brochures/hemisphere-plt/images/aethon-uhp/aethon-uhp.thumb.webp",
+          "original": "/brochures/hemisphere-plt/images/aethon-uhp/aethon-uhp.png",
+          "filename": "AETHON UHP.png",
+          "w": 1076,
+          "h": 1280,
+          "bytes": 802046,
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "2": {
+      "pattern": "aethon-hp",
+      "rect": {
+        "x": 48.0,
+        "y": 30.5,
+        "w": 49.4,
+        "h": 35.4
+      }
+    },
+    "3": {
+      "pattern": "aethon-hp",
+      "rect": {
+        "x": 49.0,
+        "y": 30.3,
+        "w": 46.9,
+        "h": 35.4
+      }
+    },
+    "4": {
+      "pattern": "aethon-4x4-hp",
+      "rect": {
+        "x": 60.0,
+        "y": 33.4,
+        "w": 37.1,
+        "h": 35.0
+      }
+    },
+    "5": {
+      "pattern": "aethon-4x4-hp",
+      "rect": {
+        "x": 49.4,
+        "y": 32.8,
+        "w": 46.2,
+        "h": 35.4
+      }
+    },
+    "6": {
+      "pattern": "aethon-at",
+      "rect": {
+        "x": 46.5,
+        "y": 28.0,
+        "w": 50.8,
+        "h": 35.4
+      }
+    },
+    "7": {
+      "pattern": "aethon-at",
+      "rect": {
+        "x": 50.0,
+        "y": 27.9,
+        "w": 46.3,
+        "h": 35.4
+      }
+    },
+    "8": {
+      "pattern": "aethon-ht",
+      "rect": {
+        "x": 49.1,
+        "y": 29.5,
+        "w": 47.6,
+        "h": 34.0
+      }
+    },
+    "9": {
+      "pattern": "aethon-rt",
+      "rect": {
+        "x": 46.8,
+        "y": 19.2,
+        "w": 51.0,
+        "h": 35.4
+      }
+    },
+    "10": {
+      "pattern": "aethon-uhp-ii",
+      "rect": {
+        "x": 47.6,
+        "y": 40.6,
+        "w": 48.5,
+        "h": 32.9
+      }
+    },
+    "11": {
+      "pattern": "aethon-uhp-iii",
+      "rect": {
+        "x": 40.3,
+        "y": 37.7,
+        "w": 56.5,
+        "h": 36.1
+      }
+    },
+    "12": {
+      "pattern": "aethon-uhp",
+      "rect": {
+        "x": 47.2,
+        "y": 31.7,
+        "w": 50.2,
+        "h": 34.8
+      }
+    },
+    "13": {
+      "pattern": "aethon-uhp",
+      "rect": {
+        "x": 47.2,
+        "y": 31.7,
+        "w": 50.2,
+        "h": 34.8
+      }
+    }
+  }
+}

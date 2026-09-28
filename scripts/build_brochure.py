@@ -9,6 +9,9 @@ meta.json, then regenerates the React registry from every meta.json on disk.
 Re-run with --regen-only after hand-editing a meta.json to refresh the registry
 without re-rendering anything.
 
+A new edition can move pages around, so afterwards re-run
+scripts/build_images.py <id> to re-attach the tire photos to the right pages.
+
 Requires PyMuPDF and Pillow.
 """
 
@@ -102,6 +105,8 @@ def regenerate_registry():
         lines.append('    ext: "webp",')
         if e.get("pdf"):
             lines.append(f"    pdfUrl: {js_string(base + '/source.pdf')},")
+        if e.get("images"):
+            lines.append(f"    imagesUrl: {js_string(base + '/images.json')},")
         if e.get("logo"):
             logo = e["logo"]
             lines.append("    logo: {")

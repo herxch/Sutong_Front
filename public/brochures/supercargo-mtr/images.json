@@ -1,0 +1,840 @@
+{
+  "zip": {
+    "url": "/brochures/supercargo-mtr/supercargo-mtr-images.zip",
+    "filename": "SuperCargo MTR Images.zip",
+    "bytes": 42469044,
+    "entries": [
+      {
+        "path": "SuperCargo MTR Images/S202/S202.png",
+        "src": "/brochures/supercargo-mtr/images/s202/s202.png",
+        "bytes": 1138826
+      },
+      {
+        "path": "SuperCargo MTR Images/D271/D271 a.png",
+        "src": "/brochures/supercargo-mtr/images/d271/d271-a.png",
+        "bytes": 1389200
+      },
+      {
+        "path": "SuperCargo MTR Images/D271/D271 b.png",
+        "src": "/brochures/supercargo-mtr/images/d271/d271-b.png",
+        "bytes": 1138859
+      },
+      {
+        "path": "SuperCargo MTR Images/D271/D271 c.png",
+        "src": "/brochures/supercargo-mtr/images/d271/d271-c.png",
+        "bytes": 1454362
+      },
+      {
+        "path": "SuperCargo MTR Images/D271/D271 d.png",
+        "src": "/brochures/supercargo-mtr/images/d271/d271-d.png",
+        "bytes": 552621
+      },
+      {
+        "path": "SuperCargo MTR Images/S205/S205 a.png",
+        "src": "/brochures/supercargo-mtr/images/s205/s205-a.png",
+        "bytes": 1365162
+      },
+      {
+        "path": "SuperCargo MTR Images/S205/S205 b.png",
+        "src": "/brochures/supercargo-mtr/images/s205/s205-b.png",
+        "bytes": 1133110
+      },
+      {
+        "path": "SuperCargo MTR Images/S205/S205 c.png",
+        "src": "/brochures/supercargo-mtr/images/s205/s205-c.png",
+        "bytes": 1649932
+      },
+      {
+        "path": "SuperCargo MTR Images/S205/S205 d.png",
+        "src": "/brochures/supercargo-mtr/images/s205/s205-d.png",
+        "bytes": 506484
+      },
+      {
+        "path": "SuperCargo MTR Images/D272/D272 a.png",
+        "src": "/brochures/supercargo-mtr/images/d272/d272-a.png",
+        "bytes": 1341008
+      },
+      {
+        "path": "SuperCargo MTR Images/D272/D272 b.png",
+        "src": "/brochures/supercargo-mtr/images/d272/d272-b.png",
+        "bytes": 1097200
+      },
+      {
+        "path": "SuperCargo MTR Images/D272/D272 c.png",
+        "src": "/brochures/supercargo-mtr/images/d272/d272-c.png",
+        "bytes": 1403815
+      },
+      {
+        "path": "SuperCargo MTR Images/D272/D272 d.png",
+        "src": "/brochures/supercargo-mtr/images/d272/d272-d.png",
+        "bytes": 526895
+      },
+      {
+        "path": "SuperCargo MTR Images/A576/A576 a.png",
+        "src": "/brochures/supercargo-mtr/images/a576/a576-a.png",
+        "bytes": 1273910
+      },
+      {
+        "path": "SuperCargo MTR Images/A576/A576 b.png",
+        "src": "/brochures/supercargo-mtr/images/a576/a576-b.png",
+        "bytes": 1052927
+      },
+      {
+        "path": "SuperCargo MTR Images/A576/A576 c.png",
+        "src": "/brochures/supercargo-mtr/images/a576/a576-c.png",
+        "bytes": 1396530
+      },
+      {
+        "path": "SuperCargo MTR Images/A576/A576 d.png",
+        "src": "/brochures/supercargo-mtr/images/a576/a576-d.png",
+        "bytes": 469560
+      },
+      {
+        "path": "SuperCargo MTR Images/T210/T210 a.png",
+        "src": "/brochures/supercargo-mtr/images/t210/t210-a.png",
+        "bytes": 1382135
+      },
+      {
+        "path": "SuperCargo MTR Images/T210/T210 b.png",
+        "src": "/brochures/supercargo-mtr/images/t210/t210-b.png",
+        "bytes": 1137216
+      },
+      {
+        "path": "SuperCargo MTR Images/T210/T210 c.png",
+        "src": "/brochures/supercargo-mtr/images/t210/t210-c.png",
+        "bytes": 1440906
+      },
+      {
+        "path": "SuperCargo MTR Images/T210/T210 d.png",
+        "src": "/brochures/supercargo-mtr/images/t210/t210-d.png",
+        "bytes": 492853
+      },
+      {
+        "path": "SuperCargo MTR Images/D251/D251 A.png",
+        "src": "/brochures/supercargo-mtr/images/d251/d251-a.png",
+        "bytes": 1364206
+      },
+      {
+        "path": "SuperCargo MTR Images/D251/D251 b.png",
+        "src": "/brochures/supercargo-mtr/images/d251/d251-b.png",
+        "bytes": 1141865
+      },
+      {
+        "path": "SuperCargo MTR Images/D251/D251 c.png",
+        "src": "/brochures/supercargo-mtr/images/d251/d251-c.png",
+        "bytes": 1420891
+      },
+      {
+        "path": "SuperCargo MTR Images/D251/D251 d.png",
+        "src": "/brochures/supercargo-mtr/images/d251/d251-d.png",
+        "bytes": 531464
+      },
+      {
+        "path": "SuperCargo MTR Images/D252/D252 A.png",
+        "src": "/brochures/supercargo-mtr/images/d252/d252-a.png",
+        "bytes": 1239890
+      },
+      {
+        "path": "SuperCargo MTR Images/D252/D252 b.png",
+        "src": "/brochures/supercargo-mtr/images/d252/d252-b.png",
+        "bytes": 992069
+      },
+      {
+        "path": "SuperCargo MTR Images/D252/D252 c.png",
+        "src": "/brochures/supercargo-mtr/images/d252/d252-c.png",
+        "bytes": 1404986
+      },
+      {
+        "path": "SuperCargo MTR Images/D252/D252 d.jpg",
+        "src": "/brochures/supercargo-mtr/images/d252/d252-d.jpg",
+        "bytes": 113192
+      },
+      {
+        "path": "SuperCargo MTR Images/DL01/DL01 a.png",
+        "src": "/brochures/supercargo-mtr/images/dl01/dl01-a.png",
+        "bytes": 1394322
+      },
+      {
+        "path": "SuperCargo MTR Images/DL01/DL01 b.png",
+        "src": "/brochures/supercargo-mtr/images/dl01/dl01-b.png",
+        "bytes": 1635935
+      },
+      {
+        "path": "SuperCargo MTR Images/DL01/DL01 c.png",
+        "src": "/brochures/supercargo-mtr/images/dl01/dl01-c.png",
+        "bytes": 1530208
+      },
+      {
+        "path": "SuperCargo MTR Images/DL01/DL01 d.png",
+        "src": "/brochures/supercargo-mtr/images/dl01/dl01-d.png",
+        "bytes": 572498
+      },
+      {
+        "path": "SuperCargo MTR Images/SC820/SC820.png",
+        "src": "/brochures/supercargo-mtr/images/sc820/sc820.png",
+        "bytes": 1299653
+      },
+      {
+        "path": "SuperCargo MTR Images/A275/A275 a.png",
+        "src": "/brochures/supercargo-mtr/images/a275/a275-a.png",
+        "bytes": 1624531
+      },
+      {
+        "path": "SuperCargo MTR Images/A275/A275 b.png",
+        "src": "/brochures/supercargo-mtr/images/a275/a275-b.png",
+        "bytes": 1261897
+      },
+      {
+        "path": "SuperCargo MTR Images/LM180/LM180.png",
+        "src": "/brochures/supercargo-mtr/images/lm180/lm180.png",
+        "bytes": 695509
+      },
+      {
+        "path": "SuperCargo MTR Images/LM281/LM281.png",
+        "src": "/brochures/supercargo-mtr/images/lm281/lm281.png",
+        "bytes": 786574
+      },
+      {
+        "path": "SuperCargo MTR Images/Logo/SUPERCARGO LOGO PNG.png",
+        "src": "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO PNG.png",
+        "bytes": 101104
+      },
+      {
+        "path": "SuperCargo MTR Images/Logo/SUPERCARGO LOGO SVG.svg",
+        "src": "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO SVG.svg",
+        "bytes": 8669
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "s202",
+      "label": "S202",
+      "pages": [
+        2
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/s202/s202.webp",
+          "thumb": "/brochures/supercargo-mtr/images/s202/s202.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/s202/s202.png",
+          "filename": "S202.png",
+          "w": 825,
+          "h": 1280,
+          "bytes": 1138826,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "d271",
+      "label": "D271",
+      "pages": [
+        3
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/d271/d271-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d271/d271-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d271/d271-a.png",
+          "filename": "D271 a.png",
+          "w": 1070,
+          "h": 1280,
+          "bytes": 1389200,
+          "label": "a"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d271/d271-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d271/d271-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d271/d271-b.png",
+          "filename": "D271 b.png",
+          "w": 858,
+          "h": 1280,
+          "bytes": 1138859,
+          "label": "b"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d271/d271-c.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d271/d271-c.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d271/d271-c.png",
+          "filename": "D271 c.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1454362,
+          "label": "c"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d271/d271-d.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d271/d271-d.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d271/d271-d.png",
+          "filename": "D271 d.png",
+          "w": 425,
+          "h": 1280,
+          "bytes": 552621,
+          "label": "d"
+        }
+      ]
+    },
+    {
+      "id": "s205",
+      "label": "S205",
+      "pages": [
+        4
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/s205/s205-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/s205/s205-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/s205/s205-a.png",
+          "filename": "S205 a.png",
+          "w": 1072,
+          "h": 1280,
+          "bytes": 1365162,
+          "label": "a"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/s205/s205-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/s205/s205-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/s205/s205-b.png",
+          "filename": "S205 b.png",
+          "w": 864,
+          "h": 1280,
+          "bytes": 1133110,
+          "label": "b"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/s205/s205-c.webp",
+          "thumb": "/brochures/supercargo-mtr/images/s205/s205-c.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/s205/s205-c.png",
+          "filename": "S205 c.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1649932,
+          "label": "c"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/s205/s205-d.webp",
+          "thumb": "/brochures/supercargo-mtr/images/s205/s205-d.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/s205/s205-d.png",
+          "filename": "S205 d.png",
+          "w": 412,
+          "h": 1280,
+          "bytes": 506484,
+          "label": "d"
+        }
+      ]
+    },
+    {
+      "id": "d272",
+      "label": "D272",
+      "pages": [
+        5
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/d272/d272-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d272/d272-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d272/d272-a.png",
+          "filename": "D272 a.png",
+          "w": 1068,
+          "h": 1280,
+          "bytes": 1341008,
+          "label": "a"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d272/d272-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d272/d272-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d272/d272-b.png",
+          "filename": "D272 b.png",
+          "w": 863,
+          "h": 1280,
+          "bytes": 1097200,
+          "label": "b"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d272/d272-c.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d272/d272-c.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d272/d272-c.png",
+          "filename": "D272 c.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1403815,
+          "label": "c"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d272/d272-d.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d272/d272-d.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d272/d272-d.png",
+          "filename": "D272 d.png",
+          "w": 425,
+          "h": 1280,
+          "bytes": 526895,
+          "label": "d"
+        }
+      ]
+    },
+    {
+      "id": "a576",
+      "label": "A576",
+      "pages": [
+        6
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/a576/a576-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/a576/a576-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/a576/a576-a.png",
+          "filename": "A576 a.png",
+          "w": 1075,
+          "h": 1280,
+          "bytes": 1273910,
+          "label": "a"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/a576/a576-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/a576/a576-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/a576/a576-b.png",
+          "filename": "A576 b.png",
+          "w": 861,
+          "h": 1280,
+          "bytes": 1052927,
+          "label": "b"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/a576/a576-c.webp",
+          "thumb": "/brochures/supercargo-mtr/images/a576/a576-c.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/a576/a576-c.png",
+          "filename": "A576 c.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1396530,
+          "label": "c"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/a576/a576-d.webp",
+          "thumb": "/brochures/supercargo-mtr/images/a576/a576-d.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/a576/a576-d.png",
+          "filename": "A576 d.png",
+          "w": 413,
+          "h": 1280,
+          "bytes": 469560,
+          "label": "d"
+        }
+      ]
+    },
+    {
+      "id": "t210",
+      "label": "T210",
+      "pages": [
+        7
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/t210/t210-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/t210/t210-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/t210/t210-a.png",
+          "filename": "T210 a.png",
+          "w": 1083,
+          "h": 1280,
+          "bytes": 1382135,
+          "label": "a"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/t210/t210-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/t210/t210-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/t210/t210-b.png",
+          "filename": "T210 b.png",
+          "w": 866,
+          "h": 1280,
+          "bytes": 1137216,
+          "label": "b"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/t210/t210-c.webp",
+          "thumb": "/brochures/supercargo-mtr/images/t210/t210-c.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/t210/t210-c.png",
+          "filename": "T210 c.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1440906,
+          "label": "c"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/t210/t210-d.webp",
+          "thumb": "/brochures/supercargo-mtr/images/t210/t210-d.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/t210/t210-d.png",
+          "filename": "T210 d.png",
+          "w": 383,
+          "h": 1280,
+          "bytes": 492853,
+          "label": "d"
+        }
+      ]
+    },
+    {
+      "id": "d251",
+      "label": "D251",
+      "pages": [
+        8
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/d251/d251-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d251/d251-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d251/d251-a.png",
+          "filename": "D251 A.png",
+          "w": 1068,
+          "h": 1280,
+          "bytes": 1364206,
+          "label": "A"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d251/d251-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d251/d251-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d251/d251-b.png",
+          "filename": "D251 b.png",
+          "w": 862,
+          "h": 1280,
+          "bytes": 1141865,
+          "label": "b"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d251/d251-c.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d251/d251-c.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d251/d251-c.png",
+          "filename": "D251 c.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1420891,
+          "label": "c"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d251/d251-d.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d251/d251-d.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d251/d251-d.png",
+          "filename": "D251 d.png",
+          "w": 424,
+          "h": 1280,
+          "bytes": 531464,
+          "label": "d"
+        }
+      ]
+    },
+    {
+      "id": "d252",
+      "label": "D252",
+      "pages": [
+        9
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/d252/d252-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d252/d252-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d252/d252-a.png",
+          "filename": "D252 A.png",
+          "w": 1081,
+          "h": 1280,
+          "bytes": 1239890,
+          "label": "A"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d252/d252-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d252/d252-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d252/d252-b.png",
+          "filename": "D252 b.png",
+          "w": 875,
+          "h": 1280,
+          "bytes": 992069,
+          "label": "b"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d252/d252-c.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d252/d252-c.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d252/d252-c.png",
+          "filename": "D252 c.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1404986,
+          "label": "c"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/d252/d252-d.webp",
+          "thumb": "/brochures/supercargo-mtr/images/d252/d252-d.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/d252/d252-d.jpg",
+          "filename": "D252 d.jpg",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 113192,
+          "label": "d"
+        }
+      ]
+    },
+    {
+      "id": "dl01",
+      "label": "DL01",
+      "pages": [
+        10
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/dl01/dl01-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/dl01/dl01-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/dl01/dl01-a.png",
+          "filename": "DL01 a.png",
+          "w": 1129,
+          "h": 1280,
+          "bytes": 1394322,
+          "label": "a"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/dl01/dl01-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/dl01/dl01-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/dl01/dl01-b.png",
+          "filename": "DL01 b.png",
+          "w": 1258,
+          "h": 1280,
+          "bytes": 1635935,
+          "label": "b"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/dl01/dl01-c.webp",
+          "thumb": "/brochures/supercargo-mtr/images/dl01/dl01-c.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/dl01/dl01-c.png",
+          "filename": "DL01 c.png",
+          "w": 1280,
+          "h": 1278,
+          "bytes": 1530208,
+          "label": "c"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/dl01/dl01-d.webp",
+          "thumb": "/brochures/supercargo-mtr/images/dl01/dl01-d.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/dl01/dl01-d.png",
+          "filename": "DL01 d.png",
+          "w": 409,
+          "h": 1280,
+          "bytes": 572498,
+          "label": "d"
+        }
+      ]
+    },
+    {
+      "id": "sc820",
+      "label": "SC820",
+      "pages": [
+        11
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/sc820/sc820.webp",
+          "thumb": "/brochures/supercargo-mtr/images/sc820/sc820.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/sc820/sc820.png",
+          "filename": "SC820.png",
+          "w": 696,
+          "h": 1280,
+          "bytes": 1299653,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "a275",
+      "label": "A275",
+      "pages": [
+        12
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/a275/a275-a.webp",
+          "thumb": "/brochures/supercargo-mtr/images/a275/a275-a.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/a275/a275-a.png",
+          "filename": "A275 a.png",
+          "w": 1087,
+          "h": 1280,
+          "bytes": 1624531,
+          "label": "a"
+        },
+        {
+          "src": "/brochures/supercargo-mtr/images/a275/a275-b.webp",
+          "thumb": "/brochures/supercargo-mtr/images/a275/a275-b.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/a275/a275-b.png",
+          "filename": "A275 b.png",
+          "w": 844,
+          "h": 1280,
+          "bytes": 1261897,
+          "label": "b"
+        }
+      ]
+    },
+    {
+      "id": "lm180",
+      "label": "LM180",
+      "pages": [
+        13
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/lm180/lm180.webp",
+          "thumb": "/brochures/supercargo-mtr/images/lm180/lm180.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/lm180/lm180.png",
+          "filename": "LM180.png",
+          "w": 822,
+          "h": 1280,
+          "bytes": 695509,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "lm281",
+      "label": "LM281",
+      "pages": [
+        14
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/supercargo-mtr/images/lm281/lm281.webp",
+          "thumb": "/brochures/supercargo-mtr/images/lm281/lm281.thumb.webp",
+          "original": "/brochures/supercargo-mtr/images/lm281/lm281.png",
+          "filename": "LM281.png",
+          "w": 815,
+          "h": 1280,
+          "bytes": 786574,
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "2": {
+      "pattern": "s202",
+      "rect": {
+        "x": 61.3,
+        "y": 23.7,
+        "w": 26.8,
+        "h": 24.8
+      }
+    },
+    "3": {
+      "pattern": "d271",
+      "rect": {
+        "x": 54.7,
+        "y": 28.5,
+        "w": 33.8,
+        "h": 25.6
+      }
+    },
+    "4": {
+      "pattern": "s205",
+      "rect": {
+        "x": 53.6,
+        "y": 27.4,
+        "w": 34.9,
+        "h": 27.1
+      }
+    },
+    "5": {
+      "pattern": "d272",
+      "rect": {
+        "x": 53.7,
+        "y": 27.5,
+        "w": 34.8,
+        "h": 26.4
+      }
+    },
+    "6": {
+      "pattern": "a576",
+      "rect": {
+        "x": 53.4,
+        "y": 27.6,
+        "w": 35.0,
+        "h": 26.4
+      }
+    },
+    "7": {
+      "pattern": "t210",
+      "rect": {
+        "x": 53.4,
+        "y": 27.6,
+        "w": 35.3,
+        "h": 26.4
+      }
+    },
+    "8": {
+      "pattern": "d251",
+      "rect": {
+        "x": 56.3,
+        "y": 27.5,
+        "w": 34.8,
+        "h": 26.6
+      }
+    },
+    "9": {
+      "pattern": "d252",
+      "rect": {
+        "x": 53.3,
+        "y": 27.5,
+        "w": 35.2,
+        "h": 26.3
+      }
+    },
+    "10": {
+      "pattern": "dl01",
+      "rect": {
+        "x": 53.8,
+        "y": 27.5,
+        "w": 36.8,
+        "h": 26.7
+      }
+    },
+    "11": {
+      "pattern": "sc820",
+      "rect": {
+        "x": 49.7,
+        "y": 27.8,
+        "w": 39.1,
+        "h": 27.3
+      }
+    },
+    "12": {
+      "pattern": "a275",
+      "rect": {
+        "x": 53.8,
+        "y": 28.5,
+        "w": 36.8,
+        "h": 26.7
+      }
+    },
+    "13": {
+      "pattern": "lm180",
+      "rect": {
+        "x": 55.4,
+        "y": 28.5,
+        "w": 36.8,
+        "h": 26.7
+      }
+    },
+    "14": {
+      "pattern": "lm281",
+      "rect": {
+        "x": 55.4,
+        "y": 28.5,
+        "w": 36.8,
+        "h": 26.7
+      }
+    }
+  }
+}

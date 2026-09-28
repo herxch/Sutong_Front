@@ -1,0 +1,121 @@
+{
+  "zip": {
+    "url": "/brochures/synergy-str/synergy-str-images.zip",
+    "filename": "Synergy STR Images.zip",
+    "bytes": 3284651,
+    "entries": [
+      {
+        "path": "Synergy STR Images/SP500/SP500.png",
+        "src": "/brochures/synergy-str/images/sp500/sp500.png",
+        "bytes": 1071671
+      },
+      {
+        "path": "Synergy STR Images/ST801/ST801 A.png",
+        "src": "/brochures/synergy-str/images/st801/st801-a.png",
+        "bytes": 834008
+      },
+      {
+        "path": "Synergy STR Images/ST801/ST801 B.png",
+        "src": "/brochures/synergy-str/images/st801/st801-b.png",
+        "bytes": 864062
+      },
+      {
+        "path": "Synergy STR Images/ST801/ST801 C.png",
+        "src": "/brochures/synergy-str/images/st801/st801-c.png",
+        "bytes": 419185
+      },
+      {
+        "path": "Synergy STR Images/Logo/SYNERGY LOGO PNG.png",
+        "src": "/brochures/synergy-str/images/_logo/SYNERGY LOGO PNG.png",
+        "bytes": 83669
+      },
+      {
+        "path": "Synergy STR Images/Logo/SYNERGY LOGO SVG.svg",
+        "src": "/brochures/synergy-str/images/_logo/SYNERGY LOGO SVG.svg",
+        "bytes": 11118
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "sp500",
+      "label": "SP500",
+      "pages": [
+        2
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-str/images/sp500/sp500.webp",
+          "thumb": "/brochures/synergy-str/images/sp500/sp500.thumb.webp",
+          "original": "/brochures/synergy-str/images/sp500/sp500.png",
+          "filename": "SP500.png",
+          "w": 979,
+          "h": 1280,
+          "bytes": 1071671,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "st801",
+      "label": "ST801",
+      "pages": [
+        3
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-str/images/st801/st801-a.webp",
+          "thumb": "/brochures/synergy-str/images/st801/st801-a.thumb.webp",
+          "original": "/brochures/synergy-str/images/st801/st801-a.png",
+          "filename": "ST801 A.png",
+          "w": 1007,
+          "h": 1280,
+          "bytes": 834008,
+          "label": "A"
+        },
+        {
+          "src": "/brochures/synergy-str/images/st801/st801-b.webp",
+          "thumb": "/brochures/synergy-str/images/st801/st801-b.thumb.webp",
+          "original": "/brochures/synergy-str/images/st801/st801-b.png",
+          "filename": "ST801 B.png",
+          "w": 1280,
+          "h": 1257,
+          "bytes": 864062,
+          "label": "B"
+        },
+        {
+          "src": "/brochures/synergy-str/images/st801/st801-c.webp",
+          "thumb": "/brochures/synergy-str/images/st801/st801-c.thumb.webp",
+          "original": "/brochures/synergy-str/images/st801/st801-c.png",
+          "filename": "ST801 C.png",
+          "w": 412,
+          "h": 1280,
+          "bytes": 419185,
+          "label": "C"
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "2": {
+      "pattern": "sp500",
+      "rect": {
+        "x": 52.1,
+        "y": 44.0,
+        "w": 44.4,
+        "h": 22.3
+      }
+    },
+    "3": {
+      "pattern": "st801",
+      "rect": {
+        "x": 53.5,
+        "y": 44.0,
+        "w": 43.0,
+        "h": 22.3
+      }
+    }
+  }
+}

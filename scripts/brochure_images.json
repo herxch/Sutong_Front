@@ -1,0 +1,62 @@
+{
+  "_readme": [
+    "Where each brochure's per-pattern tire photos come from. Read by scripts/build_images.py.",
+    "root     -- the folder Herbert keeps the photos in: one subfolder per brochure, one per pattern inside that.",
+    "source   -- the brochure's own photo folder. Every pattern in it is published, whether or not a page is found for it.",
+    "borrow   -- other brochures' folders whose patterns also appear on this brochure's pages; only the ones matched to a page are used.",
+    "logos    -- folders whose top-level logo files go into the ZIP; defaults to the source folder.",
+    "pages    -- page number -> pattern folder name, for pages the automatic match gets wrong. null means no photos for that page.",
+    "exclude  -- pattern folders never to publish, with the reason."
+  ],
+  "root": "C:/Users/Herbert/OneDrive - Sutong Tire Resources, Inc/Simplebooklet",
+  "exclude": {
+    "Wolf Pack ATV & UTV/P3266 RUN FLAT": "Shows a HI-RUN AT22x11-10 with a different tread, not the WolfPack P3266 25x11.00-12 on the page (2026-09-28)."
+  },
+  "brochures": {
+    "caraway-st": {
+      "source": "Caraway ST Tire"
+    },
+    "hemisphere-plt": {
+      "source": "Hemisphere Passenger & Light Truck brochure"
+    },
+    "hirun-atvutv": {
+      "source": "HI-RUN ATV & UTV Tire",
+      "borrow": ["Wolf Pack ATV & UTV"],
+      "logos": ["HI-RUN ST TIRE", "Wolf Pack ATV & UTV"]
+    },
+    "hirun-specialty": {
+      "source": "HI-RUN Specialty Tire",
+      "logos": ["HI-RUN ST TIRE"]
+    },
+    "hirun-st": {
+      "source": "HI-RUN ST TIRE"
+    },
+    "longmarch-mtr": {
+      "source": "LONG MARCH MTR Brochure"
+    },
+    "roadone-mtr": {
+      "source": "RoadOne MTR brochure"
+    },
+    "roadone-plt": {
+      "source": "RoadOne Passenger & Light Truck brochure",
+      "logos": ["RoadOne MTR brochure"]
+    },
+    "supercargo-mtr": {
+      "source": "Super Cargo MTR Brochure",
+      "logos": ["SuperCargo STR brochure"]
+    },
+    "supercargo-str": {
+      "source": "SuperCargo STR brochure"
+    },
+    "synergy-mtr": {
+      "source": "Synergy MTR Brochure",
+      "logos": ["Synergy STR brochure"]
+    },
+    "synergy-str": {
+      "source": "Synergy STR brochure"
+    },
+    "wolfpack-atvutv": {
+      "source": "Wolf Pack ATV & UTV"
+    }
+  }
+}

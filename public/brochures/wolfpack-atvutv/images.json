@@ -1,0 +1,499 @@
+{
+  "zip": {
+    "url": "/brochures/wolfpack-atvutv/wolfpack-atvutv-images.zip",
+    "filename": "WolfPack ATV-UTV Images.zip",
+    "bytes": 12672335,
+    "entries": [
+      {
+        "path": "WolfPack ATV-UTV Images/P3036 RUN FLAT/P3036.png",
+        "src": "/brochures/wolfpack-atvutv/images/p3036-run-flat/p3036.png",
+        "bytes": 984685
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P350 RUN FLAT/P350.png",
+        "src": "/brochures/wolfpack-atvutv/images/p350-run-flat/p350.png",
+        "bytes": 962758
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P3077 RUN FLAT/P3077.png",
+        "src": "/brochures/wolfpack-atvutv/images/p3077-run-flat/p3077.png",
+        "bytes": 825095
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/SU81/SU81.png",
+        "src": "/brochures/wolfpack-atvutv/images/su81/su81.png",
+        "bytes": 915366
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/F938/F938.png",
+        "src": "/brochures/wolfpack-atvutv/images/f938/f938.png",
+        "bytes": 753061
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P350/P350.png",
+        "src": "/brochures/wolfpack-atvutv/images/p350/p350.png",
+        "bytes": 962758
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P373/P373.png",
+        "src": "/brochures/wolfpack-atvutv/images/p373/p373.png",
+        "bytes": 751689
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P375/P375.png",
+        "src": "/brochures/wolfpack-atvutv/images/p375/p375.png",
+        "bytes": 802635
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P3036/P3036.png",
+        "src": "/brochures/wolfpack-atvutv/images/p3036/p3036.png",
+        "bytes": 984685
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P3057/P3057.png",
+        "src": "/brochures/wolfpack-atvutv/images/p3057/p3057.png",
+        "bytes": 822498
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P3108/P3108.png",
+        "src": "/brochures/wolfpack-atvutv/images/p3108/p3108.png",
+        "bytes": 780259
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P341/P341.png",
+        "src": "/brochures/wolfpack-atvutv/images/p341/p341.png",
+        "bytes": 745695
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/P362/P362.png",
+        "src": "/brochures/wolfpack-atvutv/images/p362/p362.png",
+        "bytes": 1057189
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/SU83/SU83.png",
+        "src": "/brochures/wolfpack-atvutv/images/su83/su83.png",
+        "bytes": 1193188
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/Logo/WOLF PACK LOGO PNG.png",
+        "src": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png",
+        "bytes": 72257
+      },
+      {
+        "path": "WolfPack ATV-UTV Images/Logo/WOLF PACK LOGO SVG.svg",
+        "src": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
+        "bytes": 55965
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "p3036-run-flat",
+      "label": "P3036 RUN FLAT",
+      "pages": [
+        3
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p3036-run-flat/p3036.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p3036-run-flat/p3036.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p3036-run-flat/p3036.png",
+          "filename": "P3036.png",
+          "w": 1161,
+          "h": 1280,
+          "bytes": 984685,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p350-run-flat",
+      "label": "P350 RUN FLAT",
+      "pages": [
+        4
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p350-run-flat/p350.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p350-run-flat/p350.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p350-run-flat/p350.png",
+          "filename": "P350.png",
+          "w": 1130,
+          "h": 1280,
+          "bytes": 962758,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p3077-run-flat",
+      "label": "P3077 RUN FLAT",
+      "pages": [
+        5
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p3077-run-flat/p3077.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p3077-run-flat/p3077.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p3077-run-flat/p3077.png",
+          "filename": "P3077.png",
+          "w": 1001,
+          "h": 1280,
+          "bytes": 825095,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "su81",
+      "label": "SU81",
+      "pages": [
+        6
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/su81/su81.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/su81/su81.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/su81/su81.png",
+          "filename": "SU81.png",
+          "w": 1136,
+          "h": 1280,
+          "bytes": 915366,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "f938",
+      "label": "F938",
+      "pages": [
+        7
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/f938/f938.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/f938/f938.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/f938/f938.png",
+          "filename": "F938.png",
+          "w": 1145,
+          "h": 1280,
+          "bytes": 753061,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p350",
+      "label": "P350",
+      "pages": [
+        8
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p350/p350.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p350/p350.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p350/p350.png",
+          "filename": "P350.png",
+          "w": 1130,
+          "h": 1280,
+          "bytes": 962758,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p373",
+      "label": "P373",
+      "pages": [
+        9
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p373/p373.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p373/p373.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p373/p373.png",
+          "filename": "P373.png",
+          "w": 1124,
+          "h": 1280,
+          "bytes": 751689,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p375",
+      "label": "P375",
+      "pages": [
+        10
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p375/p375.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p375/p375.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p375/p375.png",
+          "filename": "P375.png",
+          "w": 976,
+          "h": 1280,
+          "bytes": 802635,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p3036",
+      "label": "P3036",
+      "pages": [
+        11
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p3036/p3036.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p3036/p3036.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p3036/p3036.png",
+          "filename": "P3036.png",
+          "w": 1161,
+          "h": 1280,
+          "bytes": 984685,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p3057",
+      "label": "P3057",
+      "pages": [
+        12
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p3057/p3057.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p3057/p3057.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p3057/p3057.png",
+          "filename": "P3057.png",
+          "w": 1174,
+          "h": 1280,
+          "bytes": 822498,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p3108",
+      "label": "P3108",
+      "pages": [
+        13
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p3108/p3108.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p3108/p3108.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p3108/p3108.png",
+          "filename": "P3108.png",
+          "w": 1117,
+          "h": 1280,
+          "bytes": 780259,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p341",
+      "label": "P341",
+      "pages": [
+        14
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p341/p341.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p341/p341.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p341/p341.png",
+          "filename": "P341.png",
+          "w": 1155,
+          "h": 1280,
+          "bytes": 745695,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "p362",
+      "label": "P362",
+      "pages": [
+        15
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/p362/p362.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/p362/p362.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/p362/p362.png",
+          "filename": "P362.png",
+          "w": 1084,
+          "h": 1280,
+          "bytes": 1057189,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "su83",
+      "label": "SU83",
+      "pages": [
+        16
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/wolfpack-atvutv/images/su83/su83.webp",
+          "thumb": "/brochures/wolfpack-atvutv/images/su83/su83.thumb.webp",
+          "original": "/brochures/wolfpack-atvutv/images/su83/su83.png",
+          "filename": "SU83.png",
+          "w": 1016,
+          "h": 1280,
+          "bytes": 1193188,
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "3": {
+      "pattern": "p3036-run-flat",
+      "rect": {
+        "x": 32.9,
+        "y": 23.4,
+        "w": 61.5,
+        "h": 37.9
+      }
+    },
+    "4": {
+      "pattern": "p350-run-flat",
+      "rect": {
+        "x": 30.6,
+        "y": 22.7,
+        "w": 66.5,
+        "h": 38.6
+      }
+    },
+    "5": {
+      "pattern": "p3077-run-flat",
+      "rect": {
+        "x": 35.3,
+        "y": 23.9,
+        "w": 61.5,
+        "h": 37.5
+      }
+    },
+    "6": {
+      "pattern": "su81",
+      "rect": {
+        "x": 32.5,
+        "y": 23.3,
+        "w": 64.6,
+        "h": 38.4
+      }
+    },
+    "7": {
+      "pattern": "f938",
+      "rect": {
+        "x": 28.4,
+        "y": 23.5,
+        "w": 68.6,
+        "h": 38.1
+      }
+    },
+    "8": {
+      "pattern": "p350",
+      "rect": {
+        "x": 32.5,
+        "y": 22.8,
+        "w": 63.5,
+        "h": 38.3
+      }
+    },
+    "9": {
+      "pattern": "p373",
+      "rect": {
+        "x": 32.5,
+        "y": 23.9,
+        "w": 63.9,
+        "h": 37.7
+      }
+    },
+    "10": {
+      "pattern": "p375",
+      "rect": {
+        "x": 33.4,
+        "y": 23.4,
+        "w": 60.3,
+        "h": 37.9
+      }
+    },
+    "11": {
+      "pattern": "p3036",
+      "rect": {
+        "x": 32.5,
+        "y": 25.7,
+        "w": 63.0,
+        "h": 35.7
+      }
+    },
+    "12": {
+      "pattern": "p3057",
+      "rect": {
+        "x": 30.9,
+        "y": 24.3,
+        "w": 66.2,
+        "h": 37.2
+      }
+    },
+    "13": {
+      "pattern": "p3108",
+      "rect": {
+        "x": 32.5,
+        "y": 24.1,
+        "w": 63.5,
+        "h": 37.1
+      }
+    },
+    "14": {
+      "pattern": "p341",
+      "rect": {
+        "x": 30.9,
+        "y": 23.6,
+        "w": 66.2,
+        "h": 37.8
+      }
+    },
+    "15": {
+      "pattern": "p362",
+      "rect": {
+        "x": 30.9,
+        "y": 21.2,
+        "w": 66.2,
+        "h": 40.1
+      }
+    },
+    "16": {
+      "pattern": "su83",
+      "rect": {
+        "x": 31.7,
+        "y": 24.4,
+        "w": 62.4,
+        "h": 37.1
+      }
+    }
+  }
+}

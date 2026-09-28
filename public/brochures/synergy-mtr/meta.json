@@ -2,5 +2,6 @@
   "id": "synergy-mtr",
   "title": "Synergy MTR",
   "pages": 14,
-  "pdf": true
+  "pdf": true,
+  "images": true
 }

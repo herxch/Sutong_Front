@@ -2,5 +2,6 @@
   "id": "supercargo-str",
   "title": "SuperCargo STR",
   "pages": 3,
-  "pdf": true
+  "pdf": true,
+  "images": true
 }

@@ -2,5 +2,6 @@
   "id": "caraway-st",
   "title": "Caraway ST Tire",
   "pages": 4,
-  "pdf": true
+  "pdf": true,
+  "images": true
 }

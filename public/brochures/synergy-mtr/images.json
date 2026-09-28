@@ -1,0 +1,476 @@
+{
+  "zip": {
+    "url": "/brochures/synergy-mtr/synergy-mtr-images.zip",
+    "filename": "Synergy MTR Images.zip",
+    "bytes": 12447843,
+    "entries": [
+      {
+        "path": "Synergy MTR Images/DP206/DP206.png",
+        "src": "/brochures/synergy-mtr/images/dp206/dp206.png",
+        "bytes": 1100486
+      },
+      {
+        "path": "Synergy MTR Images/SP900/SP900.png",
+        "src": "/brochures/synergy-mtr/images/sp900/sp900.png",
+        "bytes": 1058634
+      },
+      {
+        "path": "Synergy MTR Images/AP400/AP400.png",
+        "src": "/brochures/synergy-mtr/images/ap400/ap400.png",
+        "bytes": 940690
+      },
+      {
+        "path": "Synergy MTR Images/DP209/DP209.png",
+        "src": "/brochures/synergy-mtr/images/dp209/dp209.png",
+        "bytes": 1144071
+      },
+      {
+        "path": "Synergy MTR Images/MCW07/MCW07.png",
+        "src": "/brochures/synergy-mtr/images/mcw07/mcw07.png",
+        "bytes": 980054
+      },
+      {
+        "path": "Synergy MTR Images/MCW02/MCW02.png",
+        "src": "/brochures/synergy-mtr/images/mcw02/mcw02.png",
+        "bytes": 751266
+      },
+      {
+        "path": "Synergy MTR Images/MC05/MC05.png",
+        "src": "/brochures/synergy-mtr/images/mc05/mc05.png",
+        "bytes": 995027
+      },
+      {
+        "path": "Synergy MTR Images/DP205/DP205.png",
+        "src": "/brochures/synergy-mtr/images/dp205/dp205.png",
+        "bytes": 852138
+      },
+      {
+        "path": "Synergy MTR Images/TP301/TP301.png",
+        "src": "/brochures/synergy-mtr/images/tp301/tp301.png",
+        "bytes": 706062
+      },
+      {
+        "path": "Synergy MTR Images/TP300/TP300.png",
+        "src": "/brochures/synergy-mtr/images/tp300/tp300.png",
+        "bytes": 857952
+      },
+      {
+        "path": "Synergy MTR Images/MCW15/MCW15-1.png",
+        "src": "/brochures/synergy-mtr/images/mcw15/mcw15-1.png",
+        "bytes": 708245
+      },
+      {
+        "path": "Synergy MTR Images/MCW15/MCW15-2.png",
+        "src": "/brochures/synergy-mtr/images/mcw15/mcw15-2.png",
+        "bytes": 545586
+      },
+      {
+        "path": "Synergy MTR Images/MCW15/MCW15-3.png",
+        "src": "/brochures/synergy-mtr/images/mcw15/mcw15-3.png",
+        "bytes": 525741
+      },
+      {
+        "path": "Synergy MTR Images/MCW15/MCW15-4.png",
+        "src": "/brochures/synergy-mtr/images/mcw15/mcw15-4.png",
+        "bytes": 221925
+      },
+      {
+        "path": "Synergy MTR Images/DP309/DP309.png",
+        "src": "/brochures/synergy-mtr/images/dp309/dp309.png",
+        "bytes": 962657
+      },
+      {
+        "path": "Synergy MTR Images/Logo/SYNERGY LOGO PNG.png",
+        "src": "/brochures/synergy-str/images/_logo/SYNERGY LOGO PNG.png",
+        "bytes": 83669
+      },
+      {
+        "path": "Synergy MTR Images/Logo/SYNERGY LOGO SVG.svg",
+        "src": "/brochures/synergy-str/images/_logo/SYNERGY LOGO SVG.svg",
+        "bytes": 11118
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "dp206",
+      "label": "DP206",
+      "pages": [
+        2
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/dp206/dp206.webp",
+          "thumb": "/brochures/synergy-mtr/images/dp206/dp206.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/dp206/dp206.png",
+          "filename": "DP206.png",
+          "w": 927,
+          "h": 1280,
+          "bytes": 1100486,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "sp900",
+      "label": "SP900",
+      "pages": [
+        3
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/sp900/sp900.webp",
+          "thumb": "/brochures/synergy-mtr/images/sp900/sp900.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/sp900/sp900.png",
+          "filename": "SP900.png",
+          "w": 910,
+          "h": 1280,
+          "bytes": 1058634,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "ap400",
+      "label": "AP400",
+      "pages": [
+        4
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/ap400/ap400.webp",
+          "thumb": "/brochures/synergy-mtr/images/ap400/ap400.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/ap400/ap400.png",
+          "filename": "AP400.png",
+          "w": 740,
+          "h": 1280,
+          "bytes": 940690,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "dp209",
+      "label": "DP209",
+      "pages": [
+        5
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/dp209/dp209.webp",
+          "thumb": "/brochures/synergy-mtr/images/dp209/dp209.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/dp209/dp209.png",
+          "filename": "DP209.png",
+          "w": 819,
+          "h": 1280,
+          "bytes": 1144071,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "mcw07",
+      "label": "MCW07",
+      "pages": [
+        6
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/mcw07/mcw07.webp",
+          "thumb": "/brochures/synergy-mtr/images/mcw07/mcw07.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/mcw07/mcw07.png",
+          "filename": "MCW07.png",
+          "w": 910,
+          "h": 1280,
+          "bytes": 980054,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "mcw02",
+      "label": "MCW02",
+      "pages": [
+        7
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/mcw02/mcw02.webp",
+          "thumb": "/brochures/synergy-mtr/images/mcw02/mcw02.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/mcw02/mcw02.png",
+          "filename": "MCW02.png",
+          "w": 826,
+          "h": 1280,
+          "bytes": 751266,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "mc05",
+      "label": "MC05",
+      "pages": [
+        8
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/mc05/mc05.webp",
+          "thumb": "/brochures/synergy-mtr/images/mc05/mc05.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/mc05/mc05.png",
+          "filename": "MC05.png",
+          "w": 897,
+          "h": 1280,
+          "bytes": 995027,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "dp205",
+      "label": "DP205",
+      "pages": [
+        9
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/dp205/dp205.webp",
+          "thumb": "/brochures/synergy-mtr/images/dp205/dp205.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/dp205/dp205.png",
+          "filename": "DP205.png",
+          "w": 780,
+          "h": 1280,
+          "bytes": 852138,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "tp301",
+      "label": "TP301",
+      "pages": [
+        10
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/tp301/tp301.webp",
+          "thumb": "/brochures/synergy-mtr/images/tp301/tp301.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/tp301/tp301.png",
+          "filename": "TP301.png",
+          "w": 785,
+          "h": 1280,
+          "bytes": 706062,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "tp300",
+      "label": "TP300",
+      "pages": [
+        11
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/tp300/tp300.webp",
+          "thumb": "/brochures/synergy-mtr/images/tp300/tp300.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/tp300/tp300.png",
+          "filename": "TP300.png",
+          "w": 758,
+          "h": 1280,
+          "bytes": 857952,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "mcw15",
+      "label": "MCW15",
+      "pages": [
+        12
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/mcw15/mcw15-1.webp",
+          "thumb": "/brochures/synergy-mtr/images/mcw15/mcw15-1.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/mcw15/mcw15-1.png",
+          "filename": "MCW15-1.png",
+          "w": 742,
+          "h": 1280,
+          "bytes": 708245,
+          "label": "1"
+        },
+        {
+          "src": "/brochures/synergy-mtr/images/mcw15/mcw15-2.webp",
+          "thumb": "/brochures/synergy-mtr/images/mcw15/mcw15-2.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/mcw15/mcw15-2.png",
+          "filename": "MCW15-2.png",
+          "w": 1092,
+          "h": 1280,
+          "bytes": 545586,
+          "label": "2"
+        },
+        {
+          "src": "/brochures/synergy-mtr/images/mcw15/mcw15-3.webp",
+          "thumb": "/brochures/synergy-mtr/images/mcw15/mcw15-3.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/mcw15/mcw15-3.png",
+          "filename": "MCW15-3.png",
+          "w": 1279,
+          "h": 1280,
+          "bytes": 525741,
+          "label": "3"
+        },
+        {
+          "src": "/brochures/synergy-mtr/images/mcw15/mcw15-4.webp",
+          "thumb": "/brochures/synergy-mtr/images/mcw15/mcw15-4.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/mcw15/mcw15-4.png",
+          "filename": "MCW15-4.png",
+          "w": 349,
+          "h": 1280,
+          "bytes": 221925,
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "id": "dp309",
+      "label": "DP309",
+      "pages": [
+        13
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/synergy-mtr/images/dp309/dp309.webp",
+          "thumb": "/brochures/synergy-mtr/images/dp309/dp309.thumb.webp",
+          "original": "/brochures/synergy-mtr/images/dp309/dp309.png",
+          "filename": "DP309.png",
+          "w": 672,
+          "h": 1280,
+          "bytes": 962657,
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "2": {
+      "pattern": "dp206",
+      "rect": {
+        "x": 54.9,
+        "y": 44.1,
+        "w": 34.0,
+        "h": 22.2
+      }
+    },
+    "3": {
+      "pattern": "sp900",
+      "rect": {
+        "x": 55.8,
+        "y": 44.1,
+        "w": 32.6,
+        "h": 22.2
+      }
+    },
+    "4": {
+      "pattern": "ap400",
+      "rect": {
+        "x": 55.6,
+        "y": 43.8,
+        "w": 33.0,
+        "h": 22.5
+      }
+    },
+    "5": {
+      "pattern": "dp209",
+      "rect": {
+        "x": 55.3,
+        "y": 44.2,
+        "w": 33.0,
+        "h": 22.3
+      }
+    },
+    "6": {
+      "pattern": "mcw07",
+      "rect": {
+        "x": 55.2,
+        "y": 44.1,
+        "w": 33.0,
+        "h": 22.2
+      }
+    },
+    "7": {
+      "pattern": "mcw02",
+      "rect": {
+        "x": 55.6,
+        "y": 44.2,
+        "w": 33.0,
+        "h": 22.2
+      }
+    },
+    "8": {
+      "pattern": "mc05",
+      "rect": {
+        "x": 55.4,
+        "y": 44.0,
+        "w": 33.0,
+        "h": 22.3
+      }
+    },
+    "9": {
+      "pattern": "dp205",
+      "rect": {
+        "x": 55.5,
+        "y": 44.1,
+        "w": 33.0,
+        "h": 22.1
+      }
+    },
+    "10": {
+      "pattern": "tp301",
+      "rect": {
+        "x": 55.6,
+        "y": 44.1,
+        "w": 33.0,
+        "h": 22.3
+      }
+    },
+    "11": {
+      "pattern": "tp300",
+      "rect": {
+        "x": 55.6,
+        "y": 44.1,
+        "w": 33.0,
+        "h": 22.2
+      }
+    },
+    "12": {
+      "pattern": "mcw15",
+      "rect": {
+        "x": 55.6,
+        "y": 55.5,
+        "w": 33.0,
+        "h": 22.2
+      }
+    },
+    "13": {
+      "pattern": "dp309",
+      "rect": {
+        "x": 52.2,
+        "y": 49.0,
+        "w": 36.4,
+        "h": 28.6
+      }
+    }
+  }
+}

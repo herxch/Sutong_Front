@@ -1,0 +1,215 @@
+{
+  "zip": {
+    "url": "/brochures/caraway-st/caraway-st-images.zip",
+    "filename": "Caraway ST Tire Images.zip",
+    "bytes": 6103378,
+    "entries": [
+      {
+        "path": "Caraway ST Tire Images/ST202/ST202 A.png",
+        "src": "/brochures/caraway-st/images/st202/st202-a.png",
+        "bytes": 681295
+      },
+      {
+        "path": "Caraway ST Tire Images/ST202/ST202 B.png",
+        "src": "/brochures/caraway-st/images/st202/st202-b.png",
+        "bytes": 839513
+      },
+      {
+        "path": "Caraway ST Tire Images/ST202/ST202 C.png",
+        "src": "/brochures/caraway-st/images/st202/st202-c.png",
+        "bytes": 385206
+      },
+      {
+        "path": "Caraway ST Tire Images/SU805/SU805 A.png",
+        "src": "/brochures/caraway-st/images/su805/su805-a.png",
+        "bytes": 833508
+      },
+      {
+        "path": "Caraway ST Tire Images/SU805/SU805 B.png",
+        "src": "/brochures/caraway-st/images/su805/su805-b.png",
+        "bytes": 839274
+      },
+      {
+        "path": "Caraway ST Tire Images/SU805/SU805 C.png",
+        "src": "/brochures/caraway-st/images/su805/su805-c.png",
+        "bytes": 441707
+      },
+      {
+        "path": "Caraway ST Tire Images/CT921/CT921 A.png",
+        "src": "/brochures/caraway-st/images/ct921/ct921-a.png",
+        "bytes": 698521
+      },
+      {
+        "path": "Caraway ST Tire Images/CT921/CT921 B.png",
+        "src": "/brochures/caraway-st/images/ct921/ct921-b.png",
+        "bytes": 834053
+      },
+      {
+        "path": "Caraway ST Tire Images/CT921/CT921 C.png",
+        "src": "/brochures/caraway-st/images/ct921/ct921-c.png",
+        "bytes": 424810
+      },
+      {
+        "path": "Caraway ST Tire Images/Logo/CARAWAY LOGO PNG.png",
+        "src": "/brochures/caraway-st/images/_logo/CARAWAY LOGO PNG.png",
+        "bytes": 106058
+      },
+      {
+        "path": "Caraway ST Tire Images/Logo/CARAWAY LOGO SVG.svg",
+        "src": "/brochures/caraway-st/images/_logo/CARAWAY LOGO SVG.svg",
+        "bytes": 17663
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "st202",
+      "label": "ST202",
+      "pages": [
+        2
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/caraway-st/images/st202/st202-a.webp",
+          "thumb": "/brochures/caraway-st/images/st202/st202-a.thumb.webp",
+          "original": "/brochures/caraway-st/images/st202/st202-a.png",
+          "filename": "ST202 A.png",
+          "w": 769,
+          "h": 1280,
+          "bytes": 681295,
+          "label": "A"
+        },
+        {
+          "src": "/brochures/caraway-st/images/st202/st202-b.webp",
+          "thumb": "/brochures/caraway-st/images/st202/st202-b.thumb.webp",
+          "original": "/brochures/caraway-st/images/st202/st202-b.png",
+          "filename": "ST202 B.png",
+          "w": 1280,
+          "h": 1252,
+          "bytes": 839513,
+          "label": "B"
+        },
+        {
+          "src": "/brochures/caraway-st/images/st202/st202-c.webp",
+          "thumb": "/brochures/caraway-st/images/st202/st202-c.thumb.webp",
+          "original": "/brochures/caraway-st/images/st202/st202-c.png",
+          "filename": "ST202 C.png",
+          "w": 441,
+          "h": 1280,
+          "bytes": 385206,
+          "label": "C"
+        }
+      ]
+    },
+    {
+      "id": "su805",
+      "label": "SU805",
+      "pages": [
+        3
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/caraway-st/images/su805/su805-a.webp",
+          "thumb": "/brochures/caraway-st/images/su805/su805-a.thumb.webp",
+          "original": "/brochures/caraway-st/images/su805/su805-a.png",
+          "filename": "SU805 A.png",
+          "w": 911,
+          "h": 1280,
+          "bytes": 833508,
+          "label": "A"
+        },
+        {
+          "src": "/brochures/caraway-st/images/su805/su805-b.webp",
+          "thumb": "/brochures/caraway-st/images/su805/su805-b.thumb.webp",
+          "original": "/brochures/caraway-st/images/su805/su805-b.png",
+          "filename": "SU805 B.png",
+          "w": 1280,
+          "h": 1254,
+          "bytes": 839274,
+          "label": "B"
+        },
+        {
+          "src": "/brochures/caraway-st/images/su805/su805-c.webp",
+          "thumb": "/brochures/caraway-st/images/su805/su805-c.thumb.webp",
+          "original": "/brochures/caraway-st/images/su805/su805-c.png",
+          "filename": "SU805 C.png",
+          "w": 470,
+          "h": 1280,
+          "bytes": 441707,
+          "label": "C"
+        }
+      ]
+    },
+    {
+      "id": "ct921",
+      "label": "CT921",
+      "pages": [
+        4
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/caraway-st/images/ct921/ct921-a.webp",
+          "thumb": "/brochures/caraway-st/images/ct921/ct921-a.thumb.webp",
+          "original": "/brochures/caraway-st/images/ct921/ct921-a.png",
+          "filename": "CT921 A.png",
+          "w": 869,
+          "h": 1280,
+          "bytes": 698521,
+          "label": "A"
+        },
+        {
+          "src": "/brochures/caraway-st/images/ct921/ct921-b.webp",
+          "thumb": "/brochures/caraway-st/images/ct921/ct921-b.thumb.webp",
+          "original": "/brochures/caraway-st/images/ct921/ct921-b.png",
+          "filename": "CT921 B.png",
+          "w": 1280,
+          "h": 1225,
+          "bytes": 834053,
+          "label": "B"
+        },
+        {
+          "src": "/brochures/caraway-st/images/ct921/ct921-c.webp",
+          "thumb": "/brochures/caraway-st/images/ct921/ct921-c.thumb.webp",
+          "original": "/brochures/caraway-st/images/ct921/ct921-c.png",
+          "filename": "CT921 C.png",
+          "w": 453,
+          "h": 1280,
+          "bytes": 424810,
+          "label": "C"
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "2": {
+      "pattern": "st202",
+      "rect": {
+        "x": 54.7,
+        "y": 24.6,
+        "w": 41.4,
+        "h": 34.8
+      }
+    },
+    "3": {
+      "pattern": "su805",
+      "rect": {
+        "x": 48.3,
+        "y": 24.6,
+        "w": 47.8,
+        "h": 35.3
+      }
+    },
+    "4": {
+      "pattern": "ct921",
+      "rect": {
+        "x": 49.3,
+        "y": 24.6,
+        "w": 46.7,
+        "h": 37.1
+      }
+    }
+  }
+}

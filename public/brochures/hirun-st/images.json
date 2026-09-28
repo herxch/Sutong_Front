@@ -1,0 +1,185 @@
+{
+  "zip": {
+    "url": "/brochures/hirun-st/hirun-st-images.zip",
+    "filename": "HI-RUN ST Tire Images.zip",
+    "bytes": 5391344,
+    "entries": [
+      {
+        "path": "HI-RUN ST Tire Images/JK42/JK42 A.png",
+        "src": "/brochures/hirun-st/images/jk42/jk42-a.png",
+        "bytes": 766629
+      },
+      {
+        "path": "HI-RUN ST Tire Images/JK42/JA42 B.png",
+        "src": "/brochures/hirun-st/images/jk42/ja42-b.png",
+        "bytes": 773108
+      },
+      {
+        "path": "HI-RUN ST Tire Images/JK42/JK42 C.png",
+        "src": "/brochures/hirun-st/images/jk42/jk42-c.png",
+        "bytes": 429852
+      },
+      {
+        "path": "HI-RUN ST Tire Images/H180/H180 A.png",
+        "src": "/brochures/hirun-st/images/h180/h180-a.png",
+        "bytes": 711462
+      },
+      {
+        "path": "HI-RUN ST Tire Images/H180/H180 B.png",
+        "src": "/brochures/hirun-st/images/h180/h180-b.png",
+        "bytes": 836301
+      },
+      {
+        "path": "HI-RUN ST Tire Images/H180/H180 C.png",
+        "src": "/brochures/hirun-st/images/h180/h180-c.png",
+        "bytes": 476349
+      },
+      {
+        "path": "HI-RUN ST Tire Images/ST-100/ST-100.png",
+        "src": "/brochures/hirun-st/images/st-100/st-100.png",
+        "bytes": 1374466
+      },
+      {
+        "path": "HI-RUN ST Tire Images/Logo/HI-RUN LOGO PNG.png",
+        "src": "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
+        "bytes": 18617
+      },
+      {
+        "path": "HI-RUN ST Tire Images/Logo/HI-RUN LOGO SVG.svg",
+        "src": "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
+        "bytes": 3148
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "jk42",
+      "label": "JK42",
+      "pages": [
+        2
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hirun-st/images/jk42/jk42-a.webp",
+          "thumb": "/brochures/hirun-st/images/jk42/jk42-a.thumb.webp",
+          "original": "/brochures/hirun-st/images/jk42/jk42-a.png",
+          "filename": "JK42 A.png",
+          "w": 1080,
+          "h": 1280,
+          "bytes": 766629,
+          "label": "A"
+        },
+        {
+          "src": "/brochures/hirun-st/images/jk42/ja42-b.webp",
+          "thumb": "/brochures/hirun-st/images/jk42/ja42-b.thumb.webp",
+          "original": "/brochures/hirun-st/images/jk42/ja42-b.png",
+          "filename": "JA42 B.png",
+          "w": 1274,
+          "h": 1280,
+          "bytes": 773108,
+          "label": "B"
+        },
+        {
+          "src": "/brochures/hirun-st/images/jk42/jk42-c.webp",
+          "thumb": "/brochures/hirun-st/images/jk42/jk42-c.thumb.webp",
+          "original": "/brochures/hirun-st/images/jk42/jk42-c.png",
+          "filename": "JK42 C.png",
+          "w": 422,
+          "h": 1280,
+          "bytes": 429852,
+          "label": "C"
+        }
+      ]
+    },
+    {
+      "id": "h180",
+      "label": "H180",
+      "pages": [
+        3
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hirun-st/images/h180/h180-a.webp",
+          "thumb": "/brochures/hirun-st/images/h180/h180-a.thumb.webp",
+          "original": "/brochures/hirun-st/images/h180/h180-a.png",
+          "filename": "H180 A.png",
+          "w": 1009,
+          "h": 1280,
+          "bytes": 711462,
+          "label": "A"
+        },
+        {
+          "src": "/brochures/hirun-st/images/h180/h180-b.webp",
+          "thumb": "/brochures/hirun-st/images/h180/h180-b.thumb.webp",
+          "original": "/brochures/hirun-st/images/h180/h180-b.png",
+          "filename": "H180 B.png",
+          "w": 1280,
+          "h": 1274,
+          "bytes": 836301,
+          "label": "B"
+        },
+        {
+          "src": "/brochures/hirun-st/images/h180/h180-c.webp",
+          "thumb": "/brochures/hirun-st/images/h180/h180-c.thumb.webp",
+          "original": "/brochures/hirun-st/images/h180/h180-c.png",
+          "filename": "H180 C.png",
+          "w": 430,
+          "h": 1280,
+          "bytes": 476349,
+          "label": "C"
+        }
+      ]
+    },
+    {
+      "id": "st-100",
+      "label": "ST-100",
+      "pages": [
+        4
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/hirun-st/images/st-100/st-100.webp",
+          "thumb": "/brochures/hirun-st/images/st-100/st-100.thumb.webp",
+          "original": "/brochures/hirun-st/images/st-100/st-100.png",
+          "filename": "ST-100.png",
+          "w": 854,
+          "h": 1280,
+          "bytes": 1374466,
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "2": {
+      "pattern": "jk42",
+      "rect": {
+        "x": 45.7,
+        "y": 25.3,
+        "w": 50.3,
+        "h": 35.9
+      }
+    },
+    "3": {
+      "pattern": "h180",
+      "rect": {
+        "x": 42.6,
+        "y": 25.3,
+        "w": 53.5,
+        "h": 38.4
+      }
+    },
+    "4": {
+      "pattern": "st-100",
+      "rect": {
+        "x": 43.0,
+        "y": 25.1,
+        "w": 53.6,
+        "h": 41.8
+      }
+    }
+  }
+}

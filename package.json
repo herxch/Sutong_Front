@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "node scripts/prerender.js",
+    "postbuild": "node scripts/prerender.js && node scripts/pack_images.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

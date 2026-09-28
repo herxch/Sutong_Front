@@ -1,0 +1,966 @@
+{
+  "zip": {
+    "url": "/brochures/roadone-mtr/roadone-mtr-images.zip",
+    "filename": "RoadOne MTR Images.zip",
+    "bytes": 32199516,
+    "entries": [
+      {
+        "path": "RoadOne MTR Images/RL616/RL616.png",
+        "src": "/brochures/roadone-mtr/images/rl616/rl616.png",
+        "bytes": 628525
+      },
+      {
+        "path": "RoadOne MTR Images/RL716/RL716.png",
+        "src": "/brochures/roadone-mtr/images/rl716/rl716.png",
+        "bytes": 726323
+      },
+      {
+        "path": "RoadOne MTR Images/RL916/RL916.png",
+        "src": "/brochures/roadone-mtr/images/rl916/rl916.png",
+        "bytes": 657186
+      },
+      {
+        "path": "RoadOne MTR Images/T810/T810.png",
+        "src": "/brochures/roadone-mtr/images/t810/t810.png",
+        "bytes": 863228
+      },
+      {
+        "path": "RoadOne MTR Images/LLA08/LLA08.png",
+        "src": "/brochures/roadone-mtr/images/lla08/lla08.png",
+        "bytes": 753250
+      },
+      {
+        "path": "RoadOne MTR Images/LLF16/LLF16.png",
+        "src": "/brochures/roadone-mtr/images/llf16/llf16.png",
+        "bytes": 915260
+      },
+      {
+        "path": "RoadOne MTR Images/LLA28/LLA28.png",
+        "src": "/brochures/roadone-mtr/images/lla28/lla28.png",
+        "bytes": 879385
+      },
+      {
+        "path": "RoadOne MTR Images/LLF02/LLF02.png",
+        "src": "/brochures/roadone-mtr/images/llf02/llf02.png",
+        "bytes": 801390
+      },
+      {
+        "path": "RoadOne MTR Images/F820/F820.png",
+        "src": "/brochures/roadone-mtr/images/f820/f820.png",
+        "bytes": 836494
+      },
+      {
+        "path": "RoadOne MTR Images/LLA18/LLA18.png",
+        "src": "/brochures/roadone-mtr/images/lla18/lla18.png",
+        "bytes": 912544
+      },
+      {
+        "path": "RoadOne MTR Images/D928/D928.png",
+        "src": "/brochures/roadone-mtr/images/d928/d928.png",
+        "bytes": 763073
+      },
+      {
+        "path": "RoadOne MTR Images/LLA38/LLA38.png",
+        "src": "/brochures/roadone-mtr/images/lla38/lla38.png",
+        "bytes": 853556
+      },
+      {
+        "path": "RoadOne MTR Images/LLA78/LLA78.png",
+        "src": "/brochures/roadone-mtr/images/lla78/lla78.png",
+        "bytes": 924653
+      },
+      {
+        "path": "RoadOne MTR Images/F816/F816.png",
+        "src": "/brochures/roadone-mtr/images/f816/f816.png",
+        "bytes": 774386
+      },
+      {
+        "path": "RoadOne MTR Images/LLF86/LLF86.png",
+        "src": "/brochures/roadone-mtr/images/llf86/llf86.png",
+        "bytes": 824586
+      },
+      {
+        "path": "RoadOne MTR Images/LLD37/LLD37.png",
+        "src": "/brochures/roadone-mtr/images/lld37/lld37.png",
+        "bytes": 913099
+      },
+      {
+        "path": "RoadOne MTR Images/RDP200/RDP200 0°.png",
+        "src": "/brochures/roadone-mtr/images/rdp200/rdp200-0deg.png",
+        "bytes": 563718
+      },
+      {
+        "path": "RoadOne MTR Images/RDP200/RDP200 30°.png",
+        "src": "/brochures/roadone-mtr/images/rdp200/rdp200-30deg.png",
+        "bytes": 1259734
+      },
+      {
+        "path": "RoadOne MTR Images/RDP200/RDP200 90°.png",
+        "src": "/brochures/roadone-mtr/images/rdp200/rdp200-90deg.png",
+        "bytes": 1678406
+      },
+      {
+        "path": "RoadOne MTR Images/RDP202/RDP202 0°.png",
+        "src": "/brochures/roadone-mtr/images/rdp202/rdp202-0deg.png",
+        "bytes": 636729
+      },
+      {
+        "path": "RoadOne MTR Images/RDP202/RDP202 30°.png",
+        "src": "/brochures/roadone-mtr/images/rdp202/rdp202-30deg.png",
+        "bytes": 1352984
+      },
+      {
+        "path": "RoadOne MTR Images/RDP202/RDP202 90°.png",
+        "src": "/brochures/roadone-mtr/images/rdp202/rdp202-90deg.png",
+        "bytes": 1700370
+      },
+      {
+        "path": "RoadOne MTR Images/AP717/AP717 0°.png",
+        "src": "/brochures/roadone-mtr/images/ap717/ap717-0deg.png",
+        "bytes": 374462
+      },
+      {
+        "path": "RoadOne MTR Images/AP717/AP717 22°.png",
+        "src": "/brochures/roadone-mtr/images/ap717/ap717-22deg.png",
+        "bytes": 717700
+      },
+      {
+        "path": "RoadOne MTR Images/AP717/AP717 30°.png",
+        "src": "/brochures/roadone-mtr/images/ap717/ap717-30deg.png",
+        "bytes": 834702
+      },
+      {
+        "path": "RoadOne MTR Images/AP717/AP717 90°.png",
+        "src": "/brochures/roadone-mtr/images/ap717/ap717-90deg.png",
+        "bytes": 1148081
+      },
+      {
+        "path": "RoadOne MTR Images/DP919/DP919 0°.png",
+        "src": "/brochures/roadone-mtr/images/dp919/dp919-0deg.png",
+        "bytes": 439638
+      },
+      {
+        "path": "RoadOne MTR Images/DP919/DP919 22°.png",
+        "src": "/brochures/roadone-mtr/images/dp919/dp919-22deg.png",
+        "bytes": 804229
+      },
+      {
+        "path": "RoadOne MTR Images/DP919/DP919 30°.png",
+        "src": "/brochures/roadone-mtr/images/dp919/dp919-30deg.png",
+        "bytes": 920921
+      },
+      {
+        "path": "RoadOne MTR Images/DP919/DP919 90°.png",
+        "src": "/brochures/roadone-mtr/images/dp919/dp919-90deg.png",
+        "bytes": 1158911
+      },
+      {
+        "path": "RoadOne MTR Images/LFL866/LFL866.png",
+        "src": "/brochures/roadone-mtr/images/lfl866/lfl866.png",
+        "bytes": 870810
+      },
+      {
+        "path": "RoadOne MTR Images/RL917/RL917 0°.png",
+        "src": "/brochures/roadone-mtr/images/rl917/rl917-0deg.png",
+        "bytes": 505657
+      },
+      {
+        "path": "RoadOne MTR Images/RL917/RL917 22°.png",
+        "src": "/brochures/roadone-mtr/images/rl917/rl917-22deg.png",
+        "bytes": 759510
+      },
+      {
+        "path": "RoadOne MTR Images/RL917/RL917 30°.png",
+        "src": "/brochures/roadone-mtr/images/rl917/rl917-30deg.png",
+        "bytes": 979042
+      },
+      {
+        "path": "RoadOne MTR Images/RL917/RL917 90°.png",
+        "src": "/brochures/roadone-mtr/images/rl917/rl917-90deg.png",
+        "bytes": 1200444
+      },
+      {
+        "path": "RoadOne MTR Images/Logo/ROADONE LOGO PNG.png",
+        "src": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO PNG.png",
+        "bytes": 285929
+      },
+      {
+        "path": "RoadOne MTR Images/Logo/ROADONE LOGO SVG.svg",
+        "src": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO SVG.svg",
+        "bytes": 975029
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "rl616",
+      "label": "RL616",
+      "pages": [
+        2
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/rl616/rl616.webp",
+          "thumb": "/brochures/roadone-mtr/images/rl616/rl616.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rl616/rl616.png",
+          "filename": "RL616.png",
+          "w": 732,
+          "h": 1280,
+          "bytes": 628525,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "rl716",
+      "label": "RL716",
+      "pages": [
+        3
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/rl716/rl716.webp",
+          "thumb": "/brochures/roadone-mtr/images/rl716/rl716.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rl716/rl716.png",
+          "filename": "RL716.png",
+          "w": 739,
+          "h": 1280,
+          "bytes": 726323,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "rl916",
+      "label": "RL916",
+      "pages": [
+        4
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/rl916/rl916.webp",
+          "thumb": "/brochures/roadone-mtr/images/rl916/rl916.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rl916/rl916.png",
+          "filename": "RL916.png",
+          "w": 730,
+          "h": 1280,
+          "bytes": 657186,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "t810",
+      "label": "T810",
+      "pages": [
+        5
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/t810/t810.webp",
+          "thumb": "/brochures/roadone-mtr/images/t810/t810.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/t810/t810.png",
+          "filename": "T810.png",
+          "w": 706,
+          "h": 1280,
+          "bytes": 863228,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "lla08",
+      "label": "LLA08",
+      "pages": [
+        6
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/lla08/lla08.webp",
+          "thumb": "/brochures/roadone-mtr/images/lla08/lla08.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/lla08/lla08.png",
+          "filename": "LLA08.png",
+          "w": 642,
+          "h": 1280,
+          "bytes": 753250,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "llf16",
+      "label": "LLF16",
+      "pages": [
+        7
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/llf16/llf16.webp",
+          "thumb": "/brochures/roadone-mtr/images/llf16/llf16.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/llf16/llf16.png",
+          "filename": "LLF16.png",
+          "w": 624,
+          "h": 1280,
+          "bytes": 915260,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "lla28",
+      "label": "LLA28",
+      "pages": [
+        8
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/lla28/lla28.webp",
+          "thumb": "/brochures/roadone-mtr/images/lla28/lla28.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/lla28/lla28.png",
+          "filename": "LLA28.png",
+          "w": 783,
+          "h": 1280,
+          "bytes": 879385,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "llf02",
+      "label": "LLF02",
+      "pages": [
+        9
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/llf02/llf02.webp",
+          "thumb": "/brochures/roadone-mtr/images/llf02/llf02.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/llf02/llf02.png",
+          "filename": "LLF02.png",
+          "w": 630,
+          "h": 1280,
+          "bytes": 801390,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "f820",
+      "label": "F820",
+      "pages": [
+        10
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/f820/f820.webp",
+          "thumb": "/brochures/roadone-mtr/images/f820/f820.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/f820/f820.png",
+          "filename": "F820.png",
+          "w": 655,
+          "h": 1280,
+          "bytes": 836494,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "lla18",
+      "label": "LLA18",
+      "pages": [
+        11
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/lla18/lla18.webp",
+          "thumb": "/brochures/roadone-mtr/images/lla18/lla18.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/lla18/lla18.png",
+          "filename": "LLA18.png",
+          "w": 772,
+          "h": 1280,
+          "bytes": 912544,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "d928",
+      "label": "D928",
+      "pages": [
+        12
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/d928/d928.webp",
+          "thumb": "/brochures/roadone-mtr/images/d928/d928.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/d928/d928.png",
+          "filename": "D928.png",
+          "w": 654,
+          "h": 1280,
+          "bytes": 763073,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "lla38",
+      "label": "LLA38",
+      "pages": [
+        13
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/lla38/lla38.webp",
+          "thumb": "/brochures/roadone-mtr/images/lla38/lla38.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/lla38/lla38.png",
+          "filename": "LLA38.png",
+          "w": 753,
+          "h": 1280,
+          "bytes": 853556,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "lla78",
+      "label": "LLA78",
+      "pages": [
+        14
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/lla78/lla78.webp",
+          "thumb": "/brochures/roadone-mtr/images/lla78/lla78.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/lla78/lla78.png",
+          "filename": "LLA78.png",
+          "w": 744,
+          "h": 1280,
+          "bytes": 924653,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "f816",
+      "label": "F816",
+      "pages": [
+        15
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/f816/f816.webp",
+          "thumb": "/brochures/roadone-mtr/images/f816/f816.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/f816/f816.png",
+          "filename": "F816.png",
+          "w": 640,
+          "h": 1280,
+          "bytes": 774386,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "llf86",
+      "label": "LLF86",
+      "pages": [
+        16
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/llf86/llf86.webp",
+          "thumb": "/brochures/roadone-mtr/images/llf86/llf86.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/llf86/llf86.png",
+          "filename": "LLF86.png",
+          "w": 624,
+          "h": 1280,
+          "bytes": 824586,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "lld37",
+      "label": "LLD37",
+      "pages": [
+        17
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/lld37/lld37.webp",
+          "thumb": "/brochures/roadone-mtr/images/lld37/lld37.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/lld37/lld37.png",
+          "filename": "LLD37.png",
+          "w": 697,
+          "h": 1280,
+          "bytes": 913099,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "rdp200",
+      "label": "RDP200",
+      "pages": [
+        18
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/rdp200/rdp200-0deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rdp200/rdp200-0deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rdp200/rdp200-0deg.png",
+          "filename": "RDP200 0°.png",
+          "w": 361,
+          "h": 1280,
+          "bytes": 563718,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/rdp200/rdp200-30deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rdp200/rdp200-30deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rdp200/rdp200-30deg.png",
+          "filename": "RDP200 30°.png",
+          "w": 843,
+          "h": 1280,
+          "bytes": 1259734,
+          "label": "30°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/rdp200/rdp200-90deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rdp200/rdp200-90deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rdp200/rdp200-90deg.png",
+          "filename": "RDP200 90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1678406,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "rdp202",
+      "label": "RDP202",
+      "pages": [
+        19
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/rdp202/rdp202-0deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rdp202/rdp202-0deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rdp202/rdp202-0deg.png",
+          "filename": "RDP202 0°.png",
+          "w": 405,
+          "h": 1280,
+          "bytes": 636729,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/rdp202/rdp202-30deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rdp202/rdp202-30deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rdp202/rdp202-30deg.png",
+          "filename": "RDP202 30°.png",
+          "w": 861,
+          "h": 1280,
+          "bytes": 1352984,
+          "label": "30°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/rdp202/rdp202-90deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rdp202/rdp202-90deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rdp202/rdp202-90deg.png",
+          "filename": "RDP202 90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1700370,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "ap717",
+      "label": "AP717",
+      "pages": [
+        20
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/ap717/ap717-0deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/ap717/ap717-0deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/ap717/ap717-0deg.png",
+          "filename": "AP717 0°.png",
+          "w": 399,
+          "h": 1280,
+          "bytes": 374462,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/ap717/ap717-22deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/ap717/ap717-22deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/ap717/ap717-22deg.png",
+          "filename": "AP717 22°.png",
+          "w": 712,
+          "h": 1280,
+          "bytes": 717700,
+          "label": "22°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/ap717/ap717-30deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/ap717/ap717-30deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/ap717/ap717-30deg.png",
+          "filename": "AP717 30°.png",
+          "w": 851,
+          "h": 1280,
+          "bytes": 834702,
+          "label": "30°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/ap717/ap717-90deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/ap717/ap717-90deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/ap717/ap717-90deg.png",
+          "filename": "AP717 90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1148081,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "dp919",
+      "label": "DP919",
+      "pages": [
+        21
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/dp919/dp919-0deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/dp919/dp919-0deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/dp919/dp919-0deg.png",
+          "filename": "DP919 0°.png",
+          "w": 392,
+          "h": 1280,
+          "bytes": 439638,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/dp919/dp919-22deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/dp919/dp919-22deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/dp919/dp919-22deg.png",
+          "filename": "DP919 22°.png",
+          "w": 734,
+          "h": 1280,
+          "bytes": 804229,
+          "label": "22°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/dp919/dp919-30deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/dp919/dp919-30deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/dp919/dp919-30deg.png",
+          "filename": "DP919 30°.png",
+          "w": 873,
+          "h": 1280,
+          "bytes": 920921,
+          "label": "30°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/dp919/dp919-90deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/dp919/dp919-90deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/dp919/dp919-90deg.png",
+          "filename": "DP919 90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1158911,
+          "label": "90°"
+        }
+      ]
+    },
+    {
+      "id": "lfl866",
+      "label": "LFL866",
+      "pages": [
+        22
+      ],
+      "cover": 0,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/lfl866/lfl866.webp",
+          "thumb": "/brochures/roadone-mtr/images/lfl866/lfl866.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/lfl866/lfl866.png",
+          "filename": "LFL866.png",
+          "w": 591,
+          "h": 1280,
+          "bytes": 870810,
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "rl917",
+      "label": "RL917",
+      "pages": [
+        23
+      ],
+      "cover": 1,
+      "views": [
+        {
+          "src": "/brochures/roadone-mtr/images/rl917/rl917-0deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rl917/rl917-0deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rl917/rl917-0deg.png",
+          "filename": "RL917 0°.png",
+          "w": 375,
+          "h": 1280,
+          "bytes": 505657,
+          "label": "0°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/rl917/rl917-22deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rl917/rl917-22deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rl917/rl917-22deg.png",
+          "filename": "RL917 22°.png",
+          "w": 714,
+          "h": 1280,
+          "bytes": 759510,
+          "label": "22°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/rl917/rl917-30deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rl917/rl917-30deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rl917/rl917-30deg.png",
+          "filename": "RL917 30°.png",
+          "w": 858,
+          "h": 1280,
+          "bytes": 979042,
+          "label": "30°"
+        },
+        {
+          "src": "/brochures/roadone-mtr/images/rl917/rl917-90deg.webp",
+          "thumb": "/brochures/roadone-mtr/images/rl917/rl917-90deg.thumb.webp",
+          "original": "/brochures/roadone-mtr/images/rl917/rl917-90deg.png",
+          "filename": "RL917 90°.png",
+          "w": 1280,
+          "h": 1280,
+          "bytes": 1200444,
+          "label": "90°"
+        }
+      ]
+    }
+  ],
+  "hotspots": {
+    "2": {
+      "pattern": "rl616",
+      "rect": {
+        "x": 49.4,
+        "y": 34.1,
+        "w": 46.7,
+        "h": 35.4
+      }
+    },
+    "3": {
+      "pattern": "rl716",
+      "rect": {
+        "x": 49.6,
+        "y": 34.1,
+        "w": 46.5,
+        "h": 35.0
+      }
+    },
+    "4": {
+      "pattern": "rl916",
+      "rect": {
+        "x": 50.0,
+        "y": 34.1,
+        "w": 46.1,
+        "h": 35.4
+      }
+    },
+    "5": {
+      "pattern": "t810",
+      "rect": {
+        "x": 48.4,
+        "y": 34.1,
+        "w": 47.7,
+        "h": 35.5
+      }
+    },
+    "6": {
+      "pattern": "lla08",
+      "rect": {
+        "x": 48.4,
+        "y": 34.1,
+        "w": 47.7,
+        "h": 35.5
+      }
+    },
+    "7": {
+      "pattern": "llf16",
+      "rect": {
+        "x": 47.4,
+        "y": 34.1,
+        "w": 48.7,
+        "h": 35.5
+      }
+    },
+    "8": {
+      "pattern": "lla28",
+      "rect": {
+        "x": 44.3,
+        "y": 34.5,
+        "w": 52.3,
+        "h": 36.4
+      }
+    },
+    "9": {
+      "pattern": "llf02",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 37.8
+      }
+    },
+    "10": {
+      "pattern": "f820",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 37.8
+      }
+    },
+    "11": {
+      "pattern": "lla18",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 36.9
+      }
+    },
+    "12": {
+      "pattern": "d928",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 37.8
+      }
+    },
+    "13": {
+      "pattern": "lla38",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 37.8
+      }
+    },
+    "14": {
+      "pattern": "lla78",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 37.8
+      }
+    },
+    "15": {
+      "pattern": "f816",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 37.8
+      }
+    },
+    "16": {
+      "pattern": "llf86",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 37.8
+      }
+    },
+    "17": {
+      "pattern": "lld37",
+      "rect": {
+        "x": 42.8,
+        "y": 34.5,
+        "w": 53.8,
+        "h": 37.8
+      }
+    },
+    "18": {
+      "pattern": "rdp200",
+      "rect": {
+        "x": 42.8,
+        "y": 34.7,
+        "w": 53.9,
+        "h": 40.5
+      }
+    },
+    "19": {
+      "pattern": "rdp202",
+      "rect": {
+        "x": 42.8,
+        "y": 34.7,
+        "w": 53.9,
+        "h": 38.7
+      }
+    },
+    "20": {
+      "pattern": "ap717",
+      "rect": {
+        "x": 44.8,
+        "y": 34.6,
+        "w": 50.3,
+        "h": 39.2
+      }
+    },
+    "21": {
+      "pattern": "dp919",
+      "rect": {
+        "x": 44.8,
+        "y": 34.6,
+        "w": 50.3,
+        "h": 36.4
+      }
+    },
+    "22": {
+      "pattern": "lfl866",
+      "rect": {
+        "x": 50.7,
+        "y": 34.6,
+        "w": 41.6,
+        "h": 37.7
+      }
+    },
+    "23": {
+      "pattern": "rl917",
+      "rect": {
+        "x": 52.3,
+        "y": 34.6,
+        "w": 43.0,
+        "h": 35.3
+      }
+    }
+  }
+}

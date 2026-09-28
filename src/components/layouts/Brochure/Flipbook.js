@@ -7,6 +7,7 @@ import {
   useState,
 } from "react";
 import HTMLFlipBook from "react-pageflip";
+import Gallery, { formatMB } from "./Gallery";
 import Lightbox from "./Lightbox";
 import styles from "./Flipbook.module.css";
 
@@ -20,8 +21,13 @@ const PAGE_RATIO = 0.773;
 // it show past the page edges.
 const CLIP_SLACK = 0;
 
-const Page = forwardRef(({ src, number, hotspot, onZoom }, ref) => {
+const Page = forwardRef(({ src, number, hotspot, label, onZoom }, ref) => {
   const r = hotspot?.rect;
+  // Bottom-right corner of the tire photo; the page's top-right corner when
+  // the page has no photo of its own (a continued spec table, say).
+  const at = r
+    ? { left: `calc(${r.x + r.w}% - 40px)`, top: `calc(${r.y + r.h}% - 40px)` }
+    : { right: "12px", top: "12px" };
   return (
     <div className={styles.page} ref={ref}>
       <img
@@ -31,21 +37,18 @@ const Page = forwardRef(({ src, number, hotspot, onZoom }, ref) => {
         loading={number <= 2 ? "eager" : "lazy"}
         draggable={false}
       />
-      {hotspot?.image && r && (
+      {hotspot && (
         <button
           type="button"
           className={styles.zoomBtn}
-          style={{
-            left: `calc(${r.x + r.w}% - 40px)`,
-            top: `calc(${r.y + r.h}% - 40px)`,
-          }}
+          style={at}
           onMouseDown={(e) => e.stopPropagation()}
           onClick={(e) => {
             e.stopPropagation();
-            onZoom(hotspot);
+            onZoom(hotspot.pattern);
           }}
-          aria-label={`View ${hotspot.code} hi-res image`}
-          title="View hi-res image"
+          aria-label={`View ${label} photos`}
+          title={`View ${label} photos`}
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <circle cx="10" cy="10" r="7" stroke="currentColor" strokeWidth="2" />
@@ -66,8 +69,9 @@ const Flipbook = ({ brochure }) => {
   const stageRef = useRef(null);
   const [page, setPage] = useState(0);
   const [count, setCount] = useState(brochure.pages);
-  const [hotspots, setHotspots] = useState({});
-  const [lightbox, setLightbox] = useState(null);
+  const [images, setImages] = useState(null);
+  const [viewer, setViewer] = useState(null); // index into images.patterns
+  const [galleryOpen, setGalleryOpen] = useState(false);
   const [logoOpen, setLogoOpen] = useState(false);
   const [bookMaxH, setBookMaxH] = useState(640);
   const [stageW, setStageW] = useState(0);
@@ -98,17 +102,31 @@ const Flipbook = ({ brochure }) => {
   }, [brochure.id]);
 
   useEffect(() => {
+    setImages(null);
+    setViewer(null);
+    setGalleryOpen(false);
+    if (!brochure.imagesUrl) return undefined;
     let alive = true;
-    fetch(`${PUBLIC}${brochure.basePath}/hotspots.json`)
-      .then((r) => (r.ok ? r.json() : {}))
-      .then((d) => alive && setHotspots(d || {}))
+    fetch(`${PUBLIC}${brochure.imagesUrl}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => alive && d?.patterns?.length && setImages(d))
       .catch(() => {});
     return () => {
       alive = false;
     };
-  }, [brochure.basePath]);
+  }, [brochure.imagesUrl]);
 
-  const hasZoomable = Object.values(hotspots).some((h) => h?.image);
+  const modalOpen = viewer !== null || galleryOpen;
+  useEffect(() => {
+    if (!modalOpen) return undefined;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [modalOpen]);
+
+  const hotspots = images?.hotspots ?? {};
+  const patternIndex = (id) => images.patterns.findIndex((p) => p.id === id);
   // Keep in step with minWidth below, or the two constraints fight and
   // StPageFlip sizes the spread inconsistently.
   const pageW = Math.max(260, Math.round(bookMaxH * PAGE_RATIO));
@@ -140,14 +158,22 @@ const Flipbook = ({ brochure }) => {
     if (pf) setCount(pf.getPageCount());
   }, []);
 
-  const openZoom = useCallback(
-    (h) =>
-      setLightbox({
-        src: `${PUBLIC}${h.image}`,
-        caption: `${brochure.title} · ${h.code}`,
-      }),
-    [brochure.title]
+  const openPattern = useCallback(
+    (id) => {
+      const i = images?.patterns.findIndex((p) => p.id === id) ?? -1;
+      if (i >= 0) setViewer(i);
+    },
+    [images]
   );
+
+  const goToPage = useCallback((n) => {
+    const pf = bookRef.current?.pageFlip?.();
+    if (!pf) return;
+    pf.turnToPage(n - 1);
+    setPage(pf.getCurrentPageIndex());
+    setViewer(null);
+    setGalleryOpen(false);
+  }, []);
 
   const toggleFullscreen = useCallback(() => {
     const el = wrapRef.current;
@@ -158,13 +184,13 @@ const Flipbook = ({ brochure }) => {
 
   useEffect(() => {
     const onKey = (e) => {
-      if (lightbox) return;
+      if (modalOpen) return;
       if (e.key === "ArrowRight") flipNext();
       if (e.key === "ArrowLeft") flipPrev();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [flipNext, flipPrev, lightbox]);
+  }, [flipNext, flipPrev, modalOpen]);
 
   return (
     <section className={styles.wrapper} ref={wrapRef}>
@@ -216,7 +242,11 @@ const Flipbook = ({ brochure }) => {
                 src={src}
                 number={i + 1}
                 hotspot={hotspots[i + 1]}
-                onZoom={openZoom}
+                label={
+                  hotspots[i + 1] &&
+                  images.patterns[patternIndex(hotspots[i + 1].pattern)]?.label
+                }
+                onZoom={openPattern}
               />
             ))}
           </HTMLFlipBook>
@@ -286,24 +316,53 @@ const Flipbook = ({ brochure }) => {
             ↓ PDF
           </a>
         )}
+
+        {images && (
+          <>
+            <button
+              className={`${styles.btn} ${styles.accent}`}
+              onClick={() => setGalleryOpen(true)}
+            >
+              ▦ Tire Photos
+            </button>
+            <a
+              className={styles.btn}
+              href={`${PUBLIC}${images.zip.url}`}
+              download={images.zip.filename}
+            >
+              ↓ All Photos ({formatMB(images.zip.bytes)})
+            </a>
+          </>
+        )}
       </div>
 
       <p className={styles.hint}>
         Drag a page corner or use the arrows / ← → keys to flip.
-        {hasZoomable && (
+        {images && (
           <>
             {" "}
             Click the <span className={styles.inlineIcon}> ⌕ </span> icon on a
-            tire to view a hi-res image.
+            tire to see its photos.
           </>
         )}
       </p>
 
-      {lightbox && (
+      {galleryOpen && (
+        <Gallery
+          title={brochure.title}
+          images={images}
+          onOpen={setViewer}
+          onClose={() => setGalleryOpen(false)}
+          paused={viewer !== null}
+        />
+      )}
+      {viewer !== null && (
         <Lightbox
-          src={lightbox.src}
-          caption={lightbox.caption}
-          onClose={() => setLightbox(null)}
+          key={viewer}
+          pattern={images.patterns[viewer]}
+          title={brochure.title}
+          onClose={() => setViewer(null)}
+          onGoToPage={goToPage}
         />
       )}
     </section>
