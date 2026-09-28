@@ -2,5 +2,12 @@
   "id": "hirun-tube",
   "title": "HI-RUN Tube Application Guide",
   "pages": 2,
-  "pdf": true
+  "pdf": true,
+  "logos": [
+    {
+      "label": "HI-RUN",
+      "svg": "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
+      "png": "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png"
+    }
+  ]
 }

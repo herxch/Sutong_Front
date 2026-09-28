@@ -107,14 +107,16 @@ def regenerate_registry():
             lines.append(f"    pdfUrl: {js_string(base + '/source.pdf')},")
         if e.get("images"):
             lines.append(f"    imagesUrl: {js_string(base + '/images.json')},")
-        if e.get("logo"):
-            logo = e["logo"]
-            lines.append("    logo: {")
-            lines.append(f"      label: {js_string(logo['label'])},")
-            for fmt in ("svg", "png"):
-                if logo.get(fmt):
-                    lines.append(f"      {fmt}: {js_string(logo[fmt])},")
-            lines.append("    },")
+        if e.get("logos"):
+            lines.append("    logos: [")
+            for logo in e["logos"]:
+                lines.append("      {")
+                lines.append(f"        label: {js_string(logo['label'])},")
+                for fmt in ("svg", "png"):
+                    if logo.get(fmt):
+                        lines.append(f"        {fmt}: {js_string(logo[fmt])},")
+                lines.append("      },")
+            lines.append("    ],")
         lines.append("  },")
     lines.append("};")
     lines.append("")

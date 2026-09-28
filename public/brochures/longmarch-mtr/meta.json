@@ -3,5 +3,12 @@
   "title": "Long March MTR",
   "pages": 16,
   "pdf": true,
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "Long March",
+      "svg": "/brochures/longmarch-mtr/images/_logo/LONGMARCH LOGO SVG.svg",
+      "png": "/brochures/longmarch-mtr/images/_logo/LONGMARCH LOGO PNG.png"
+    }
+  ]
 }

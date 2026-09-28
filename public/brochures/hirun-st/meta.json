@@ -3,5 +3,12 @@
   "title": "HI-RUN ST Tire",
   "pages": 4,
   "pdf": true,
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "HI-RUN",
+      "svg": "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
+      "png": "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png"
+    }
+  ]
 }

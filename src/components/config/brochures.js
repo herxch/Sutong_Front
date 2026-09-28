@@ -10,6 +10,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/caraway-st/source.pdf",
     imagesUrl: "/brochures/caraway-st/images.json",
+    logos: [
+      {
+        label: "Caraway",
+        svg: "/brochures/caraway-st/images/_logo/CARAWAY LOGO SVG.svg",
+        png: "/brochures/caraway-st/images/_logo/CARAWAY LOGO PNG.png",
+      },
+    ],
   },
   "hemisphere-plt": {
     id: "hemisphere-plt",
@@ -19,6 +26,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/hemisphere-plt/source.pdf",
     imagesUrl: "/brochures/hemisphere-plt/images.json",
+    logos: [
+      {
+        label: "Hemisphere",
+        svg: "/brochures/hemisphere-plt/images/_logo/HEMISPHERE LOGO SVG.svg",
+        png: "/brochures/hemisphere-plt/images/_logo/HEMISPHERE LOGO PNG.png",
+      },
+    ],
   },
   "hirun-atvutv": {
     id: "hirun-atvutv",
@@ -28,6 +42,18 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/hirun-atvutv/source.pdf",
     imagesUrl: "/brochures/hirun-atvutv/images.json",
+    logos: [
+      {
+        label: "HI-RUN",
+        svg: "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
+        png: "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
+      },
+      {
+        label: "WolfPack",
+        svg: "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
+        png: "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png",
+      },
+    ],
   },
   "hirun-specialty": {
     id: "hirun-specialty",
@@ -37,6 +63,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/hirun-specialty/source.pdf",
     imagesUrl: "/brochures/hirun-specialty/images.json",
+    logos: [
+      {
+        label: "HI-RUN",
+        svg: "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
+        png: "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
+      },
+    ],
   },
   "hirun-st": {
     id: "hirun-st",
@@ -46,6 +79,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/hirun-st/source.pdf",
     imagesUrl: "/brochures/hirun-st/images.json",
+    logos: [
+      {
+        label: "HI-RUN",
+        svg: "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
+        png: "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
+      },
+    ],
   },
   "hirun-tube": {
     id: "hirun-tube",
@@ -54,6 +94,13 @@ export const BROCHURES = {
     pages: 2,
     ext: "webp",
     pdfUrl: "/brochures/hirun-tube/source.pdf",
+    logos: [
+      {
+        label: "HI-RUN",
+        svg: "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
+        png: "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
+      },
+    ],
   },
   "longmarch-mtr": {
     id: "longmarch-mtr",
@@ -63,6 +110,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/longmarch-mtr/source.pdf",
     imagesUrl: "/brochures/longmarch-mtr/images.json",
+    logos: [
+      {
+        label: "Long March",
+        svg: "/brochures/longmarch-mtr/images/_logo/LONGMARCH LOGO SVG.svg",
+        png: "/brochures/longmarch-mtr/images/_logo/LONGMARCH LOGO PNG.png",
+      },
+    ],
   },
   "roadone-mtr": {
     id: "roadone-mtr",
@@ -72,6 +126,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/roadone-mtr/source.pdf",
     imagesUrl: "/brochures/roadone-mtr/images.json",
+    logos: [
+      {
+        label: "RoadOne",
+        svg: "/brochures/roadone-mtr/images/_logo/ROADONE LOGO SVG.svg",
+        png: "/brochures/roadone-mtr/images/_logo/ROADONE LOGO PNG.png",
+      },
+    ],
   },
   "roadone-plt": {
     id: "roadone-plt",
@@ -81,6 +142,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/roadone-plt/source.pdf",
     imagesUrl: "/brochures/roadone-plt/images.json",
+    logos: [
+      {
+        label: "RoadOne",
+        svg: "/brochures/roadone-mtr/images/_logo/ROADONE LOGO SVG.svg",
+        png: "/brochures/roadone-mtr/images/_logo/ROADONE LOGO PNG.png",
+      },
+    ],
   },
   "supercargo-mtr": {
     id: "supercargo-mtr",
@@ -90,6 +158,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/supercargo-mtr/source.pdf",
     imagesUrl: "/brochures/supercargo-mtr/images.json",
+    logos: [
+      {
+        label: "SuperCargo",
+        svg: "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO SVG.svg",
+        png: "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO PNG.png",
+      },
+    ],
   },
   "supercargo-str": {
     id: "supercargo-str",
@@ -99,6 +174,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/supercargo-str/source.pdf",
     imagesUrl: "/brochures/supercargo-str/images.json",
+    logos: [
+      {
+        label: "SuperCargo",
+        svg: "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO SVG.svg",
+        png: "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO PNG.png",
+      },
+    ],
   },
   "synergy-mtr": {
     id: "synergy-mtr",
@@ -108,6 +190,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/synergy-mtr/source.pdf",
     imagesUrl: "/brochures/synergy-mtr/images.json",
+    logos: [
+      {
+        label: "Synergy",
+        svg: "/brochures/synergy-str/images/_logo/SYNERGY LOGO SVG.svg",
+        png: "/brochures/synergy-str/images/_logo/SYNERGY LOGO PNG.png",
+      },
+    ],
   },
   "synergy-str": {
     id: "synergy-str",
@@ -117,6 +206,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/synergy-str/source.pdf",
     imagesUrl: "/brochures/synergy-str/images.json",
+    logos: [
+      {
+        label: "Synergy",
+        svg: "/brochures/synergy-str/images/_logo/SYNERGY LOGO SVG.svg",
+        png: "/brochures/synergy-str/images/_logo/SYNERGY LOGO PNG.png",
+      },
+    ],
   },
   "wolfpack-atvutv": {
     id: "wolfpack-atvutv",
@@ -126,11 +222,13 @@ export const BROCHURES = {
     ext: "webp",
     pdfUrl: "/brochures/wolfpack-atvutv/source.pdf",
     imagesUrl: "/brochures/wolfpack-atvutv/images.json",
-    logo: {
-      label: "WolfPack",
-      svg: "/brochures/wolfpack-atvutv/logo/wolfpack.svg",
-      png: "/brochures/wolfpack-atvutv/logo/wolfpack.png",
-    },
+    logos: [
+      {
+        label: "WolfPack",
+        svg: "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
+        png: "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png",
+      },
+    ],
   },
 };
 

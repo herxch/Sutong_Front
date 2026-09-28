@@ -3,5 +3,12 @@
   "title": "Synergy MTR",
   "pages": 14,
   "pdf": true,
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "Synergy",
+      "svg": "/brochures/synergy-str/images/_logo/SYNERGY LOGO SVG.svg",
+      "png": "/brochures/synergy-str/images/_logo/SYNERGY LOGO PNG.png"
+    }
+  ]
 }

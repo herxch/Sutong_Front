@@ -3,5 +3,12 @@
   "title": "Caraway ST Tire",
   "pages": 4,
   "pdf": true,
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "Caraway",
+      "svg": "/brochures/caraway-st/images/_logo/CARAWAY LOGO SVG.svg",
+      "png": "/brochures/caraway-st/images/_logo/CARAWAY LOGO PNG.png"
+    }
+  ]
 }

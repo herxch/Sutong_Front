@@ -3,5 +3,12 @@
   "title": "Hemisphere Passenger & Light Truck",
   "pages": 14,
   "pdf": true,
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "Hemisphere",
+      "svg": "/brochures/hemisphere-plt/images/_logo/HEMISPHERE LOGO SVG.svg",
+      "png": "/brochures/hemisphere-plt/images/_logo/HEMISPHERE LOGO PNG.png"
+    }
+  ]
 }

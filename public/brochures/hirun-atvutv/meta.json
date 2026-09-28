@@ -3,5 +3,17 @@
   "title": "HI-RUN ATV & UTV Tire",
   "pages": 24,
   "pdf": true,
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "HI-RUN",
+      "svg": "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
+      "png": "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png"
+    },
+    {
+      "label": "WolfPack",
+      "svg": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
+      "png": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png"
+    }
+  ]
 }

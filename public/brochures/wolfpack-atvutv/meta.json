@@ -3,10 +3,12 @@
   "title": "WolfPack ATV / UTV",
   "pages": 19,
   "pdf": true,
-  "logo": {
-    "label": "WolfPack",
-    "svg": "/brochures/wolfpack-atvutv/logo/wolfpack.svg",
-    "png": "/brochures/wolfpack-atvutv/logo/wolfpack.png"
-  },
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "WolfPack",
+      "svg": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
+      "png": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png"
+    }
+  ]
 }

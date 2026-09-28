@@ -290,32 +290,35 @@ const Flipbook = ({ brochure }) => {
           ⛶ Fullscreen
         </button>
 
-        {brochure.logo && (
+        {brochure.logos?.length > 0 && (
           <div className={styles.dropdown}>
             <button
               className={styles.btn}
               onClick={() => setLogoOpen((o) => !o)}
             >
-              ↓ Logo ▾
+              ↓ {brochure.logos.length > 1 ? "Logos" : "Logo"} ▾
             </button>
             {logoOpen && (
               <div className={styles.menu} onMouseLeave={() => setLogoOpen(false)}>
-                <a
-                  className={styles.menuItem}
-                  href={`${PUBLIC}${brochure.logo.png}`}
-                  download
-                  onClick={() => setLogoOpen(false)}
-                >
-                  PNG
-                </a>
-                <a
-                  className={styles.menuItem}
-                  href={`${PUBLIC}${brochure.logo.svg}`}
-                  download
-                  onClick={() => setLogoOpen(false)}
-                >
-                  SVG
-                </a>
+                {/* A brochure can carry two brands (HI-RUN ATV/UTV has the
+                    WolfPack range), so name the brand when there's more
+                    than one. */}
+                {brochure.logos.flatMap((logo) =>
+                  ["png", "svg"]
+                    .filter((fmt) => logo[fmt])
+                    .map((fmt) => (
+                      <a
+                        key={`${logo.label}-${fmt}`}
+                        className={styles.menuItem}
+                        href={`${PUBLIC}${logo[fmt]}`}
+                        download={`${logo.label} logo.${fmt}`}
+                        onClick={() => setLogoOpen(false)}
+                      >
+                        {brochure.logos.length > 1 && `${logo.label} · `}
+                        {fmt.toUpperCase()}
+                      </a>
+                    ))
+                )}
               </div>
             )}
           </div>

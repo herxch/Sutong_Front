@@ -3,5 +3,12 @@
   "title": "SuperCargo MTR",
   "pages": 15,
   "pdf": true,
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "SuperCargo",
+      "svg": "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO SVG.svg",
+      "png": "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO PNG.png"
+    }
+  ]
 }

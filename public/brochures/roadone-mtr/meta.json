@@ -3,5 +3,12 @@
   "title": "RoadOne MTR",
   "pages": 24,
   "pdf": true,
-  "images": true
+  "images": true,
+  "logos": [
+    {
+      "label": "RoadOne",
+      "svg": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO SVG.svg",
+      "png": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO PNG.png"
+    }
+  ]
 }
