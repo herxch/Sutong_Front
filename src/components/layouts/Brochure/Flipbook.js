@@ -153,10 +153,25 @@ const Flipbook = ({ brochure }) => {
     []
   );
 
+  // StPageFlip sizes its pages from its container only at init and on a
+  // window resize. When the container changes size any other way -- the page
+  // was laid out while its window was hidden or zero-sized, say -- the pages
+  // keep the stale size and sit in a corner of the book. Watch the container
+  // itself and re-run the layout whenever it changes.
+  const resizeWatch = useRef(null);
   const handleInit = useCallback(() => {
     const pf = bookRef.current?.pageFlip?.();
-    if (pf) setCount(pf.getPageCount());
+    if (!pf) return;
+    setCount(pf.getPageCount());
+    resizeWatch.current?.disconnect();
+    if (typeof ResizeObserver === "undefined") return;
+    const block = pf.getUI().getDistElement();
+    resizeWatch.current = new ResizeObserver(() => {
+      if (block.isConnected) pf.update();
+    });
+    resizeWatch.current.observe(block);
   }, []);
+  useEffect(() => () => resizeWatch.current?.disconnect(), []);
 
   const openPattern = useCallback(
     (id) => {
