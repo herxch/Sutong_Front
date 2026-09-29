@@ -14,7 +14,7 @@ const BRAND_LIST = [
   { name: "Synergy", logo: synergy, id: "synergy" },
   { name: "Long March", logo: longmarch, id: "longmarch" },
   { name: "Hi-Run", logo: hirun, id: "hirun" },
-  { name: "SuperCargo", logo: supercargo, id: "supercargo" },
+  { name: "Super Cargo", logo: supercargo, id: "supercargo" },
   { name: "Hemisphere", logo: hemisphere, id: "hemisphere" },
   { name: "RoadOne", logo: roadone, id: "roadone" },
   { name: "Caraway", logo: caraway, id: "caraway" },

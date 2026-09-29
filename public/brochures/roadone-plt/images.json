@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/roadone-plt/roadone-plt-images.zip",
     "filename": "RoadOne Passenger & Light Truck Images.zip",
-    "bytes": 36027614,
+    "bytes": 36027598,
     "entries": [
       {
         "path": "RoadOne Passenger & Light Truck Images/CAVALRY AS/CAVALRY AS_0°.png",
@@ -160,12 +160,12 @@
         "bytes": 1259121
       },
       {
-        "path": "RoadOne Passenger & Light Truck Images/Logo/ROADONE LOGO PNG.png",
+        "path": "RoadOne Passenger & Light Truck Images/Logo/RoadOne logo.png",
         "src": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO PNG.png",
         "bytes": 285929
       },
       {
-        "path": "RoadOne Passenger & Light Truck Images/Logo/ROADONE LOGO SVG.svg",
+        "path": "RoadOne Passenger & Light Truck Images/Logo/RoadOne logo.svg",
         "src": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO SVG.svg",
         "bytes": 975029
       }

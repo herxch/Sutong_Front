@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/roadone-mtr/roadone-mtr-images.zip",
     "filename": "RoadOne MTR Images.zip",
-    "bytes": 32199516,
+    "bytes": 32199500,
     "entries": [
       {
         "path": "RoadOne MTR Images/RL616/RL616.png",
@@ -180,12 +180,12 @@
         "bytes": 1200444
       },
       {
-        "path": "RoadOne MTR Images/Logo/ROADONE LOGO PNG.png",
+        "path": "RoadOne MTR Images/Logo/RoadOne logo.png",
         "src": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO PNG.png",
         "bytes": 285929
       },
       {
-        "path": "RoadOne MTR Images/Logo/ROADONE LOGO SVG.svg",
+        "path": "RoadOne MTR Images/Logo/RoadOne logo.svg",
         "src": "/brochures/roadone-mtr/images/_logo/ROADONE LOGO SVG.svg",
         "bytes": 975029
       }

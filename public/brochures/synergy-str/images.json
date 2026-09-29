@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/synergy-str/synergy-str-images.zip",
     "filename": "Synergy STR Images.zip",
-    "bytes": 3284651,
+    "bytes": 3284635,
     "entries": [
       {
         "path": "Synergy STR Images/SP500/SP500.png",
@@ -25,12 +25,12 @@
         "bytes": 419185
       },
       {
-        "path": "Synergy STR Images/Logo/SYNERGY LOGO PNG.png",
+        "path": "Synergy STR Images/Logo/Synergy logo.png",
         "src": "/brochures/synergy-str/images/_logo/SYNERGY LOGO PNG.png",
         "bytes": 83669
       },
       {
-        "path": "Synergy STR Images/Logo/SYNERGY LOGO SVG.svg",
+        "path": "Synergy STR Images/Logo/Synergy logo.svg",
         "src": "/brochures/synergy-str/images/_logo/SYNERGY LOGO SVG.svg",
         "bytes": 11118
       }

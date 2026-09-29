@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/hirun-atvutv/hirun-atvutv-images.zip",
     "filename": "HI-RUN ATV & UTV Tire Images.zip",
-    "bytes": 18549887,
+    "bytes": 18549851,
     "entries": [
       {
         "path": "HI-RUN ATV & UTV Tire Images/SU13/SU13.png",
@@ -110,22 +110,22 @@
         "bytes": 1193188
       },
       {
-        "path": "HI-RUN ATV & UTV Tire Images/Logo/HI-RUN LOGO PNG.png",
+        "path": "HI-RUN ATV & UTV Tire Images/Logo/HI-RUN logo.png",
         "src": "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
         "bytes": 18617
       },
       {
-        "path": "HI-RUN ATV & UTV Tire Images/Logo/HI-RUN LOGO SVG.svg",
+        "path": "HI-RUN ATV & UTV Tire Images/Logo/HI-RUN logo.svg",
         "src": "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
         "bytes": 3148
       },
       {
-        "path": "HI-RUN ATV & UTV Tire Images/Logo/WOLF PACK LOGO PNG.png",
+        "path": "HI-RUN ATV & UTV Tire Images/Logo/WolfPack logo.png",
         "src": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png",
         "bytes": 72257
       },
       {
-        "path": "HI-RUN ATV & UTV Tire Images/Logo/WOLF PACK LOGO SVG.svg",
+        "path": "HI-RUN ATV & UTV Tire Images/Logo/WolfPack logo.svg",
         "src": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
         "bytes": 55965
       }

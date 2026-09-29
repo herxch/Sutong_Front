@@ -1,7 +1,7 @@
 [
   { "id": "synergy-mtr", "brand": "Synergy", "line": "MTR", "pages": 2 },
   { "id": "longmarch-mtr", "brand": "Long March", "line": "MTR", "pages": 2 },
-  { "id": "supercargo-mtr", "brand": "SuperCargo", "line": "MTR", "pages": 2 },
+  { "id": "supercargo-mtr", "brand": "Super Cargo", "line": "MTR", "pages": 2 },
   { "id": "cavalry-mtr", "brand": "Cavalry", "line": "MTR", "pages": 2 },
   { "id": "roadone-mtr", "brand": "RoadOne", "line": "MTR", "pages": 2 },
   {

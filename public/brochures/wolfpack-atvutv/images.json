@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/wolfpack-atvutv/wolfpack-atvutv-images.zip",
     "filename": "WolfPack ATV-UTV Images.zip",
-    "bytes": 12672335,
+    "bytes": 12672315,
     "entries": [
       {
         "path": "WolfPack ATV-UTV Images/P3036 RUN FLAT/P3036.png",
@@ -75,12 +75,12 @@
         "bytes": 1193188
       },
       {
-        "path": "WolfPack ATV-UTV Images/Logo/WOLF PACK LOGO PNG.png",
+        "path": "WolfPack ATV-UTV Images/Logo/WolfPack logo.png",
         "src": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png",
         "bytes": 72257
       },
       {
-        "path": "WolfPack ATV-UTV Images/Logo/WOLF PACK LOGO SVG.svg",
+        "path": "WolfPack ATV-UTV Images/Logo/WolfPack logo.svg",
         "src": "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
         "bytes": 55965
       }

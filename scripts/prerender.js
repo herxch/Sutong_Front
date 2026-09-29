@@ -39,7 +39,7 @@ const STATIC_ROUTES = [
     route: "/catalog",
     title: `Tire Catalog & Brochures — ${BRAND}`,
     description:
-      "Browse brochures for Synergy, Long March, SuperCargo, RoadOne, Hemisphere, Hi-Run, Caraway and Wolf Pack — medium truck, trailer, passenger, L&G, ATV/UTV and tube.",
+      "Browse brochures for Synergy, Long March, Super Cargo, RoadOne, Hemisphere, Hi-Run, Caraway and Wolf Pack — medium truck, trailer, passenger, L&G, ATV/UTV and tube.",
   },
   {
     route: "/careers",
@@ -61,7 +61,7 @@ const STATIC_ROUTES = [
     route: "/warranty",
     title: `Limited Warranty — ${BRAND}`,
     description:
-      "Limited Warranty documents for Synergy, Long March, SuperCargo, Cavalry, RoadOne, Hemisphere and Hi-Run tires.",
+      "Limited Warranty documents for Synergy, Long March, Super Cargo, Cavalry, RoadOne, Hemisphere and Hi-Run tires.",
   },
 ];
 

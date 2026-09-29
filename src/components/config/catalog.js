@@ -43,7 +43,7 @@ export const BRANDS = [
   },
   {
     id: "supercargo",
-    name: "SuperCargo",
+    name: "Super Cargo",
     logo: supercargo,
     categories: [
       { ...CATEGORY.mtr, brochureId: "supercargo-mtr" },

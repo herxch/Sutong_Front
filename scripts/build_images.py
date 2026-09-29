@@ -313,15 +313,24 @@ def photo_rect(page):
 # ZIP
 
 
-def zip_plan(title, patterns, logos):
-    """Entries for pack_images.js, plus the exact size of the stored ZIP."""
+def zip_plan(title, patterns, logos, brands):
+    """Entries for pack_images.js, plus the exact size of the stored ZIP.
+
+    Logos are named after the brand as meta.json spells it ("Super Cargo
+    logo.png"), the same name the toolbar's Logo menu downloads, rather than
+    the factory's file name ("SUPERCARGO LOGO PNG.png"), which runs brand
+    names together.
+    """
     top = re.sub(r"\s*/\s*", "-", title).strip() + " Images"
+    brand_of = {url: b["label"] for b in brands for url in (b.get("png"), b.get("svg")) if url}
     entries = []
     for p in patterns:
         for v in p["views"]:
             entries.append({"path": f"{top}/{p['label']}/{v['filename']}", "src": v["original"], "bytes": v["bytes"]})
     for logo in logos:
-        entries.append({"path": f"{top}/Logo/{logo['filename']}", "src": logo["original"], "bytes": logo["bytes"]})
+        brand = brand_of.get(logo["original"])
+        name = f"{brand} logo{Path(logo['filename']).suffix.lower()}" if brand else logo["filename"]
+        entries.append({"path": f"{top}/Logo/{name}", "src": logo["original"], "bytes": logo["bytes"]})
     # Stored (no compression -- PNGs don't shrink), no extra fields:
     # 30-byte local header + name + data, 46-byte central entry + name, 22-byte end record.
     size = 22 + sum(76 + 2 * len(e["path"].encode("utf-8")) + e["bytes"] for e in entries)
@@ -453,7 +462,7 @@ def main():
             }
             for p in used
         ]
-        top, entries, size = zip_plan(meta["title"], patterns, logos)
+        top, entries, size = zip_plan(meta["title"], patterns, logos, meta.get("logos", []))
         manifest = {
             "zip": {
                 "url": f"/brochures/{bid}/{bid}-images.zip",

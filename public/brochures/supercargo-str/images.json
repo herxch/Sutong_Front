@@ -1,36 +1,36 @@
 {
   "zip": {
     "url": "/brochures/supercargo-str/supercargo-str-images.zip",
-    "filename": "SuperCargo STR Images.zip",
+    "filename": "Super Cargo STR Images.zip",
     "bytes": 2755874,
     "entries": [
       {
-        "path": "SuperCargo STR Images/SC126/SC126 A.png",
+        "path": "Super Cargo STR Images/SC126/SC126 A.png",
         "src": "/brochures/supercargo-str/images/sc126/sc126-a.png",
         "bytes": 786613
       },
       {
-        "path": "SuperCargo STR Images/SC126/SC126 B.png",
+        "path": "Super Cargo STR Images/SC126/SC126 B.png",
         "src": "/brochures/supercargo-str/images/sc126/sc126-b.png",
         "bytes": 809266
       },
       {
-        "path": "SuperCargo STR Images/SC126/SC126 C.png",
+        "path": "Super Cargo STR Images/SC126/SC126 C.png",
         "src": "/brochures/supercargo-str/images/sc126/sc126-c.png",
         "bytes": 330167
       },
       {
-        "path": "SuperCargo STR Images/ST506/ST506.png",
+        "path": "Super Cargo STR Images/ST506/ST506.png",
         "src": "/brochures/supercargo-str/images/st506/st506.png",
         "bytes": 719069
       },
       {
-        "path": "SuperCargo STR Images/Logo/SUPERCARGO LOGO PNG.png",
+        "path": "Super Cargo STR Images/Logo/Super Cargo logo.png",
         "src": "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO PNG.png",
         "bytes": 101104
       },
       {
-        "path": "SuperCargo STR Images/Logo/SUPERCARGO LOGO SVG.svg",
+        "path": "Super Cargo STR Images/Logo/Super Cargo logo.svg",
         "src": "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO SVG.svg",
         "bytes": 8669
       }

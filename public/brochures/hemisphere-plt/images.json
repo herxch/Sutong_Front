@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/hemisphere-plt/hemisphere-plt-images.zip",
     "filename": "Hemisphere Passenger & Light Truck Images.zip",
-    "bytes": 14264445,
+    "bytes": 14264429,
     "entries": [
       {
         "path": "Hemisphere Passenger & Light Truck Images/AETHON HP/AETHON HP 1.png",
@@ -95,12 +95,12 @@
         "bytes": 802046
       },
       {
-        "path": "Hemisphere Passenger & Light Truck Images/Logo/HEMISPHERE LOGO PNG.png",
+        "path": "Hemisphere Passenger & Light Truck Images/Logo/Hemisphere logo.png",
         "src": "/brochures/hemisphere-plt/images/_logo/HEMISPHERE LOGO PNG.png",
         "bytes": 69133
       },
       {
-        "path": "Hemisphere Passenger & Light Truck Images/Logo/HEMISPHERE LOGO SVG.svg",
+        "path": "Hemisphere Passenger & Light Truck Images/Logo/Hemisphere logo.svg",
         "src": "/brochures/hemisphere-plt/images/_logo/HEMISPHERE LOGO SVG.svg",
         "bytes": 6166
       }

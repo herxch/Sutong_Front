@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/longmarch-mtr/longmarch-mtr-images.zip",
     "filename": "Long March MTR Images.zip",
-    "bytes": 43395508,
+    "bytes": 43395496,
     "entries": [
       {
         "path": "Long March MTR Images/D271/D271 a.png",
@@ -200,12 +200,12 @@
         "bytes": 786574
       },
       {
-        "path": "Long March MTR Images/Logo/LONGMARCH LOGO PNG.png",
+        "path": "Long March MTR Images/Logo/Long March logo.png",
         "src": "/brochures/longmarch-mtr/images/_logo/LONGMARCH LOGO PNG.png",
         "bytes": 63041
       },
       {
-        "path": "Long March MTR Images/Logo/LONGMARCH LOGO SVG.svg",
+        "path": "Long March MTR Images/Logo/Long March logo.svg",
         "src": "/brochures/longmarch-mtr/images/_logo/LONGMARCH LOGO SVG.svg",
         "bytes": 34136
       }

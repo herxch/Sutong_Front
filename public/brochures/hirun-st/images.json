@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/hirun-st/hirun-st-images.zip",
     "filename": "HI-RUN ST Tire Images.zip",
-    "bytes": 5391344,
+    "bytes": 5391328,
     "entries": [
       {
         "path": "HI-RUN ST Tire Images/JK42/JK42 A.png",
@@ -40,12 +40,12 @@
         "bytes": 1374466
       },
       {
-        "path": "HI-RUN ST Tire Images/Logo/HI-RUN LOGO PNG.png",
+        "path": "HI-RUN ST Tire Images/Logo/HI-RUN logo.png",
         "src": "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
         "bytes": 18617
       },
       {
-        "path": "HI-RUN ST Tire Images/Logo/HI-RUN LOGO SVG.svg",
+        "path": "HI-RUN ST Tire Images/Logo/HI-RUN logo.svg",
         "src": "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
         "bytes": 3148
       }

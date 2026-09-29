@@ -152,7 +152,7 @@ export const BROCHURES = {
   },
   "supercargo-mtr": {
     id: "supercargo-mtr",
-    title: "SuperCargo MTR",
+    title: "Super Cargo MTR",
     basePath: "/brochures/supercargo-mtr",
     pages: 15,
     ext: "webp",
@@ -160,7 +160,7 @@ export const BROCHURES = {
     imagesUrl: "/brochures/supercargo-mtr/images.json",
     logos: [
       {
-        label: "SuperCargo",
+        label: "Super Cargo",
         svg: "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO SVG.svg",
         png: "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO PNG.png",
       },
@@ -168,7 +168,7 @@ export const BROCHURES = {
   },
   "supercargo-str": {
     id: "supercargo-str",
-    title: "SuperCargo STR",
+    title: "Super Cargo STR",
     basePath: "/brochures/supercargo-str",
     pages: 3,
     ext: "webp",
@@ -176,7 +176,7 @@ export const BROCHURES = {
     imagesUrl: "/brochures/supercargo-str/images.json",
     logos: [
       {
-        label: "SuperCargo",
+        label: "Super Cargo",
         svg: "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO SVG.svg",
         png: "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO PNG.png",
       },

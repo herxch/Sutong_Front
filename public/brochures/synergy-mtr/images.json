@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/synergy-mtr/synergy-mtr-images.zip",
     "filename": "Synergy MTR Images.zip",
-    "bytes": 12447843,
+    "bytes": 12447827,
     "entries": [
       {
         "path": "Synergy MTR Images/DP206/DP206.png",
@@ -80,12 +80,12 @@
         "bytes": 962657
       },
       {
-        "path": "Synergy MTR Images/Logo/SYNERGY LOGO PNG.png",
+        "path": "Synergy MTR Images/Logo/Synergy logo.png",
         "src": "/brochures/synergy-str/images/_logo/SYNERGY LOGO PNG.png",
         "bytes": 83669
       },
       {
-        "path": "Synergy MTR Images/Logo/SYNERGY LOGO SVG.svg",
+        "path": "Synergy MTR Images/Logo/Synergy logo.svg",
         "src": "/brochures/synergy-str/images/_logo/SYNERGY LOGO SVG.svg",
         "bytes": 11118
       }

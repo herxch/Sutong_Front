@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/hirun-specialty/hirun-specialty-images.zip",
     "filename": "HI-RUN Specialty Tire Images.zip",
-    "bytes": 69862244,
+    "bytes": 69862228,
     "entries": [
       {
         "path": "HI-RUN Specialty Tire Images/SU05/SU05 A.png",
@@ -500,12 +500,12 @@
         "bytes": 326493
       },
       {
-        "path": "HI-RUN Specialty Tire Images/Logo/HI-RUN LOGO PNG.png",
+        "path": "HI-RUN Specialty Tire Images/Logo/HI-RUN logo.png",
         "src": "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
         "bytes": 18617
       },
       {
-        "path": "HI-RUN Specialty Tire Images/Logo/HI-RUN LOGO SVG.svg",
+        "path": "HI-RUN Specialty Tire Images/Logo/HI-RUN logo.svg",
         "src": "/brochures/hirun-st/images/_logo/HI-RUN LOGO SVG.svg",
         "bytes": 3148
       }

@@ -1,12 +1,12 @@
 {
   "id": "supercargo-mtr",
-  "title": "SuperCargo MTR",
+  "title": "Super Cargo MTR",
   "pages": 15,
   "pdf": true,
   "images": true,
   "logos": [
     {
-      "label": "SuperCargo",
+      "label": "Super Cargo",
       "svg": "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO SVG.svg",
       "png": "/brochures/supercargo-str/images/_logo/SUPERCARGO LOGO PNG.png"
     }

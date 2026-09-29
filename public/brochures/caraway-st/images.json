@@ -2,7 +2,7 @@
   "zip": {
     "url": "/brochures/caraway-st/caraway-st-images.zip",
     "filename": "Caraway ST Tire Images.zip",
-    "bytes": 6103378,
+    "bytes": 6103362,
     "entries": [
       {
         "path": "Caraway ST Tire Images/ST202/ST202 A.png",
@@ -50,12 +50,12 @@
         "bytes": 424810
       },
       {
-        "path": "Caraway ST Tire Images/Logo/CARAWAY LOGO PNG.png",
+        "path": "Caraway ST Tire Images/Logo/Caraway logo.png",
         "src": "/brochures/caraway-st/images/_logo/CARAWAY LOGO PNG.png",
         "bytes": 106058
       },
       {
-        "path": "Caraway ST Tire Images/Logo/CARAWAY LOGO SVG.svg",
+        "path": "Caraway ST Tire Images/Logo/Caraway logo.svg",
         "src": "/brochures/caraway-st/images/_logo/CARAWAY LOGO SVG.svg",
         "bytes": 17663
       }
