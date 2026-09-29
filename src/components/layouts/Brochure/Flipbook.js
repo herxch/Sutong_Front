@@ -301,7 +301,7 @@ const Flipbook = ({ brochure }) => {
             {logoOpen && (
               <div className={styles.menu} onMouseLeave={() => setLogoOpen(false)}>
                 {/* A brochure can carry two brands (HI-RUN ATV/UTV has the
-                    WolfPack range), so name the brand when there's more
+                    Wolf Pack range), so name the brand when there's more
                     than one. */}
                 {brochure.logos.flatMap((logo) =>
                   ["png", "svg"]

@@ -18,7 +18,7 @@ const BRAND_LIST = [
   { name: "Hemisphere", logo: hemisphere, id: "hemisphere" },
   { name: "RoadOne", logo: roadone, id: "roadone" },
   { name: "Caraway", logo: caraway, id: "caraway" },
-  { name: "WolfPack", logo: wolfpack, id: "wolfpack" },
+  { name: "Wolf Pack", logo: wolfpack, id: "wolfpack" },
   { name: "SuperStrong", logo: superstrong, id: "superstrong" },
 ];
 

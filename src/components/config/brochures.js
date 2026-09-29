@@ -49,7 +49,7 @@ export const BROCHURES = {
         png: "/brochures/hirun-st/images/_logo/HI-RUN LOGO PNG.png",
       },
       {
-        label: "WolfPack",
+        label: "Wolf Pack",
         svg: "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
         png: "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png",
       },
@@ -216,7 +216,7 @@ export const BROCHURES = {
   },
   "wolfpack-atvutv": {
     id: "wolfpack-atvutv",
-    title: "WolfPack ATV / UTV",
+    title: "Wolf Pack ATV / UTV",
     basePath: "/brochures/wolfpack-atvutv",
     pages: 19,
     ext: "webp",
@@ -224,7 +224,7 @@ export const BROCHURES = {
     imagesUrl: "/brochures/wolfpack-atvutv/images.json",
     logos: [
       {
-        label: "WolfPack",
+        label: "Wolf Pack",
         svg: "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO SVG.svg",
         png: "/brochures/wolfpack-atvutv/images/_logo/WOLF PACK LOGO PNG.png",
       },

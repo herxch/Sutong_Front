@@ -4,7 +4,7 @@ Renders every page to WebP, copies the PDF alongside it for download, records a
 meta.json, then regenerates the React registry from every meta.json on disk.
 
     python scripts/build_brochure.py _inbox/WolfPackATVUTV.pdf \
-        --id wolfpack-atvutv --title "WolfPack ATV / UTV"
+        --id wolfpack-atvutv --title "Wolf Pack ATV / UTV"
 
 Re-run with --regen-only after hand-editing a meta.json to refresh the registry
 without re-rendering anything.
